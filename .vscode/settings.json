@@ -1,0 +1,5 @@
+{
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "python.analysis.typeCheckingMode": "basic",
+    "java.debug.settings.onBuildFailureProceed": true
+}
