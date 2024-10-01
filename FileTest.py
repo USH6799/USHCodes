@@ -1,3 +1,5 @@
+import os
+
 def IsAvailable(path):
     try:
         open(path , 'r')
@@ -17,14 +19,40 @@ def CheckComment(path , symbol):
         
     else:
         pass
+
+def GetAllFiles(path , ext , passdata):
+    data = os.listdir(path)
+    for file in data:
+        if file.endswith(ext):
+            passdata.append(file)
         
+        elif file.count('.'):
+            print(file + " Containing dot")
+            
+        else:
+            passdata = GetAllFiles((f"{path}/{file}") , ext , passdata)
+    
+    return passdata
+
+
+def IsPosted(loc , web):
+    # print(loc)
+    for pgm in loc:
+        ans = web.count(pgm)
+        if not ans:
+            print(pgm + " Not Found on Web")
+            pass
+    
+            
+    
         
-def Initiate(arr , ext , symbol):
+def Initiate(arr , ext , symbol , local):
+    
+    onlinedata = []
     
     while True:
         
         start = arr.find("assets")
-        
         
         end = arr.find(ext) + len(ext)
         
@@ -36,20 +64,36 @@ def Initiate(arr , ext , symbol):
         
         arr = arr[end : ]
         
+        onlinedata.append(path.split('/')[-1])
+        
         IsAvailable(path)
         CheckComment(path , symbol)
         
-java = open('JAVA.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
+    IsPosted(local , onlinedata)
+          
 
-python = open('PYTHON.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
 
+if __name__ == "__main__":
+            
+    java = open('JAVA.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
+    python = open('PYTHON.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
 
-java = java.strip()
+    java = java.strip()
+    python = python.strip()
 
-python = python.strip()
+    local_java = GetAllFiles("./assets/Codes/JavaCode" , '.java' , [])
+    
+    local_python = GetAllFiles("./assets/Codes/PythonCode" , '.py' , [])
 
-Initiate(java , ".java" , "//")
-Initiate(python , ".py" , "#")
+    Initiate(java , ".java" , "//" , local_java)
+    
+    # print(local_java)
+
+    # Initiate(python , ".py" , "#" , local_python)
+
+    # print(local_python)
+    
+
 
 
 
