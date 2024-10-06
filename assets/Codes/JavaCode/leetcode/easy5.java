@@ -1,4 +1,4 @@
-public class ReverseAdding {
+public class easy5 {
 
     public static void main(String[] args) {
 

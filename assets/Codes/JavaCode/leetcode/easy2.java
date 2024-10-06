@@ -3,13 +3,13 @@ import java.util.Scanner;
 /**
  * AlternateReverse class that alternates between reversing and keeping words as is.
  */
-public class AlternateReverse {
+public class easy2 {
 
     // Instance variables to store the original string and the result
     String str, res;
 
     // Constructor initializes the variables
-    AlternateReverse() {
+    easy2() {
         str = "";
         res = "";
     }
@@ -84,7 +84,7 @@ public class AlternateReverse {
     // Main method to run the program
     public static void main(String[] args) {
         // Create an instance of AlternateReverse
-        AlternateReverse obj = new AlternateReverse();
+        easy2 obj = new easy2();
 
         // Take input from the user
         obj.Input();

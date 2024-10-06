@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class ReverbArray_Easy {
+public class easy4 {
 
     // Method to reverse the array of characters
     static char[] Reverse(char[] word) {

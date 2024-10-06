@@ -11,14 +11,16 @@ def CheckComment(path , symbol):
     try:
         data = open(path , 'r').read()
         
-    except:
-        print(path , " Not found")
-
-    if(data.count(symbol) < 10):
-        print(path , " Not commented")
+        if(data.count(symbol) < 10):
+            print(path , " Not commented")
         
-    else:
-        pass
+        else:
+            pass
+        
+    except:
+        print(path , " Not found and Not commented")
+
+    
 
 def GetAllFiles(path , ext , passdata):
     data = os.listdir(path)
@@ -27,7 +29,11 @@ def GetAllFiles(path , ext , passdata):
             passdata.append(file)
         
         elif file.count('.'):
-            print(file + " Containing dot")
+            if file.count("vscode") == 1:
+                continue
+            
+            else:
+                print(file + " Containing dot")
             
         else:
             passdata = GetAllFiles((f"{path}/{file}") , ext , passdata)
@@ -65,7 +71,6 @@ def Initiate(arr , ext , symbol , local):
         arr = arr[end : ]
         
         onlinedata.append(path.split('/')[-1])
-        
         IsAvailable(path)
         CheckComment(path , symbol)
         
@@ -89,7 +94,7 @@ if __name__ == "__main__":
     
     # print(local_java)
 
-    # Initiate(python , ".py" , "#" , local_python)
+    Initiate(python , ".py" , "#" , local_python)
 
     # print(local_python)
     

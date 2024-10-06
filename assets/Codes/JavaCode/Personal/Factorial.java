@@ -11,7 +11,7 @@ public class Factorial{
          // Integer Datatype because it doesn't contain any floating/decimal values.
 
         int fact = 1;
-        // A varible 'fact' intitialized as 1 of datatype Integer.
+        // A variable 'fact' initialized as 1 of datatype Integer.
 
         // Integer Datatype because it doesn't contain any floating/decimal values.
 

@@ -2,19 +2,15 @@ const Skills = () => {
 	let data = [
 		{
 			skillname: "Web Design",
-			current: "40",
+			current: "45",
 		},
 		{
 			skillname: "Web Development",
-			current: "55",
+			current: "60",
 		},
 		{
-			skillname: "MERN Stack",
+			skillname: "Backend (MERN)",
 			current: "75",
-		},
-		{
-			skillname: "Backend (Node.js)",
-			current: "55",
 		},
 		{
 			skillname: "PYTHON",
@@ -22,7 +18,7 @@ const Skills = () => {
 		},
 		{
 			skillname: "Java",
-			current: "25",
+			current: "45",
 		},
 	];
 
@@ -30,7 +26,7 @@ const Skills = () => {
 
 	data.forEach((skill) => {
 		clutter += `<div class="skill-name">
-                        <p>${skill.skillname}</p><p>${skill.current}%</p>
+                        <p style="font-weight:600">${skill.skillname}</p><p style="font-weight:600">${skill.current}%</p>
                     </div>
 
                     <div class="progress">
@@ -44,6 +40,12 @@ const Skills = () => {
 const Timelines = () => {
 	let data = [
 		{
+			date: "April:2024 - August:2024",
+			heading: "Learning Backend In Depth",
+			source: "From Youtube - Sheriyans Coding School",
+			desc: "A coding school located in bhopal,M.P. (india) providing insane courses of web development, The creators and Students are One of the Best Frontend Developer in India and Also Creates Modern Website and Animations.",
+		},
+		{
 			date: "January:2024 - June:2024",
 			heading: "Learning MERN Stack Basic",
 			source: "From Youtube - CodeWithHarry",
@@ -53,7 +55,7 @@ const Timelines = () => {
 			date: "November:2023 - April:2024",
 			heading: "Learned UI/UX Designing",
 			source: "From Youtube - AnshMehra & Figma.com",
-			desc: "A UI/UX Designer giving absolute free Course of UI designing and Other important Desgining Tips, also looking for job opportunities",
+			desc: "A UI/UX Designer giving absolute free Course of UI designing and Other important Designing Tips, also looking for job opportunities",
 		},
 		{
 			date: "March:2023 - January:2024",
@@ -65,7 +67,7 @@ const Timelines = () => {
 			date: "January:2022 - June:2024",
 			heading: "Python/Java Basics",
 			source: "From Youtube - Apna College",
-			desc: "Best for beginner level stuffs and understable Courses, also sells offline courses and diffrent teaching.",
+			desc: "Best for beginner level stuffs and understandable Courses, also sells offline courses and different teaching.",
 		},
 		{
 			date: "2022 - 2023",
@@ -108,7 +110,7 @@ const Blogs = () => {
 			date: "06-July-2024",
 			comment: "2",
 			img: "/assets/img/work/TodoList.webp",
-			desc: "A Web Todo app capable of storing todos in internal memory also after closing it and Fully made using MERN stack and Backend Logics.",
+			desc: "A Web Todo app capable of storing todo in internal memory also after closing it and Fully made using MERN stack and Backend Logics.",
 			link: "assets/Codes/HtmlCode/ToDo/dist/index.html",
 		},
 		{
@@ -117,7 +119,7 @@ const Blogs = () => {
 			date: "23-July-2024",
 			comment: "4",
 			img: "/assets/img/work/Calculator.webp",
-			desc: "A Simple Calculator Design with unqiue colors and theme and Also used Javascript Logics for Calculating...",
+			desc: "A Simple Calculator Design with unique colors and theme and Also used Javascript Logics for Calculating...",
 			link: "/assets/Codes/HtmlCode/Calculator/calculator.html",
 		},
 		{
@@ -135,7 +137,7 @@ const Blogs = () => {
 			date: "17-Aug-2024",
 			comment: "10",
 			img: "/assets/img/work/Significo.webp",
-			desc: "A Website Clone of Significo. Just Cloned to interact and design their animations inside it and the amzing use of Scroll Trigger and Locomotive Libraries in it. It is not Responsive till now but soon will be responsive as it uses Tailwind CSS which makes it easier to be responsive.",
+			desc: "A Website Clone of Significo. Just Cloned to interact and design their animations inside it and the amazing use of Scroll Trigger and Locomotive Libraries in it. It is not Responsive till now but soon will be responsive as it uses Tailwind CSS which makes it easier to be responsive.",
 			link: "./assets/Codes/HtmlCode/Significo/Significo.html",
 		},
 	];
@@ -185,5 +187,4 @@ const Blogs = () => {
 
 Skills();
 Timelines();
-Projects();
 Blogs();

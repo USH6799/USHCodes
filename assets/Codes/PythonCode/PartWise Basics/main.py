@@ -155,7 +155,7 @@
 
 # By the Way, One advantage of Compiler over interpreter was finding issues and bugs becomes easier before running the code in Compiler but in Interpreter it is difficult to match errors with lines execution.
 
-# In the Other Way, One advantage of Interpreter over Compiler was that in languages using compilers werebeing easier to find errors in them but changing the before line of code to fix error may change the whole execution of the Rest of the Program or Calculations may change but in Interpreted Languages it stops at the line of Code and Doesn,t let you execute other lines of code and also doesn't tell you about future errors which make it easier to fix errors.
+# In the Other Way, One advantage of Interpreter over Compiler was that in languages using compilers were being easier to find errors in them but changing the before line of code to fix error may change the whole execution of the Rest of the Program or Calculations may change but in Interpreted Languages it stops at the line of Code and doesn't let you execute other lines of code and also doesn't tell you about future errors which make it easier to fix errors.
 
 # Both are Better in their Own Way. 
 
@@ -201,7 +201,7 @@ print()
 
 # Variables are like empty boxes where you can store or change any value inside them.
 
-# In short, a storage box for the values or datas inside the code.
+# In short, a storage box for the values or data inside the code.
 
 # If you use the '=' symbol after any word or name except keyword then it will become the variable.
 
@@ -331,7 +331,7 @@ print(type(12j))
     
 print(type(True)) # this will returns that true is of boolean datatype.
 
-print(type(10 < 5)) # here if you think that the type will be integer, you are wrong here also the datatype will be booleann, because inside any conditonal statement, we can pass any condition which laters converts into true or flase.
+print(type(10 < 5)) # here if you think that the type will be integer, you are wrong here also the datatype will be boolean, because inside any conditional statement, we can pass any condition which later converts into true or false.
 
 # like here 10 < 5, all we know that this is wrong or false and returns false to the function and the datatype of false is boolean.
     
@@ -456,7 +456,7 @@ name = input("My name is: ") # This will first print the string part then ask th
 
 print(type(name)) # here if you input a number also then also the type of variable is String datatype.
 
-print("Hello! ", name) # prints the input taken from user. Uses , comma to prints two diffrent values under 1 print() fnc like printing String and variable together.
+print("Hello! ", name) # prints the input taken from user. Uses , comma to prints two different values under 1 print() fnc like printing String and variable together.
 
 # The above print() statement will print the string part first and then the variable part.
 
@@ -478,9 +478,9 @@ print()
 # ----------------------------------------------------------
 # ESCAPE SEQUENCES:
 
-# Escape sequences are used to add special characters in the string. Like, \n -> new line, \t -> tab space(4 spaces), \b -> backspace, \r -> carriage return,\b -> backspace etc.
+# Escape sequences are used to add special characters in the string. Like, \n -> new line, \t -> tab space(4 spaces), \b -> backspace, \r -> carriage return etc.
 
-# Like, I want to Print("Hello friend. I am a coder"), here i want th part after full stop goes to next line.
+# Like, I want to Print("Hello friend. I am a coder"), here i want the part after full stop goes to next line.
 
 print("Hello friend") # Using print() fnc to print the first part of String.
 print("I am a coder") # Using print() fnc to print the Second part of String.
@@ -498,7 +498,7 @@ print("Hello friend,\nI am a coder") # Now we can use \n to add new line and mov
 print("Use \n to move to the next line") # It will print: Use   
 #                                                         to move to the next line
 
-# beacuse it is the escape sequence which is used to add a line, but here we dont want to use it , we just want to display it as output.
+# because it is the escape sequence which is used to add a line, but here we dont want to use it , we just want to display it as output.
 
 print(r"Use \n to move to the next line") # the 'r' letter before the String converts the String into a raw string.
 
@@ -958,7 +958,7 @@ while i < 11: # Here, the value of var 'i' is less than 11 and it gives the outp
 
 # function syntax:- def function_name():
 
-# function have two main things:- 1. Paramters and 2.Arguments.
+# function have two main things:- 1. Parameters and 2.Arguments.
 
 # like Checking even and odd numbers.
 
@@ -1005,7 +1005,7 @@ else: # if num is odd then else block will run.
 # ----------------------------------------------------------
 
 
-# Above , we are writing seperate if else for each number. Which makes the Program bigger and Complex. Instead we can use function.
+# Above , we are writing separate if else for each number. Which makes the Program bigger and Complex. Instead we can use function.
 
 # FUNCTION EX:
 # ----------------------------------------------------------
@@ -1034,7 +1034,7 @@ checkEvenOdd(14) # calling the fnc, with the argument 14 which is later stored a
 
 # We can reuse fnc as many times as we want.
 
-# Remember the Diffrence btw arguments and Parameters.
+# Remember the Difference btw arguments and Parameters.
 
 
 # ----------------------------------------------------------
@@ -1062,13 +1062,13 @@ def Sayhello(name): # Here, the name of the function is 'Sayhello' and the param
 
 def Defaulthello(name = "Uttkarsh"): # Here, the name of the function is 'Defaulthello' and the Default parameter is 'name' and it runs the block code inside it when called.
     
-    # name , was a deafult parameter as it doesn't need argument to be passed and already initialized.
+    # name , was a default parameter as it doesn't need argument to be passed and already initialized.
     
     
-    print("hello! " , name) # prints the input taken from user. Uses , comma to prints two diffrent values under 1 print() fnc like printing String and variable together.
+    print("hello! " , name) # prints the input taken from user. Uses , comma to prints two different values under 1 print() fnc like printing String and variable together.
     
 
-# Calling the Dafault parameter fnc without a argument.
+# Calling the Default parameter fnc without a argument.
 
 Defaulthello() # calling the fnc, without any argument passed. Here, the default value is passed as "Uttkarsh" as it has a parameter to be stored in.
 
@@ -1076,7 +1076,7 @@ Defaulthello() # calling the fnc, without any argument passed. Here, the default
 
 # but What if i passed an argument in the default parameter fnc, then
 
-Defaulthello("USH") # calling the fnc, with the argument "USH" which is later override or cahnge the value parameter 'name' inside the fnc.
+Defaulthello("USH") # calling the fnc, with the argument "USH" which is later override or change the value parameter 'name' inside the fnc.
 
 # Output: hello! USH    
 
@@ -1109,7 +1109,7 @@ Show(c = 10 , b = 12 , a = 14) # here, it is the Keyword Arguments, which takes 
 
 
 # ----------------------------------------------------------
-# DIFFRENCE BTW Print() and return 
+# DIFFERENCE BTW Print() and return 
 # ----------------------------------------------------------
 
 def PrintOddEven(num): # Here, the name of the function is 'PrintOddEven' and the parameter is 'num' and it runs the block of codes inside it when called.
@@ -1230,7 +1230,7 @@ for i in range(0 , len(str) , 1): # Here, the value of var 'i' goes from 0 to 11
 
 # A list is a versatile and mutable data structure that can contain different data types and allows you to store collection of data items.
 
-# list Syntax:- var = [val1 , val2 , val3 , val4 , val5], here you can store diffrent datatypes inside this list.
+# list Syntax:- var = [val1 , val2 , val3 , val4 , val5], here you can store different datatypes inside this list.
 
 List = [12 , 122 , 1652 , "hello" , True , "Lets Work"] # Here, the value of var 'List' is [12 , 122 , 1652 , "hello" , True , "Lets Work" , ] of list datatype.
 
@@ -1240,7 +1240,7 @@ print(type(List)) # prints the datatype of var 'List'.
 
 # Output: <class 'list'> , here you can see that it is a list datatype.
 
-# List is varsatile because it can contain different data types.
+# List is versatile because it can contain different data types.
 
 # It is mutable because it can be changed.
 
@@ -1372,7 +1372,7 @@ print(f"The List After Removing the 3th Item of the List: {a}") # prints the who
 # We use remove() fnc to remove items from list.
 # Syntax:- list.remove(Item)
 
-# The Two Diffrences between pop() and remove() are:-
+# The Two Differences between pop() and remove() are:-
 
  # IN pop():
  #      - It Returns the Removed item to the Caller or to the Variable and can be stored.
@@ -1521,9 +1521,9 @@ print(c) # prints the whole list.
  # SETS
 # ----------------------------------------------------------
 
-# Sets are Same as list and tuples , but all has some diffrences,
+# Sets are Same as list and tuples , but all has some differences,
 
-# Sets is also a list but in this list all items should unique or do not repeat themeselves.
+# Sets is also a list but in this list all items should unique or do not repeat themselves.
 
 # So Sets are used to store multiple items in a single variable. Sets are unordered, unchangeable, and do not allow duplicate values.
 
@@ -1555,7 +1555,7 @@ for i in a: # Here, the value of var 'i' is 1 , 2 , 3 , 4 , 4 , 6 , 7 , 8 , 5 an
  # DICTIONARIES
 # ----------------------------------------------------------
  
-# dictionary in python is a collection of key-value pairs. It is used to store data values in key:value pairs. It is Mutable, ordered, and has no duplicate values , it is iteratable but has some special powers like key and value.
+# dictionary in python is a collection of key-value pairs. It is used to store data values in key:value pairs. It is Mutable, ordered, and has no duplicate values , it is iterable but has some special powers like key and value.
 
 # Syntax:- var = {key:value , key:value , key:value}
 
@@ -1571,7 +1571,7 @@ topper = {
 
 # Lets check the datatype of var 'dic',
 
-print(type(topper)) # prints the datatype of vartopper'.
+print(type(topper)) # prints the datatype of var 'topper'.
 
 # OUTPUT:- <class 'dict'>
 
@@ -1645,7 +1645,7 @@ for i in a.keys(): # Here .keys allows to use it as index of a and access each e
 # ----------------------------------------------------------
 
 
-# There Are Three Types of Programmig:
+# There Are Three Types of Programming:
 
 # ----------------------------------------------------------
  # IMPERATIVE PROGRAMMING
@@ -1713,8 +1713,8 @@ OddEvenChecker(23) # OUTPUT:- "Odd"
     # What is Encapsulation?
     # What is Class and Object?
     # Creating class Attributes and class methods.
-    # Diffrence btw public and private class Attributes and Methods.
-    # Making Classe's object.
+    # Difference btw public and private class Attributes and Methods.
+    # Making class's object.
     # What is Constructor fnc?
     # Object Attributes and Methods.
     # What is Polymorphism?
@@ -1732,13 +1732,13 @@ OddEvenChecker(23) # OUTPUT:- "Odd"
 # ----------------------------------------------------------
  # What are classes and Objects.
  
- # Classes are the blueprints for creating diffrent objects, they also know as object factory.
+ # Classes are the blueprints for creating different objects, they also know as object factory.
  
  # Like, A car factory , imagine it is a class
  
  # Now it needs three requirements like body type , tyres , and engine type to create a car.
  
- # Object are the instances of class, they have their own behaviour , attributes and methods or functions.
+ # Object are the instances of class, they have their own behavior , attributes and methods or functions.
  
  # Like A Car factory (class),
  
@@ -1748,9 +1748,9 @@ OddEvenChecker(23) # OUTPUT:- "Odd"
 
  # Splendor(object) : open(body) , 3 layers(tyres) and 8 cycle(Engine).
 
- # Above all vechiles are the object of Car factory, means car factory is the class which is a blueprint of vechiles(requirements) and creates the object.
+ # Above all vehicles are the object of Car factory, means car factory is the class which is a blueprint of vehicles(requirements) and creates the object.
  
- # all vechiles are the instance of the class.
+ # all vehicles are the instance of the class.
  
  
 # ----------------------------------------------------------
@@ -1770,7 +1770,7 @@ OddEvenChecker(23) # OUTPUT:- "Odd"
         
         # As a Car maker, they also show only the Essential information to the user or driver like where is brake and what to press, but they hide the backend or unnecessary information from the user or driver like functionality of brake in stopping the moving tyres and the engine.
         
-        # This makes the code secure and not accessible to diffrent classes.
+        # This makes the code secure and not accessible to different classes.
         
 
 # ----------------------------------------------------------
@@ -1778,7 +1778,7 @@ OddEvenChecker(23) # OUTPUT:- "Odd"
  
     # Encapsulation is the process of hiding the data of the class from the outside world.
     
-    # It makes the code secure and unaccessible to diffrent classes.
+    # It makes the code secure and unaccessible to different classes.
     
     # it can only be accessed through the class at specific methods or ways.
     
@@ -1813,7 +1813,7 @@ OddEvenChecker(23) # OUTPUT:- "Odd"
         
         # For His Kids, he is their father.
         
-        # So One person, has many diffrent forms in respect of the time , place and the person whom he met or belong.
+        # So One person, has many different forms in respect of the time , place and the person whom he met or belong.
         
 
 # ----------------------------------------------------------
@@ -1944,7 +1944,7 @@ class CarFactory5: # this is a simple example of class
     
 CarFactory5() # Calling the Class from outside to run the class line wise,
 
-# after class running the method __hello() will run and prints the statements which means the method is accessiable.
+# after class running the method __hello() will run and prints the statements which means the method is accessible.
 
 
 # ----------------------------------------------------------
@@ -1964,7 +1964,7 @@ class CarFactory6: # This is the Simple of Class.
         
         print("Hello Guys") # Printing...
         
-# Syntax for object:- objname = classname()
+# Syntax for object:- <objectname> = <classname>()
 
 obj = CarFactory6() # Here the variable 'obj' becomes an object by calling the class 'CarFactory6'.
 
@@ -1972,7 +1972,7 @@ print(obj.a) # Instead of Writing classname , u can use object to access class a
 
 # Object gets all the powers of classes.
 
-# Object has the advantage that they can create as many as we want , means diffrent objects of same class like,
+# Object has the advantage that they can create as many as we want , means different objects of same class like,
 
 obj1 = CarFactory6() # Here, a new object of class 'CarFactory6' is created.
 
@@ -1990,9 +1990,9 @@ obj3 = CarFactory6() # Here, a new object of class 'CarFactory6' is created.
 
 class CarFactory7: # This is the Simple of Class.
     
-    def __init__(self): # this is the main method which automatically runs during class calls and doesn't reuired to call it.
+    def __init__(self): # this is the main method which automatically runs during class calls and doesn't required to call it.
         
-        print("Hello! I am Automaticlly Called") # Prints hello
+        print("Hello! I am Automatically Called") # Prints hello
         
     def ManualHello(): # here, a function 'ManualHello()' is declared inside the class and it is known as class methods.
         
@@ -2148,7 +2148,7 @@ class Factory: # this is a simple class
         
 ferrari = Factory("Covered" , 4 , "8 cycle") # here the self parameter takes ferrari as its argument. and calling the constructor fnc with 3 parameters.
 
-ferrari.PrintDetails() # This will call the class and from class it calls the PrintDetails() method passing no parameters but in realtiy passing the object as parameter which later stored in self.
+ferrari.PrintDetails() # This will call the class and from class it calls the PrintDetails() method passing no parameters but in reality passing the object as parameter which later stored in self.
 
 # OUTPUT:- The Details are :
 # Body Type: Covered
@@ -2158,7 +2158,7 @@ ferrari.PrintDetails() # This will call the class and from class it calls the Pr
 
 alto = Factory("Covered" , 4 , "4 cycle") # here the self parameter takes Alto as its argument. and calling the constructor fnc with 3 parameters.
 
-alto.PrintDetails() # This will call the class and from class it calls the PrintDetails() method passing no parameters but in realtiy passing the object as parameter which later stored in self.
+alto.PrintDetails() # This will call the class and from class it calls the PrintDetails() method passing no parameters but in reality passing the object as parameter which later stored in self.
 
 # OUTPUT:- The Details are :
 # Body Type: Covered
@@ -2168,7 +2168,7 @@ alto.PrintDetails() # This will call the class and from class it calls the Print
 
 Splendor = Factory("Open" , 2 , "8 cycle") # here the self parameter takes Splendor as its argument. and calling the constructor fnc with 3 parameters.
 
-Splendor.PrintDetails() # This will call the class and from class it calls the PrintDetails() method passing no parameters but in realtiy passing the object as parameter which later stored in self.
+Splendor.PrintDetails() # This will call the class and from class it calls the PrintDetails() method passing no parameters but in reality passing the object as parameter which later stored in self.
 
 # OUTPUT:- The Details are :
 # Body Type: Open
@@ -2181,7 +2181,7 @@ Splendor.PrintDetails() # This will call the class and from class it calls the P
 # ----------------------------------------------------------
  
  
- # Imagine there is a brand factory of cars and they give the blueprint to Factory to make vechiles, but they do not make any cars but they sent a blueprint to factory which has additional attributes and methods.
+ # Imagine there is a brand factory of cars and they give the blueprint to Factory to make vehicles, but they do not make any cars but they sent a blueprint to factory which has additional attributes and methods.
  
 class Brand(Factory): # When class has () brackets and another classname is written inside it then the main class or sub class inherits the property of bracket class or parent class.
      
@@ -2200,7 +2200,7 @@ class Honda(Factory): # Here is the class 'Honda' which inherits the class 'Fact
     
     def __init__(self): # the constructor fnc of class 'Honda' , it runs automatically when class is called.
         
-        print("I am the constructor of Sub class") # Printing that it is the constructot of Sub class.
+        print("I am the constructor of Sub class") # Printing that it is the constructor of Sub class.
         
 Honda() # OUTPUT:- I am the constructor of Sub class
 
@@ -2236,7 +2236,7 @@ from contextlib import AbstractAsyncContextManager
 
 class AbstractClass(ABC): # Here this class is the Abstracted class because it has ABC has it inherited class and This class becomes Abstracted.
     
-    @ abstractmethod # this is a decorator which tells that this method is the Abstarcted method.
+    @ abstractmethod # this is a decorator which tells that this method is the Abstracted method.
     
     def AbstractMethod(self): # a function 'AbstractMethod()' taking self as its parameter. which later refers to the obj.
         
@@ -2248,7 +2248,7 @@ class Normal(AbstractClass): # A class 'Normal' inherited the abstracted class '
 
 # Normal()
 
-# this will show that the error that you didn't run the AbstarctMethod() of inherited class in your own class , because if any class inherited the abstract class then it becomes compulsory to define the methods of abstracted class.
+# this will show that the error that you didn't run the AbstractMethod() of inherited class in your own class , because if any class inherited the abstract class then it becomes compulsory to define the methods of abstracted class.
 
 class Normal2(AbstractClass):# A class 'Normal2' inherited the abstracted class 'AbstractClass'.
     
@@ -2257,40 +2257,3 @@ class Normal2(AbstractClass):# A class 'Normal2' inherited the abstracted class 
         super().AbstractMethod() # Calling the method of super or inherited class using super() fnc.
         
 Normal2() # it wont show any error and prints hello! guys
-
-
-    
-    
-    
-
-    
-
-
-
-   
-
-
-
-
-
-
- 
-        
-
-    
-
-        
-
- 
-    
-
-
-
-
-    
-
-
-
-
-
-        

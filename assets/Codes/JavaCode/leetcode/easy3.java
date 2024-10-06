@@ -1,4 +1,4 @@
-public class MergeList {
+public class easy3 {
 
     // Recursive method to sort the array using Bubble Sort algorithm
     static int[] Sort(int arr[], int n) {

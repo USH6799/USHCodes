@@ -10,7 +10,7 @@
 import java.util.Scanner;
 // imported scanner class for taking input from user.
 
-public class TwoSum_Easy {
+public class easy6 {
     // classname TwoSum_Easy
 
     public static void main(String[] args) {
