@@ -1,3 +1,6 @@
+import java.util.Scanner;
+// imported scanner class for taking input from user.
+
 public class WhileLoop {
     public static void main() {
 
@@ -125,12 +128,12 @@ public class WhileLoop {
          * Example of an infinite loop:
          */
 
-        int i = 1;
+        // int i = 1;
 
-        while (i > 0) { // Condition: This loop will run forever because i is always greater than 0.
-            System.out.println(i); // It will keep printing the value of i.
-            i++; // Since i keeps increasing, the condition will always be true.
-        }
+        // while (i > 0) { // Condition: This loop will run forever because i is always greater than 0.
+        //    System.out.println(i); // It will keep printing the value of i.
+        //    i++; // Since i keeps increasing, the condition will always be true.
+        // }
 
         /*
          * In the above example, the loop will run infinitely because the condition (i >
@@ -155,7 +158,7 @@ public class WhileLoop {
 
         int userGuess = -1; // Initialize the user's guess to an invalid number.
 
-        Input scanner = new Input(System.in); // Create a Scanner object to take input from the user.
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object to take input from the user.
 
         System.out.println("Guess the secret number (between 1 and 10):"); // Prompt the user to guess.
 
@@ -171,7 +174,8 @@ public class WhileLoop {
         }
 
         System.out.println("Congratulations! You've guessed the secret number!"); // Once the correct guess is made,
-                                                                                  // print a congratulatory message.
+    
+        // print a congratulatory message.
 
         /*
          * Dry Run:

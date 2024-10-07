@@ -62,6 +62,14 @@ public class Main {
         Looping();
         Functions();
         Function1();
+        Function2();
+        MathClass();
+        TypeConversion();
+        Complexity();
+        Arrays();
+        Array_2D();
+        StringManipulation();
+        StringBuilding();
 
         // Ignore this all things.
 
@@ -1255,6 +1263,7 @@ public class Main {
         System.out.println("Quotient = " + (num1 / num2)); // Printing the Quotient when num1 is divided by num2
 
         System.out.println("Remainder = " + (num1 % num2)); // Printing the Remainder when num1 is divided by num2
+
     }
 
     static void Conditionals() {
@@ -2388,7 +2397,7 @@ public class Main {
 
     // Now we create a Function 'OddOrEven' which takes int 'var' as parameter and returning void which means it is a impure function so Now lets call it.
 
-    static int AddTwo(int val){ // This is the Prototype of the Function 'AddTwo' taking int 'val' as parameter and returning Integr Value which means it is a pure function.
+    static int AddTwo(int val){ // This is the Prototype of the Function 'AddTwo' taking int 'val' as parameter and returning Integer Value which means it is a pure function.
 
         return val + 2; // adds 2 in the Original Value of 'val' and return it to the caller.
 
@@ -2443,7 +2452,2232 @@ public class Main {
         System.out.println(y1); // OUTPUT:- 15
     }
 
+    // Lets create a Function to Input the Name of the User and greet him.
 
-    // --------------------------------------------------------------------------
+    static void Greeting(String name){ // A function 'Greeting' take 1 parameter 'name' and returning void which means it is an Impure function.
 
-}
+        System.out.println("Hello " + name); // Printing hello and the value of var 'name';
+
+    }// function 'Greeting' ends here.
+
+    // Lets create One more Function In which it takes the name and its gender and Greet Accordingly.
+
+    static void Greeting(String name , char gender){ // A function 'Greeting' take 2 parameters 'name' and 'gender' and returning void which means it is an Impure function.
+
+    // This is also called an Overloaded Function.
+
+    // Overloaded Functions are the Functions which have same name but have Different Return type and Different type of Parameters, or Different no. of Parameters.
+
+    // Overloading means Creating the same function with different Parameters. 
+
+        if(gender == 'M' || gender == 'm'){ // Checking whether the value of 'gender' is equal to 'M' or 'm', if it is equal to any one then the Condition becomes true and hence if block will run.
+
+            System.out.println("Hello " + name + " Sir"); // Greets the Person according to its gender.
+        
+        }// if block ends here.
+
+        else if(gender == 'F' || gender == 'f'){ // Checking Whether 'gender' is equal to 'F' or 'f', if it is equal to any one then the Condition becomes true and hence if block will run.
+
+            System.out.println("Hello " + name + " Ma'am"); // Greets the Person according to its gender.
+
+        }// else if block ends here.
+
+        else{ // If none of the above Conditions are true, then this block will run.
+
+            System.out.println("Wrong Gender, Please Enter M for male and F for female."); // Prints this message.
+
+        } // else block ends here.
+
+    }// Function 'Greeting' ends here.
+
+    // Lets try to Call them Both,
+
+    static void Function2(){ // We can Call Any Function Inside another function, hence a Temporary Function is created. Do not Focus on this Function.
+
+        Greeting("Himanshu"); // Calling the Function 'Greeting' with 1 parameter 'Himanshu'.
+
+        // This is the First function, because there is only one parameter during calling.
+
+        // Inside Greeting(name) fnc,
+
+        // Value of name = Himanshu
+
+        // OUTPUT:- Hello Himanshu
+
+        // Lets call the 2nd Function,
+
+        Greeting("Himanshu" , 'M'); // Calling the Function 'Greeting' with 2 parameters 'Himanshu' and 'M'.
+
+        // This time, the second Overloaded Function will execute because this time there are 2 parameters during calling.
+
+        // Inside Greeting(name , gender) fnc,
+
+        // Value of name = Himanshu
+
+        // Checking if Condition, condition:- (gender == 'M' || gender == 'm')
+
+        // According to Calling, value of gender is 'M'.
+        
+        // (gender == 'M' || gender == 'm') -> (true || false) because gender is equal to 'M' but it is not equal to 'm'.
+
+        // There is an ||(or) between the 2 conditions and or says that it will return true if any one of the condition is true and will return false if both the conditions are false.
+
+        // (true || false) -> returns true, hence the Condition is True so if block will run, and display the OUTPUT.
+
+        // OUTPUT:- Hello Himanshu Sir
+
+
+    }// Function 'Function2' ends here.
+
+
+    static void MathClass() {
+
+        // --------------------------------------------------------------------------
+        // MATH's CLASS    
+        // --------------------------------------------------------------------------
+
+        // Math class is one of the most useful class library in present time, it contains many Mathematical function which helps us to perform various mathematical question easily, like finding absolute value(abs), finding Square Root(sqrt), finding cube root(cbrt) , finding random between 0 and 1(random), and many more.
+
+        //---------------------------------------------------------------------------
+
+        // It is already imported in every Program of Java so u can directly use its function just like Scanner class Functions.
+
+        // It is Another class, so we  will use a Syntax:- for Calling them
+
+        // syntax:- <classname> . <methodname>;
+
+        // Lets Start with our First mathematical Function.
+
+        // --------------------------------------------------------------------------
+        // Math.abs(a); (To find the Absolute Value of 'a').
+        // --------------------------------------------------------------------------
+
+        // Its return type is same as the Parameter type.
+
+        System.out.println(Math.abs(-10)); // OUTPUT:- 10 (integer)
+        
+        System.out.println(Math.abs(-1.8)); // OUTPUT:- 1.8 (double)
+
+        System.out.println(Math.abs(-19.878f)); // OUTPUT:- 19.878 (float)
+
+        System.out.println(Math.abs(-13848l)); // OUTPUT:- 13848 (long)
+
+        // -------------------------------------------------------------------------
+        // Math.sqrt(a); (to find the Square root of 'a')
+        // -------------------------------------------------------------------------
+
+        // Its return type is Always Double for all type of parameters.
+
+        System.out.println(Math.sqrt(64)); // OUTPUT:- 8.0 (double)
+
+        System.out.println(Math.sqrt(9.0)); // OUTPUT:- 3.0 (double)
+
+        // -------------------------------------------------------------------------
+        // Math.cbrt(a); (to find the cube root of 'a')
+        // -------------------------------------------------------------------------
+
+        // Its return type is Always Double for all type of parameters.
+
+        System.out.println(Math.cbrt(64)); // OUTPUT:- 4.0 (double)
+
+        System.out.println(Math.cbrt(27.0)); // OUTPUT:- 3.0 (double)
+
+        // -------------------------------------------------------------------------
+        // Math.floor(a); (to find the floor value of 'a' | the Nearest Lower Whole Number)
+        // -------------------------------------------------------------------------
+
+        // Returns the largest (closest to positive infinity) double value that is less than or equal to the argument and is equal to a mathematical integer.
+
+        // Its return type is always Double for all types of Parameters.
+
+        System.out.println(Math.floor(9.7)); // OUTPUT:- 9.0 (double)
+
+        System.out.println(Math.floor(3)); // OUTPUT:- 3.0 (double)
+
+        System.out.println(Math.floor(-8.2f)); // OUTPUT:- -9.0 (double)
+
+        // -------------------------------------------------------------------------
+        // Math.ceil(a); (to find the ceil value of 'a' | the Nearest Upper Whole Number)
+        // -------------------------------------------------------------------------
+
+        // Returns the largest (closest to positive infinity) double value that is greater than or equal to the argument and is equal to a mathematical integer.
+
+        // Its return type is always Double for all types of Parameters.
+
+        System.out.println(Math.ceil(9.7)); // OUTPUT:- 10.0 (double)
+
+        System.out.println(Math.ceil(3)); // OUTPUT:- 3.0 (double)
+
+        System.out.println(Math.ceil(-8.2f)); // OUTPUT:- -8.0 (double)
+
+        // -------------------------------------------------------------------------
+        // Math.clamp(val , min , max); (to Clamp a Particular 'val' between the 'min' and 'max' range)
+        // -------------------------------------------------------------------------
+
+        // Its return type is same as the Parameter type.
+
+        System.out.println(Math.clamp(45.6 , 20 , 40.0)); // OUTPUT:- 40.0 (double)
+        
+        System.out.println(Math.clamp(16 , 20 , 40)); // OUTPUT:- 20 (Integer)
+
+        System.out.println(Math.clamp(27.6 , 20 , 40)); // OUTPUT:- 27.6 (double)
+
+
+        // -------------------------------------------------------------------------
+        // Math.min(a , b); (find the minimum Value between a and b)
+        // -------------------------------------------------------------------------
+
+        // Its return type is same as the Parameter type.
+
+        System.out.println(Math.min(14.5 , 17)); // OUTPUT:- 14.5 (double)
+
+        System.out.println(Math.min(-10, 4)); // OUTPUT:- -10 (Integer)
+
+        // -------------------------------------------------------------------------
+        // Math.max(a , b); (find the maximum Value between a and b)
+        // -------------------------------------------------------------------------
+
+        // Its return type is same as the Parameter type.
+
+        System.out.println(Math.max(14.5 , 17)); // OUTPUT:- 17.0 (double)
+
+        System.out.println(Math.max(-10, 4)); // OUTPUT:- 4 (Integer)
+
+
+        // -------------------------------------------------------------------------
+        // Math.random(); (Generate and return a random double value between 0 and 1.)
+        // -------------------------------------------------------------------------
+
+        System.out.println(Math.random()); // OUTPUT:- different each time (double)
+
+        // -------------------------------------------------------------------------
+        // Math.round(a); (round of 'a' to nearest Integer or Long value.)
+        // -------------------------------------------------------------------------
+
+        // Its return type is same for Integer parameter, and long for rest types of Parameter.
+
+        System.out.println(Math.round(56.83764738)); // OUTPUT:- 57 (Long)
+ 
+        System.out.println(Math.round(89)); // OUTPUT:- 89 (Integer)
+
+        System.out.println(Math.round(-8.9)); // OUTPUT:- -9 (Long)
+
+        // -------------------------------------------------------------------------
+        // Math.pow(base , power); (returns 'base' raised to the power of 'power' | base^power)
+        // -------------------------------------------------------------------------
+
+        // Its return type is Always double for All types of Parameters.
+
+        System.out.println(Math.pow(2, 4)); // OUTPUT:- 16.0 (double)
+
+        System.out.println(Math.pow(3.0, 4)); // OUTPUT:- 81.0 (double)
+
+        // -------------------------------------------------------------------------
+        // Math.PI; (return the value of Pi)
+        // -------------------------------------------------------------------------
+
+        // The double value that is closer than any other to pi (π), the ratio of the circumference of a circle to its diameter.
+
+        // Its return type is Double
+
+        System.out.println(Math.PI); // OUTPUT:- 3.141592653589793
+        
+    }
+
+
+    static void TypeConversion(){
+
+        // Type Conversion in java means converting one datatype to another datatype.
+
+        // There are Two types of Type Conversion In java:-
+
+        // -------------------------------------------------------------------------
+        // Implicit Type Conversion or Coercion.
+        // -------------------------------------------------------------------------
+
+        // In this type of Conversion, the Smaller Datatype Value automatically converts into bigger datatype value to match its surrounding type.
+
+        // this is Automatically Done, hence it is done by computer itself.
+
+        // Like 
+
+        int a = 10; // A Variable 'a' of datatype Integer Storing value 10.
+
+        int b = 5; // A Variable 'b' of datatype Integer Storing value 5.
+
+        double c = 10.0; // A Variable 'c' of datatype double Storing value 10.0
+
+        System.out.println(a + b + c);
+
+        // In this println Statement, Addition(+) goes from left to right and hence,
+
+        // Step 1: a + b, both are of Integer datatype means same datatype so no changes are performed and added.
+
+        // Step 2: (a+b) + c, now the sum of a + b is of Integer datatype but c is of Double datatype.
+
+        // Now Memorize the memory size of Each datatype.
+
+        // Integer has 4 bytes.
+
+        // Double has 8 bytes.
+
+        // So Double > Integer , means double datatype is bigger than Integer datatype.
+
+        // Hence, in Step 3: (a+b) + c -> int + double -> will give double.
+
+        // this is due to Implicit Type Conversion.
+
+        // OUTPUT:- 25.0 (double)
+
+        // Lets take another Example.
+
+        char ch = 'A'; // A character Variable storing 'A'.
+
+        int num = 10; // A Integer Variable Storing 'num'.
+
+        System.out.println(ch + num); 
+
+        // now in this print statement, as we saw (ch + num) -> (char + int)
+
+        // So according to Memory Size, char has 2 bytes and int has 4 bytes so, int > char
+
+        // So Computer does Implicit Type Conversion to convert char into Integer.
+
+        // Now the Question arises how does, character can be converted into integer.
+
+        // this is Due ASCII value of Each character, like
+
+        // 'A' -> 65 as its ASCII value.
+
+        // A - Z -> 65 - 90
+
+        // a - z -> 97 - 122
+
+        // Just remember it, that the codes for alphabets are this.
+
+        // back to Question, ch + num -> 'A' + 10 , so value of 'A' -> 65 so 65 + 10 -> 75
+
+        // OUTPUT:- 75
+
+        // -------------------------------------------------------------------------
+        // Explicit Type Conversion or Type Casting.
+        // -------------------------------------------------------------------------
+
+        // Explicit Type Conversion or Type Casting is the process of converting from bigger datatype to smaller datatype.
+
+        // this is done by programmer.
+
+        // Because we are reducing the memory size, and converting it into smaller datatype.
+
+        // Syntax:- <target datatype> <variable name>;
+
+        // Like i have a variable 'a' of datatype double Storing 77.0
+
+        double x = 77.0;
+
+        // Now lets convert it into Integer datatype,
+        
+        int y = (int) x;
+
+        // Hence now when we describe the target datatype as integer , it converts 'x' into integer datatype, and we need any Integer variable to store it.
+
+        // so we created a new variable 'y' and stored the value of 'x' into it.
+
+        System.out.println(y); // OUTPUT:- 77
+
+        // Lets convert this Double value into character.
+
+        char z = (char) x;
+        // Hence now when we describe the target datatype as char , it converts 'x' into char datatype, and we need any char variable to store it.
+
+        // so we created a new variable 'z' and stored the value of 'x' into it.
+
+        System.out.println(z); // OUTPUT:- 'M'
+
+        // Because the ASCII value of 'M' is 77
+
+        // This type of Conversion is only possible when the value in bigger datatype can be stored or converted into smaller datatype.
+
+        // Like lets take a double variable and convert it into integer.
+
+        double d = 108.9;
+
+        int i = (int) d; 
+
+        System.out.println(i); // OUTPUT:- 108
+
+        // Here as you saw it ignores the Decimal values and taken The Integral Part of It.
+
+        // Lets try to convert it into Character datatype.
+
+        char dt = (char) d;
+        // Converting double d into character datatype, and storing it in variable 'dt' of character datatype.
+
+        System.out.println(dt); // OUTPUT:- l
+
+        // Because ASCII value of 'l' is 108.
+
+    }
+
+
+    static void Complexity(){
+
+        // --------------------------------------------------------------------------
+        //  TIME AND SPACE COMPLEXITY
+        // --------------------------------------------------------------------------
+
+        // this time and space complexity means a way to calculate the time and space complexity of a program.
+
+        // How much space will it take in memory and how much time will it take to execute.
+
+        // Finding time and space Complexity can help us in various ways:-
+
+        // Like help us to find the shortest and simplest way to write our code, so that it take less memory and run fast.
+
+        // --------------------------------------------------------------------------
+
+        // TIME COMPLEXITY means the relation between the input size and Running time(operations).
+
+        // Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input. 
+
+        // Notations are the representation of the time complexity. 
+
+        /*
+            Types of notations:-
+
+            -------------------------------------------------------------------------   
+
+            1. O-notation: It is used to denote asymptotic upper bound. 
+        
+            For a given function g(n), we denote it by O(g(n)). Pronounced as “big-oh of g of n”. 
+        
+            It is also known as worst case time complexity as it denotes the upper bound in which the algorithm terminates.
+        
+            -------------------------------------------------------------------------   
+
+            2. Ω-notation: It is used to denote asymptotic lower bound. 
+        
+            For a given function g(n), we denote it by Ω(g(n)). Pronounced as “big-omega of g of n”.
+
+            It is also known as best case time complexity as it denotes the lower bound in which the algorithm terminates. 
+
+            -------------------------------------------------------------------------
+           
+            3. 𝚯-notation: It is used to denote the average time of a program. 
+
+        */
+
+        // -------------------------------------------------------------------------
+
+        // Lets Understand the Time Complexity with coding,
+
+        Scanner sc = new Scanner(System.in); // Creating Scanner Object.
+
+        int n = sc.nextInt(); // Taking input from user.
+
+        for(int i = 1 ; i <= n ; i++){ // Looping from 1 to n.
+
+            System.out.println("hello " + i); // Printing the statement.
+
+        }// End of For Loop.
+
+        // In this lets understand our time Complexity,
+
+        // Input size: n
+
+        // No. of Operations: also 'n' because, loops runs from 1 to 'n' or 'n' times.
+
+        // This is Known as linear Relation, means the time complexity is linear.
+
+        // If Input size increases by X then time Complexity also increases by X.
+
+        // Hence time complexity is O(n).
+
+        // -------------------------------------------------------------------------
+
+        // Lets Suppose We have a list of Numbers and We have to Find a specific number in that,
+
+        // numbers: {1 , 2 , 3 , 4 , 5}
+
+        // lets find '1' in this.
+
+        // There are three approaches to calculate time complexity of a program.
+
+        // -------------------------------------------------------------------------
+
+        // Best Case Approach:-
+
+        // In best case approach, we find the minimum no. of operations to find '1' in the list.
+
+        // So we can think that if the numbers are arranged in any order, the best case is that in 1 times.
+
+        // So the time complexity is Ω(1).
+
+        // Means For any Input Size like here 5 numbers, the no. of operations will remain same and equal to 1.
+
+        // -------------------------------------------------------------------------
+
+        // Average Case Approach:-
+
+        // In this we will find the average no. of operations to find '1' in the list.
+
+        // if list = {1 , 2 , 3 , 4 , 5} then no. of operations needed to find '1' will be 1.
+        // if list = {2 , 1 , 3 , 4 , 5} then no. of operations needed to find '1' will be 2.
+        // if list = {2 , 3 , 1 , 4 , 5} then no. of operations needed to find '1' will be 3.
+        // if list = {2 , 3 , 4 , 1 , 5} then no. of operations needed to find '1' will be 4.
+        // if list = {2 , 3 , 4 , 5 , 1} then no. of operations needed to find '1' will be 5.
+
+        // Hence we can see that each time no. of operations are increasing till n.
+
+        // So the average time complexity will be (total no. of operations / n).
+
+        // total no. of operations = 1 + 2 + 3 + .... + n
+
+        // So in maths we have a formula: (n * (n + 1)) / 2
+
+        // Putting it in that will be (n * (n + 1)) / 2 = (n^2 + n) / 2 
+
+        // Further Solving will result in (no. of operations = (n^2 + n) / 2).
+
+        // (no. of operations / n) -> ((n^2 + n) / 2) / n) -> (n + 1) / 2
+        
+        // So the average time complexity will be (n + 1) / 2.
+        
+        // Average Time Complexity: 𝚯(n + 1 / 2)
+
+        // -------------------------------------------------------------------------
+        
+        // Worst Case Approach:-
+
+        // In this we have to find the maximum no. of operations to find '1' in the list.
+
+        // We can see that the maximum no. of operations will be n.
+
+        // So the time complexity is O(n).
+
+        // We always try to find the Worst Case time complexity in most of the problems.
+
+        // -------------------------------------------------------------------------
+
+        // Another Example of Time Complexity:-
+
+        int m = sc.nextInt();
+
+        for(int i = 1 ; i <= m ; i++){ // Looping from 1 to m.
+
+            for(int j = 1 ; j <= m ; j++){ // Looping from 1 to m.
+
+                System.out.println("hello "); // Printing the statement.
+
+            }
+
+        }
+
+        // Lets do a dry run,
+
+        // for the value of m = 5,
+
+        // When i = 1, then inner loop run for j = 1, j = 2, j = 3, j = 4, j = 5. 
+
+        // No. of operations = 5
+
+        // When i = 2, then inner loop run for j = 1, j = 2, j = 3, j = 4, j = 5.
+
+        // No. of operations = 5 + 5
+
+        // When i = 3, then inner loop run for j = 1, j = 2, j = 3, j = 4, j = 5.
+
+        // No. of operations = 5 + 5 + 5
+
+        // When i = 4, then inner loop run for j = 1, j = 2, j = 3, j = 4, j = 5.
+        
+        // No. of operations = 5 + 5 + 5 + 5
+
+        // When i = 5, then inner loop run for j = 1, j = 2, j = 3, j = 4, j = 5.
+
+        // No. of operations = 5 + 5 + 5 + 5 + 5
+
+        // Total no. of operations = 5 + 5 + 5 + 5 + 5 = 25 or m + m + m + m + m -> m * m
+
+        // So for Outer loop running m times,
+
+        // Each time inner loop will run m times.
+
+        // So the Worst Case time complexity is O(m * m).
+
+        // Lets take the Same Example,
+
+        int x = sc.nextInt();
+
+        int y = sc.nextInt();
+
+        for (int i = 1 ; i <= x ; i++){ // Looping from 1 to x.
+
+            for (int j = 1 ; j <= y ; j++){ // Looping from 1 to y.
+
+                System.out.println("hello "); // Printing the statement.
+
+            }
+
+        }
+
+        // Lets do a dry run,
+
+        // for the value of x = 5 and y = 4,
+
+        // When i = 1, then inner loop run for j = 1, j = 2, j = 3, j = 4.
+
+        // No. of operations = 4
+
+        // When i = 2, then inner loop run for j = 1, j = 2, j = 3, j = 4.
+
+        // No. of operations = 4 + 4
+
+        // When i = 3, then inner loop run for j = 1, j = 2, j = 3, j = 4.
+
+        // No. of operations = 4 + 4 + 4
+
+        // When i = 4, then inner loop run for j = 1, j = 2, j = 3, j = 4.
+
+        // No. of operations = 4 + 4 + 4 + 4
+
+        // When i = 5, then inner loop run for j = 1, j = 2, j = 3, j = 4.
+
+        // No. of operations = 4 + 4 + 4 + 4 + 4
+
+        // Total no. of operations = 4 + 4 + 4 + 4 + 4 = 20 or y + y + y + y + y -> 5 * y -> x * y
+
+        // Worst Case time complexity is O(x * y).
+
+        // -------------------------------------------------------------------------
+
+        int p = sc.nextInt();
+
+        int q = sc.nextInt();
+
+        for(int i = 1 ; i <= p ; i++){ // Looping from 1 to p.
+
+            System.out.println("hello "); // Printing the statement.
+
+        }
+
+        for(int j = 1 ; j <= q ; j++){ // Looping from 1 to q.
+
+            System.out.println("hello "); // Printing the statement.
+
+        }
+
+        // Lets do a dry run,
+
+        // for the value of p = 5 and q = 4,
+
+        // For the First loop, i = 1, i = 2, i = 3, i = 4, i = 5.
+
+        // No. of operations = 5
+
+        // For the Second loop, j = 1, j = 2, j = 3, j = 4.
+
+        // No. of operations = 4
+
+        // Total no. of operations = 5 + 4 -> p + q
+
+        // Worst Case time complexity is O(p + q).
+
+
+        // Now imagine if value of n = 10^6 and m = 3, then 
+
+        // The Worst Case time complexity is O(n).
+
+        // Because n is very huge and bigger than m, so we can ignore m , and its no. of operations.
+
+        // -------------------------------------------------------------------------
+
+        // Lets compare three Different Worst Case Time Complexity.
+
+        // 1. O(n)
+
+        // 2. O(n * n) or O(n^2)
+
+        // 3. O(n * n * n) or (On^3)
+
+        // When n = 1,
+
+        // No. of Operations for O(n) is 1.
+
+        // No. of Operations for O(n * n) is 1.
+
+        // No. of Operations for O(n * n * n) is 1.
+
+        // When n = 2,
+
+        // No. of Operations for O(n) is 2.
+
+        // No. of Operations for O(n * n) is 4.
+
+        // No. of Operations for O(n * n * n) is 8.
+
+        // When n = 10^5,
+
+        // No. of Operations for O(n) is 10^5.
+
+        // No. of Operations for O(n * n) is 10^10.
+
+        // No. of Operations for O(n * n * n) is 10^15.
+
+        // In this we can observer than O(n) is very less than O(n^3),
+
+        // So we can say the Best Case Time Complexity is O(n).
+
+        // And the Worst Case Time Complexity is O(n^3).
+
+    }
+
+    static void Arrays(){
+
+        // Array is a Non-Primitive Datatype in Java.
+
+        // Array is also as Reference type in Java because when we copy an array, it copies the memory address of the array.
+
+        // Array means a Variable which can contain more than one value of same datatype.
+
+        // Like i have some numbers (1 , 2 , 4), now i have to store it in memory,
+
+        // So, i will create 3 variables,.
+
+        int a = 1; // a is the name of the variable and 1 is the value of the variable.
+
+        int b = 2; // A variable 'b' of datatype Integer Storing value 2.
+
+        int c = 4; // A variable 'c' of datatype Integer Storing value 4.
+
+        // but what if i have 100 numbers, then how can i store them in memory?
+
+        // I am not going to create 100 variables.
+
+        // There we use Arrays.
+
+        // Example, we have to store some items like Subjects and their marks,
+
+        int eng = 50; // A variable 'eng' of datatype Integer Storing value 50.
+
+        int math = 60; // A variable 'math' of datatype Integer Storing value 60.
+
+        int hindi = 70; // A variable 'hindi' of datatype Integer Storing value 70.
+
+        // to Overcome this problem in java we are going to create a List of items of same datatype.
+
+        // There are also 2 ways to Create an array just like variables.
+
+        // -------------------------------------------------------------------------
+
+        // 1. Only Declaration -> We use this way when we have to add items in the future but not in present.
+
+        // Syntax of 1st:- <datatype>[] <arrayname> = new <datatype>[size]; this is compulsory.
+
+        // Initialization Syntax(in future): <arrayname>[<index>] = <value>;    
+
+        // Lets Store my marks, using both ways:-
+
+        int[] marks = new int[3]; // We created an Empty array of type int with size 3.
+
+        // We can't store any value in an array without giving it a size.
+
+        // Lets set its value.
+
+        marks[0] = 50; // We set value 50 in index 0.
+
+        marks[1] = 60; // We set value 60 in index 1.
+
+        marks[2] = 70; // We set value 70 in index 2.
+
+        // Lets Know about Indexing which is important before knowing array,
+
+        // You have noticed in your question paper, that each question is indexed starting from 1 or maybe a.
+
+        // Like 1 then 2 then 3.
+
+        // but In java, indexing begins from 0.
+
+        // Like 1st question in your question paper is indexed as 1.
+
+        // But in java 1st Item, is indexed as 0.
+
+        // In real life:- 1 , 2 , 3 , 4 , 5 , 6 , 7 , ... , n.
+
+        // In Java:-      0 , 1 , 2 , 3 , 4 , 5 , 6 , ... , n - 1.
+        
+        // now here marks = { 0 , 0 , 0 };
+
+        // this is an empty array of type int with size 3.
+
+        // Empty array is filled with null values, like 0.
+
+        // After filling the values at each index, 
+
+        // For marks[0] at index 0, we set value 50.
+
+        // marks = { 50 , 0 , 0 };
+
+        // For marks[1] at index 1, we set value 60.
+
+        // marks = { 50 , 60 , 0 };
+
+        // For marks[2] at index 2, we set value 70.
+
+        // marks = { 50 , 60 , 70 };
+
+        System.out.println(marks); // OUTPUT:- this will give the memory address of the array.
+        // you cannot see array like this.
+
+
+        System.out.println(marks[0]); // OUTPUT:- 50
+
+        System.out.println(marks[1]); // OUTPUT:- 60
+
+        System.out.println(marks[2]); // OUTPUT:- 70
+
+        // this is the poor way to print the array.
+
+        // Because for large arrays, it will take a lot of time to print them.
+
+        // You need to set a loop,
+
+        for(int i = 0 ; i < marks.length ; i++){ // A For loop runs from 0 to the length of the array.
+
+            System.out.println("marks[" + i + "] = " + marks[i]); // We print the value of each index.
+
+        }// for loop ends here.
+
+        // Lets do a Dry Run of above code.
+
+        // for i = 0,
+
+        // OUTPUT:- marks[0] = 50
+
+        // for i = 1, 
+
+        // OUTPUT:- marks[1] = 60
+
+        // for i = 2,
+
+        // OUTPUT:- marks[2] = 70
+
+        // Loop terminates.
+
+        // For loop of Array:-
+
+        for(int j : marks){ // A for Loop Running on Each item of Array and returning it in int j, for each item.
+
+            // int j because marks is an array of Integer datatype.
+
+            // Remember j do not store index, but it store the actual value.
+
+            System.out.println(j); 
+
+        }
+
+        // Lets do A dry run,
+
+        // for j = 50 or marks[0] = 50,
+
+        // OUTPUT:- 50
+
+        // for j = 60 or marks[1] = 60,
+
+        // OUTPUT:- 60
+
+        // for j = 70 or marks[2] = 70,
+
+        // OUTPUT:- 70
+
+        // --------------------------------------------------------------------------
+
+        // Lets understand about the 2nd way of Creating Arrays,
+
+        // 2. Declaration and Initialization -> We use this way when we have to add items in the present.
+
+        // Syntax of 2nd:- <datatype>[] <arrayname> = { <value1> , <value2> , <value3> }; this is compulsory.
+
+        int[] numbers = {10 , 56 , 3 , 5 , 6 , 23 , 543};
+
+        // Here we created an array of type int with size 7.
+
+        // And we have filled it with the values 10 , 56 , 3 , 5 , 6 , 23 , 543.
+
+        // Now lets print it out.
+
+        for (int i : numbers) { // For Loop Running on Each item of Array and returning it in int i, for each item.
+
+            System.out.println(i); // We print the value of each index.
+
+        }
+
+        // Lets do A dry run,
+
+        // for i = 10 or numbers[0] = 10,
+
+        // OUTPUT:- 10
+
+        // for i = 56 or numbers[1] = 56,
+
+        // OUTPUT:- 56
+
+        // for i = 3 or numbers[2] = 3,
+
+        // OUTPUT:- 3
+
+        // for i = 5 or numbers[3] = 5,
+
+        // OUTPUT:- 5
+
+        // for i = 6 or numbers[4] = 6,
+
+        // OUTPUT:- 6
+
+        // for i = 23 or numbers[5] = 23,
+
+        // OUTPUT:- 23
+
+        // for i = 543 or numbers[6] = 543,
+
+        // OUTPUT:- 543
+
+        // Loop terminates.
+
+
+        // Lets Create a user Driven Array.
+
+        Scanner sc = new Scanner(System.in); // To take input from user.
+        
+
+        System.out.println("Enter the size of array: "); // Enter the size of array.
+
+        int size = sc.nextInt(); // A variable to store the size of array.
+
+        int[] arr = new int[size]; // A new array of type int with size 'size'.
+
+        for(int i = 0 ; i < size ; i++){ // For Loop Running on Each index of Array.
+
+            System.out.print("Enter the value at index " + i + ": "); // Enter the value at each index.
+
+            arr[i] = sc.nextInt(); // Taking Input from user and storing it in array at index i.
+
+        }// for loop ends here.
+
+        // Lets try to Print the Array,
+
+        for(int j : arr){ // For Loop Running on Each item of Array and returning it in int j, for each item.
+
+            System.out.println(j); // We print the value of each index.
+
+        }
+
+        // Lets assume the size of array is 3.
+
+        // Now, it creates an array of type int with size 3.
+
+        // arr = { 0 , 0 , 0 }
+
+        // Empty Array created in memory so array is filled with null values ie. 0.
+
+        // Looping on Each Index of Array,
+
+        // for i = 0,
+
+        // Taken input from user and stored it in arr[0].
+
+        // Lets think that user enters 5.
+
+        // arr[0] = 5
+
+        // arr = { 5 , 0 , 0 }
+
+        // for i = 1,
+
+        // Taken input from user and stored it in arr[1].
+
+        // Lets think that user enters 12.
+
+        // arr[0] = 12
+
+        // arr = { 5 , 12 , 0 }
+
+        // for i = 2,
+
+        // Taken input from user and stored it in arr[2].
+
+        // Lets think that user enters 15.
+
+        // arr[2] = 15
+
+        // arr = { 5 , 12 , 15 }
+
+        // Moving Towards the next loop, for printing the value of Array.
+
+        // when int j = 5, arr[0] = 5,
+
+        // OUTPUT:- 5
+
+        // when int j = 12, arr[1] = 12,
+
+        // OUTPUT:- 12
+
+        // when int j = 15, arr[2] = 15,
+
+        // OUTPUT:- 15
+
+        // ----------------------------------------------------------------------
+
+        // Declare an integer array with a size of 4
+        // The 'new int[4]' initializes an array with four elements.
+        // By default, each element of an int array is set to 0.
+        int[] emp_arr = new int[4];
+
+        // Loop through each item in the integer array 'emp_arr'
+        // 'item' will hold the value of each element as we loop through the array.
+        for(int item : emp_arr) {
+
+            // Print each element followed by a space
+            // Since all elements are initially set to 0, it will print "0 0 0 0"
+            System.out.print(item + " ");
+        }
+
+        // OUTPUT:- 0 0 0 0
+        System.out.println(); // Move to the next line after printing the int array
+
+
+        // Dry Run for emp_arr:
+        // -------------------------------------
+        // emp_arr = [0, 0, 0, 0]   // Default int array values
+        // Iteration 1: item = 0 -> prints "0 "
+        // Iteration 2: item = 0 -> prints "0 "
+        // Iteration 3: item = 0 -> prints "0 "
+        // Iteration 4: item = 0 -> prints "0 "
+        // Final output: "0 0 0 0"
+        // -------------------------------------
+
+
+        // ----------------------------------------------------------------------
+
+        // Declare a double array with a size of 3
+        // The 'new double[3]' initializes an array with three elements.
+        // By default, each element of a double array is set to 0.0.
+        double[] double_arr = new double[3];
+
+        // Loop through each item in the double array 'double_arr'
+        for(double item : double_arr) {
+
+            // Print each element followed by a space
+            // Since all elements are initially set to 0.0, it will print "0.0 0.0 0.0"
+            System.out.print(item + " ");
+        }
+
+        // OUTPUT:- 0.0 0.0 0.0
+        System.out.println(); // Move to the next line after printing the double array
+
+
+        // Dry Run for double_arr:
+        // -------------------------------------
+        // double_arr = [0.0, 0.0, 0.0]   // Default double array values
+        // Iteration 1: item = 0.0 -> prints "0.0 "
+        // Iteration 2: item = 0.0 -> prints "0.0 "
+        // Iteration 3: item = 0.0 -> prints "0.0 "
+        // Final output: "0.0 0.0 0.0"
+        // -------------------------------------
+
+        // ----------------------------------------------------------------------
+
+        // Declare a boolean array with a size of 3
+        // The 'new boolean[3]' initializes an array with three elements.
+        // By default, each element of a boolean array is set to false.
+        boolean[] bool_arr = new boolean[3];
+
+        // Loop through each item in the boolean array 'bool_arr'
+        for(boolean item : bool_arr) {
+
+            // Print each element followed by a space
+            // Since all elements are initially set to false, it will print "false false false"
+            System.out.print(item + " ");
+        }
+
+        // OUTPUT:- false false false
+        System.out.println(); // Move to the next line after printing the boolean array
+
+
+        // Dry Run for bool_arr:
+        // -------------------------------------
+        // bool_arr = [false, false, false]   // Default boolean array values
+        // Iteration 1: item = false -> prints "false "
+        // Iteration 2: item = false -> prints "false "
+        // Iteration 3: item = false -> prints "false "
+        // Final output: "false false false"
+        // -------------------------------------
+
+
+    }
+   
+    static void Array_2D(){
+
+        // An array inside another array is called a 2D array or a matrix.
+        // In a 2D array, each element itself is an array. Think of it like a grid of rows and columns.
+        // We are going to use a 2D array in this program, which will help us store data in a matrix form.
+
+        // Syntax of declaring a 2D array:
+        // <datatype>[][] <arrayname> = new <datatype>[rows][columns];
+        // This defines an array with a specific number of rows and columns.
+
+        // Let's represent this matrix example visually:
+        /*
+            [ 0,0 | 0,1 | 0,2 | 0,3 ]  -> Row 0
+            [ 1,0 | 1,1 | 1,2 | 1,3 ]  -> Row 1
+            [ 2,0 | 2,1 | 2,2 | 2,3 ]  -> Row 2
+            [ 3,0 | 3,1 | 3,2 | 3,3 ]  -> Row 3
+            [ 4,0 | 4,1 | 4,2 | 4,3 ]  -> Row 4
+        */
+        
+        // Now, we will create a 2D array of integers with 5 rows and 4 columns.
+        int[][] arr = new int[5][4];
+
+        // 'arr' is a 2D array of integer type with 5 rows and 4 columns.
+        // Initially, all values in the array will be set to 0 (the default value for integers in Java).
+
+        // Let's assign a value to the first element at row 0, column 0.
+        arr[0][0] = 10;  // Setting the value of the first element to 10.
+        
+        // ---------------------------------------------------------------------
+
+        // Now, we will take input from the user to create and fill a 2D array.
+        
+        Scanner sc = new Scanner(System.in); // Scanner object to take input from the user.
+
+        // Asking the user to enter the number of rows for the 2D array.
+        System.out.print("Enter the No. of Rows: ");
+        int row = sc.nextInt();  // User input for the number of rows.
+
+        // Asking the user to enter the number of columns for the 2D array.
+        System.out.print("Enter the No. of Columns: ");
+        int column = sc.nextInt();  // User input for the number of columns.
+
+        // Declaring a 2D array called 'numbers' with user-specified rows and columns.
+        int[][] numbers = new int[row][column];
+
+        // Now, let's take input for each cell in the 2D array from the user.
+
+        // Outer loop for iterating through each row.
+        for(int i = 0; i < row; i++) {
+            
+            // Inner loop for iterating through each column in the current row.
+            for(int j = 0; j < column; j++) {
+
+                // Asking the user to input the value for each cell in the array.
+                System.out.print("Enter the Value of [" + i + "] [" + j + "]: ");
+                numbers[i][j] = sc.nextInt();  // Assigning the input value to the corresponding cell.
+            }
+        }
+
+        // Dry run of filling the array:
+        
+        /*
+
+        Suppose the user inputs a 2x2 matrix.
+
+        Step-by-step execution:
+        - i = 0, j = 0 -> Prompt: "Enter the Value of [0][0]:", User enters: 5 -> numbers[0][0] = 5
+        - i = 0, j = 1 -> Prompt: "Enter the Value of [0][1]:", User enters: 7 -> numbers[0][1] = 7
+        - i = 1, j = 0 -> Prompt: "Enter the Value of [1][0]:", User enters: 9 -> numbers[1][0] = 9
+        - i = 1, j = 1 -> Prompt: "Enter the Value of [1][1]:", User enters: 2 -> numbers[1][1] = 2
+        
+        Final matrix:
+        [ 5  7 ]
+        [ 9  2 ]
+
+        */
+
+        // -----------------------------------------------------------------------
+
+        // Now let's print the 2D array as a matrix.
+
+        // Outer loop to iterate through each row.
+        for(int i = 0; i < row; i++) {
+
+            // Inner loop to iterate through each column in the current row.
+            for(int j = 0; j < column; j++) {
+
+                // Print the value at current row and column followed by a space.
+                System.out.print(numbers[i][j] + "  ");
+            }
+
+            // Print a new line after each row to make it look like a matrix.
+            System.out.println();
+        }
+
+        // Dry run of printing the array:
+
+        /*
+
+        For the previous 2x2 matrix example:
+        Step-by-step execution:
+
+        - i = 0, j = 0 -> print: "5  "
+
+        - i = 0, j = 1 -> print: "7  ", then move to the next line (System.out.println())
+
+        - i = 1, j = 0 -> print: "9  "
+
+        - i = 1, j = 1 -> print: "2  ", then move to the next line (System.out.println())
+        
+        Final output:
+        5  7  
+        9  2
+
+        */
+
+        // ------------------------------------------------------------------------
+
+        // Question 1. Take a 2D array as input from the user and search for a number in the array.
+
+        // Prompt the user to enter the number of rows for the matrix
+        System.out.print("Enter the number of rows: ");
+        int r = sc.nextInt(); // Read the number of rows
+        
+        
+        // Prompt the user to enter the number of columns for the matrix
+        System.out.print("Enter the number of columns: ");
+        int c = sc.nextInt(); // Read the number of columns
+        
+        
+        // Create a 2D array (matrix) with the specified number of rows and columns
+        int[][] matrix = new int[r][c]; 
+        
+        // Taking input for the matrix
+        for (int i = 0; i < r; i++) { // Loop through each row
+            
+            for (int j = 0; j < c; j++) { // Loop through each column
+                
+                // Prompt the user to enter a value for the current position in the matrix
+                System.out.print("Enter the value at [" + i + "][" + j + "]: "); 
+                matrix[i][j] = sc.nextInt(); // Store the input value in the matrix
+            }
+        }
+        
+        // Prompt the user to enter the number to search for in the matrix
+        System.out.print("Enter the number you want to search: "); 
+        int x = sc.nextInt(); // Read the number to search
+        
+        
+        // Initialize a flag to check if the number is found
+        boolean found = false; 
+        
+        // Loop through each element in the matrix to search for the number
+        for (int i = 0; i < r; i++) { // Loop through each row
+            
+            for (int j = 0; j < c; j++) { // Loop through each column
+                
+                // Check if the current element matches the number we're searching for
+                if (matrix[i][j] == x) { 
+                    
+                    // If found, print the index and set the flag to true
+                    System.out.println("The index of the number " + x + " is " + i + " and " + j);
+                    found = true; // Mark as found
+                    break; // Exit the inner loop
+                }
+            }
+            
+            if (found) {
+                break; // Exit the outer loop if the number is found
+            }
+        }
+        
+        // If the number was not found, print a message
+        if (!found) {
+            System.out.println("Number " + x + " not found in the matrix.");
+        }
+
+
+        /*
+        Dry Run of the Code:
+        
+        Let's assume the following input during the execution of the code:
+        
+        - Number of rows (r): 3
+        - Number of columns (c): 3
+        - Matrix values:
+            Enter the value at [0][0]: 1
+            Enter the value at [0][1]: 2
+            Enter the value at [0][2]: 3
+            Enter the value at [1][0]: 4
+            Enter the value at [1][1]: 5
+            Enter the value at [1][2]: 6
+            Enter the value at [2][0]: 7
+            Enter the value at [2][1]: 8
+            Enter the value at [2][2]: 9
+        - Number to search (x): 5
+        
+        Step-by-Step Execution:
+        
+        1. Initialize Scanner.
+        2. Prompt for rows (r) = 3.
+        3. Prompt for columns (c) = 3.
+        4. Create a 2D array: matrix[3][3].
+        5. Start input loop for matrix:
+            - i = 0:
+                - j = 0: Enter value 1 → matrix[0][0] = 1
+                - j = 1: Enter value 2 → matrix[0][1] = 2
+                - j = 2: Enter value 3 → matrix[0][2] = 3
+            - i = 1:
+                - j = 0: Enter value 4 → matrix[1][0] = 4
+                - j = 1: Enter value 5 → matrix[1][1] = 5
+                - j = 2: Enter value 6 → matrix[1][2] = 6
+            - i = 2:
+                - j = 0: Enter value 7 → matrix[2][0] = 7
+                - j = 1: Enter value 8 → matrix[2][1] = 8
+                - j = 2: Enter value 9 → matrix[2][2] = 9
+        6. End of input loop.
+        7. Prompt for number to search (x) = 5.
+        8. Start search loop:
+            - i = 0:
+                - j = 0: matrix[0][0] = 1 (not found)
+                - j = 1: matrix[0][1] = 2 (not found)
+                - j = 2: matrix[0][2] = 3 (not found)
+            - i = 1:
+                - j = 0: matrix[1][0] = 4 (not found)
+                - j = 1: matrix[1][1] = 5 (found)
+                - Found at index (1, 1).
+        9. Print: "The index of the number 5 is 1 and 1".
+        10. The program exits.
+        */
+
+    }    
+
+    static void StringManipulation(){
+        // String is a non-primitive datatype value.
+
+        // It is the Collection of Characters, or the Sequence of Characters.
+
+        // like "hello123", it is a string which has 'h' , 'e' , 'l' , 'o' , '1' , '2' , '3' as its characters.
+
+        // It is non-primitive hence its memory size is not fixed but we can find through total no. of characters in it.
+
+        // Because each character is of 2 Byte in size.
+
+        // So, String will take memory of character size * total no. of characters
+
+        // -------------------------------------------------------------------
+        // String Declaration
+        // -------------------------------------------------------------------
+
+        // Through Wrapper Class, or its Primitive class.
+
+        String st = new String("Hello123 Sir");
+
+        System.out.println(st); // OUTPUT:- Hello123 Sir
+
+        // Through simple variables.
+
+        String str = "Hello123 Sir";
+
+        System.out.println(str); // OUTPUT:- Hello123 Sir
+
+        // We will study about the 1st way in future so no need of thinking about it.
+
+        // -------------------------------------------------------------------
+        // Taking String Input
+        // -------------------------------------------------------------------
+
+        Scanner sc = new Scanner(System.in);
+        // creating sc object of Scanner class for taking input or running input fncs.
+
+        String name = sc.next(); // This will take only the first word of the String and Store it in variable 'name';
+
+        // Like input is "Hi god".
+
+        // In this input 'Hi' and 'god' are two separate words.
+
+        // But name will store only the first word and ignore the rest.
+
+        System.out.println(name); // OUTPUT:- Hi
+
+        // How to take whole String as input and Store it?
+
+        String fullname = sc.nextLine(); // This will take the Whole String and Store it in variable 'fullname';
+
+        // Like input is "Hi god".
+
+        // In this input 'Hi' and 'god' are two separate words.
+
+        // fullname = "Hi god"
+
+        System.out.println(fullname); // OUTPUT:- Hi god
+
+        // -------------------------------------------------------------------
+        // Concatenation
+        // -------------------------------------------------------------------
+
+        // Concatenation is the process of joining two or more strings together.
+        
+        String a = "hello "; // A String Variable 'a' Stored the value "hello "
+
+        String b = "world"; // A String Variable 'b' Stored the value "world"
+
+        // Here we concatenate both Strings using the '+' operator.
+
+        System.out.println(a + b); // OUTPUT:- hello world
+
+        // -------------------------------------------------------------------
+        // Finding the Length of String
+        // -------------------------------------------------------------------
+
+        String x = "hello what is my length?"; // A String Variable 'x' Stored the value "hello what is my length?"
+
+        System.out.println(x.length()); // OUTPUT:- 26
+
+        // <str>.length() fnc is used to find the length of the String.
+
+
+        // -------------------------------------------------------------------
+        // charAt(finding the character at particular index)
+        // -------------------------------------------------------------------
+
+        String y = "hello"; // A String Variable 'y' Stored the value "hello"
+
+        // Here we find the character at particular index using charAt() fnc.
+
+        // Lets find the Character at index 3.
+
+        System.out.println(y.charAt(3)); // OUTPUT:- l
+
+        // <str>.charAt() fnc is used to find the character at particular index.
+
+        // here Java Indexing begins from 0.
+
+        //  String ->  h e l l o
+        //  Index  ->  0 1 2 3 4
+
+        // Now i want to Split each Character of this String,
+
+        // Lets put an loop to take each Character one by one and print it.
+
+        for(int i = 0 ; i < y.length() ; i++){ // A for loop running on variable 'i' which is iterating from 0 to y.length().
+
+            System.out.print(y.charAt(i) + " , "); // Printing Character at index 'i' in the String 'y' one by one.
+
+        }// for loop ends here.
+
+        System.out.println(); // Empty print statement to add extra line so that further input may continue from next line.
+
+        // Lets perform a dry run and check the output.
+
+        // y.length() -> 5 
+
+        //  String ->  h e l l o
+        //  Index  ->  0 1 2 3 4
+
+        // For i = 0, (i < 5) -> true,
+
+        // So, i = 0 and y.charAt(0) -> h
+
+        // For i = 1, (i < 5) -> true,
+
+        // So, i = 1 and y.charAt(1) -> e
+
+        // For i = 2, (i < 5) -> true,
+
+        // So, i = 2 and y.charAt(2) -> l
+
+        // For i = 3, (i < 5) -> true,
+
+        // So, i = 3 and y.charAt(3) -> l
+
+        // For i = 4, (i < 5) -> true,
+
+        // So, i = 4 and y.charAt(4) -> o
+
+        // So, i = 5, (i < 5) -> false, so, loop ends here.
+
+        // OUTPUT:- h , e , l , l , o ,
+
+        // -------------------------------------------------------------------
+        // .indexOf (used to find the index of given Character or String in another String.)
+        // -------------------------------------------------------------------
+
+        // indexOf() fnc is used to find the index of given String or Character in a Particular String,
+
+        // In case of Multiple Occurrences of Character in String then it will run the first Occurrence index of that String.
+
+        String str13 = "Hello World i hope it is well"; // A String variable 'str13' Storing 'Hello World i hope it is well'.
+
+        int index = str13.indexOf('e'); // This will return the index of first Character found in the string 'str13'.
+
+        // Lets understand Its Indexing first.
+
+        // String -> H e l l o   W o r l d     i     h  o  p  e     i  t     i  s     w  e  l  l
+        // Index  -> 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+
+        // According to above Statement, it will return the first Occurrence of 'e' in String "hello World i hope it is well".
+
+        // It will check the Whole String, starting from 0 index till last index.
+
+        // 'e' is founded at index 1.
+
+        // 'index1' variable will Store 1 because 'e' is found at index 1.
+
+        System.out.println(index); // OUTPUT:- 1
+
+        // lets find 'o'
+
+        int index1 = str13.indexOf('o'); // This will return the index of first Character found in the string 'str13'.
+
+        // According to above Statement, it will return the first Occurrence of 'o' in String "hello World i hope it is well".
+
+        // It will check the Whole String, starting from 0 index till last index.
+
+        // 'o' is founded at index 4 and at index 7.
+
+        // 'index' variable will Store 4 because first Occurrence of 'o' is found at index 4 not 7.
+
+        // This will only return the first occurrence and then do not check further String.
+
+        System.out.println(index1); // OUTPUT:- 4
+
+        // But what if i want to Know the index of 2nd Occurrence of 'o' in the String.
+
+        // Here we can also set the Starting and Ending Index, from where search will start.
+
+        int index2 = str13.indexOf('o' , 5); // This will return the index of first Character found in the string 'str13'.
+
+        // According to above Statement, it will return the first Occurrence of 'o' in String "hello World i hope it is well".
+
+        // It will not check the Whole String, it will start searching from index 5 till last index because last index is not specified and by default it is length of String.
+
+        // It will search in only " World i hope it is well".
+
+        
+        // 'o' is founded at index 7 in this new range of String.
+        
+        // 'index2' variable will Store 7 because first Occurrence of 'o' is found at index 7 according to new String.
+        
+        // This will only return the first occurrence and then do not check further String.
+
+        System.out.println(index2); // OUTPUT:- 7
+
+        // Now i wanted to find index of i in 'hope it is'.
+
+        // This time we need to enter both beginning and ending index of the String, in which it will search for i.
+
+        // So lets try to find 'i'.
+
+        int index3 = str13.indexOf('i' , 14 , 24); // This will return the index of first Character found in the string 'str13'.
+
+        // According to above Statement, it will return the first Occurrence of 'i' in String "hello World i hope it is well".
+
+        // It will not check the Whole String, it will start searching from index 14 till index 24 because starting and ending index for the Searching is Provided by the user in the function.
+
+        // It will search in only "hope it is".I  
+
+        
+        // 'i' is founded at index 19 in this new range of String.
+        
+        // 'index3' variable will Store 19 because first Occurrence of 'o' is found at index 19 according to new String.
+
+        System.out.println(index3); // OUTPUT:- 19
+
+
+
+        // -------------------------------------------------------------------
+        // .lastIndexOf (used to find the last index of a given Character or String in another String.)
+        // -------------------------------------------------------------------
+
+        // lastIndexOf() function is used to find the last occurrence of a given String or Character in a Particular String,
+
+        // In case of Multiple Occurrences of Character or String, it will return the index of the last occurrence.
+
+        // Let's take a new example String.
+
+        String str14 = "This is a simple example of lastIndexOf function in Java."; // A String variable 'str14' storing 'This is a simple example of lastIndexOf function in Java.'.
+
+        int lastIndex = str14.lastIndexOf('i'); // This will return the last index of the Character 'i' found in the string 'str14'.
+
+        // According to the above statement, it will return the last occurrence of 'i' in the String "This is a simple example of lastIndexOf function in Java."
+
+        // It will check the whole String, starting from the last index and moving backward.
+
+        // The last occurrence of 'i' is found at index 54.
+
+        // The 'lastIndex' variable will store 54 because 'i' is found at index 54 in the backward search.
+
+        System.out.println(lastIndex); // OUTPUT:- 54
+
+        // Let's find 'e'
+
+        int lastIndex1 = str14.lastIndexOf('e'); // This will return the last index of Character 'e' found in the string 'str14'.
+
+        // According to the above statement, it will return the last occurrence of 'e' in the String "This is a simple example of lastIndexOf function in Java."
+
+        // It will check the whole String, starting from the last index and moving backward.
+
+        // 'e' is found at index 39 as the last occurrence, though 'e' also appears earlier.
+
+        // The 'lastIndex1' variable will store 39 because 'e' is found at index 39 in the backward search.
+
+        System.out.println(lastIndex1); // OUTPUT:- 39
+
+        // But what if I want to know the index of the second-last occurrence of 'e' in the String?
+
+        // We can also set the starting index, indicating from where the backward search will start.
+
+        int lastIndex2 = str14.lastIndexOf('e', 38); // This will return the last index of Character 'e' found in the string 'str14', but starting the backward search from index 38.
+
+        // According to the above statement, it will start searching from index 38 and move backward, so the second-last 'e' will be located.
+
+        // It will find 'e' at index 25 in this backward search from index 38.
+
+        // The 'lastIndex2' variable will store 25 because the second-last 'e' is found at index 25.
+
+        System.out.println(lastIndex2); // OUTPUT:- 25
+
+        // Now I want to find the last index of 'n' in a specific range of the String.
+
+        // This time, we will enter both the beginning and ending index of the String within which it will search for 'n'.
+
+        // Let's try to find 'n'.
+
+        int lastIndex3 = str14.lastIndexOf('n', 50); // This will return the last index of Character 'n' found in the string 'str14', searching backward from index 50.
+
+        // According to the above statement, it will return the last occurrence of 'n' in the range "This is a simple example of lastIndexOf function in Jav".
+
+        // It will search backward starting from index 50, but it will not check beyond index 0.
+
+        // 'n' is found at index 46 in this range.
+
+        // The 'lastIndex3' variable will store 46 because 'n' is found at index 46 according to the backward search in the specified range.
+
+        System.out.println(lastIndex3); // OUTPUT:- 46
+
+        // -------------------------------------------------------------------
+        // .lastIndexOf (used to find the last index of a given String in another String.)
+        // -------------------------------------------------------------------
+
+        // In this example, we will use 'lastIndexOf()' to find the last occurrence of a substring in a String.
+
+        String str15 = "This example is a good example of how to use the lastIndexOf function."; // A String variable 'str15' storing 'This example is a good example of how to use the lastIndexOf function.'.
+
+        int lastIndexSubstring = str15.lastIndexOf("example"); // This will return the last index of the substring 'example' found in the string 'str15'.
+
+        // According to the above statement, it will return the last occurrence of the substring 'example' in the String "This example is a good example of how to use the lastIndexOf function."
+
+        // It will check the whole String, starting from the last index and moving backward.
+
+        // The last occurrence of 'example' is found at index 28.
+
+        // The 'lastIndexSubstring' variable will store 28 because the substring 'example' is found at index 28 in the backward search.
+
+        System.out.println(lastIndexSubstring); // OUTPUT:- 28
+
+        // -------------------------------------------------------------------
+        // lastIndexOf with a starting index to search backward from
+        // -------------------------------------------------------------------
+
+        // Let's take another example to search for the last occurrence of a character starting from a specific index.
+
+        String str16 = "I will practice Java regularly to improve my skills in Java."; // A String variable 'str16' storing 'I will practice Java regularly to improve my skills in Java.'.
+
+        int lastIndexFromStart = str16.lastIndexOf('a', 40); // This will return the last index of the character 'a' found in the string 'str16', but starting the backward search from index 40.
+
+        // Let's understand its indexing first.
+
+        // String -> I     w  i  l  l     p  r  a  c  t  i  c  e     J  a  v  a     r  e  g  u  l  a  r  l  y     t  o     i  m  p  r  o  v  e     m  y     s  k  i  l  l  s     i  n     J  a  v  a  .
+        // Index  -> 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69
+
+        // According to the above statement, it will return the last occurrence of 'a' before or at index 40 in the String "I will practice Java regularly to improve my skills in Java."
+
+        // It will start searching backward from index 40. The character 'a' is found at index 35 in this range.
+
+        // The 'lastIndexFromStart' variable will store 35 because 'a' is found at index 35 in the backward search starting from index 40.
+
+        System.out.println(lastIndexFromStart); // OUTPUT:- 35
+
+        // -------------------------------------------------------------------
+        // lastIndexOf with a starting index to search for a substring
+        // -------------------------------------------------------------------
+
+        // In this example, we will search for a substring 'Java' from a specific index.
+
+        String str17 = "Learning Java is fun. Java helps in building strong programming skills."; // A String variable 'str17' storing 'Learning Java is fun. Java helps in building strong programming skills.'.
+
+        int lastIndexOfSubstringFromStart = str17.lastIndexOf("Java", 30); // This will return the last index of the substring 'Java' found in the string 'str17', but starting the backward search from index 30.
+
+        // Let's understand its indexing first.
+
+        // String -> L  e  a  r  n  i  n  g     J  a  v  a     i  s     f  u  n  .     J  a  v  a     h  e  l  p  s     i  n     b  u  i  l  d  i  n  g     s  t  r  o  n  g     p  r  o  g  r  a  m  m  i  n  g     s  k  i  l  l  s  .
+        // Index  -> 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69
+
+        // According to the above statement, it will return the last occurrence of 'Java' before or at index 30 in the String "Learning Java is fun. Java helps in building strong programming skills."
+
+        // It will search backward starting from index 30. The substring 'Java' is found at index 8 in this range.
+
+        // The 'lastIndexOfSubstringFromStart' variable will store 8 because 'Java' is found at index 8 in the backward search starting from index 30.
+
+        System.out.println(lastIndexOfSubstringFromStart); // OUTPUT:- 8
+
+        // -------------------------------------------------------------------
+        // lastIndexOf with both start and end index for character search
+        // -------------------------------------------------------------------
+
+        // Now we will specify both the starting and ending index to search for the character 'o' in a substring range.
+
+        String str18 = "Programming is all about solving problems with logic."; // A String variable 'str18' storing 'Programming is all about solving problems with logic.'.
+
+        int lastIndexCharInRange = str18.lastIndexOf('o', 40); // This will return the last index of the character 'o' found in the string 'str18', starting the backward search from index 40.
+
+        // Let's understand its indexing first.
+
+        // String -> P  r  o  g  r  a  m  m  i  n  g     i  s     a  l  l     a  b  o  u  t     s  o  l  v  i  n  g     p  r  o  b  l  e  m  s     w  i  t  h     l  o  g  i  c  .
+        // Index  -> 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58
+
+        // According to the above statement, it will return the last occurrence of 'o' in the range from index 0 to 40 in the String "Programming is all about solving problems with logic."
+
+        // It will search backward starting from index 40. The character 'o' is found at index 32 in this range.
+
+        // The 'lastIndexCharInRange' variable will store 32 because 'o' is found at index 32 in the backward search in the given range.
+
+        System.out.println(lastIndexCharInRange); // OUTPUT:- 32
+
+
+        // -------------------------------------------------------------------
+        // .compareTo() (Used to Compare two String graphically)
+        // -------------------------------------------------------------------
+
+        // In this it will compare the ASCII values of two Strings.
+
+        String st1 = "Hello"; // A String Variable 'st1' Stored the value "Hello"
+
+        String st2 = "Hi"; // A String Variable 'st2' Stored the value "Hi"
+
+        int result = st1.compareTo(st2); // Here we compare the ASCII values of two Strings.
+
+        // In this the first String 'st1' will be compared with the second String 'st2'.
+
+        // Lets do A dry run and understand how it works.
+
+        // st1 -> Hello
+        // st2 -> Hi
+
+        // So, it will start comparing the ASCII values of the first Character of both Strings.
+
+        // Since, st1.charAt(0) -> H is same as st2.charAt(0) -> H,
+
+        // So it won't do anything, and move to the next character.
+
+        // This time, st1.charAt(1) -> e is different from st2.charAt(1) -> i.
+
+        // So it will subtract st1.charAt(1) - st2.charAt(1) -> e - i.
+
+        // but it is not possible to subtract two Characters.
+        
+        // so firstly it will convert and get the ASCII value of st1.charAt(1) -> e and st2.charAt(1) -> i.
+
+        // ASCII code of 'e' -> 101
+
+        // ASCII code of 'i' -> 105
+
+        // Now, (e - i) -> 101 - 105 -> -4
+
+        // So the value Stored in 'result' will be -4.
+
+        System.out.println(result); // OUTPUT:- -4
+
+        // -------------------------------------------------------------------
+        // .compareToIgnoreCase() (Used to Compare two String graphically)
+        // -------------------------------------------------------------------
+
+        // In this also, it will compare two Strings, but it won't compare strings According to case.
+
+        String st3 = "Hello"; // A String Variable 'st3' Stored the value "Hello"
+
+        String st4 = "wello"; // A String Variable 'st3' Stored the value "Hello"
+
+        int result1 = st3.compareTo(st4); // Here we compare the ASCII values of two Strings.
+
+        // Here When we start comparing the first Character of both Strings,
+
+        // Since, st3.charAt(0) -> H is different from st4.charAt(0) -> w,
+
+        // We will Compare the ASCII values of st3.charAt(0) -> H and st4.charAt(0) -> w.
+
+        // ASCII code of 'H' -> 72
+
+        // ASCII code of 'w' -> 119
+
+        // Now, (H - w) -> 72 - 119 -> -47
+
+        // Now the value Stored in 'result1' will be -47.
+
+        System.out.println(result1); // OUTPUT:- -47
+
+        // Now, lets use compareToIgnoreCase() function.
+
+        int result2 = st3.compareToIgnoreCase(st4);
+
+        // Here When we Start comparing the first Character of both Strings,
+
+        // Since, st3.charAt(0) -> H is different from st4.charAt(0) -> w,
+
+        // We will Compare the ASCII values of st3.charAt(0) -> H and st4.charAt(0) -> w.
+
+        // ASCII code of 'H' -> 72
+
+        // ASCII code of 'w' -> 119
+
+        // But in this we are Ignoring Case, so will find the ASCII value of 'W' instead of 'w' because 'H' is an uppercase letter.
+
+        // ASCII code of 'W' -> 87
+
+        // Now, (H - W) -> 72 - 87 -> -15
+
+        System.out.println(result2); // OUTPUT:- -15
+
+        // -------------------------------------------------------------------
+        // .substring() (Used to get a substring from a String)
+        // -------------------------------------------------------------------
+
+        // It is used to get a part of String or its substring.
+
+        String str1 = "Hello I am good"; // A String Variable 'str1' Stored the value "Hello I am good"
+
+        // Now first lets us understand the Indexing of String.
+
+        // String -> H e l l o   I   a m    g  o  o  d
+        // Index  -> 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+
+        // I want to extract everything till I.
+
+        String ext1 = str1.substring(0,5); // This will extract everything till I.
+
+        // Here in subString fnc, we have given two parameters, first is beginning Index and 2nd parameter is Ending Index.
+
+        // The Extracted String will include the beginning Index Character but do not Include Ending Index Character.
+
+        // Lets understand, str1.substring(0,5) -> "hello I am good".substring(0,5).
+        
+        // Hence, it will extract everything till 5th index.
+
+        System.out.println(ext1); // OUTPUT:- hello
+
+
+        // I want to Extract good from the String.
+
+        String ext2 = str1.substring(6); // This will extract everything till end.
+
+        // Here in subString fnc, we have given one parameter, only the beginning Index is given, this will extract everything inside a String from beginning index till end, including the last character of String as well.
+
+        System.out.println(ext2); // OUTPUT:- good
+
+        // Strings are immutable means unplayable.
+
+        // You cannot change any character, nor add any character, nor delete any character.
+
+        // -------------------------------------------------------------------
+        // .equals() (Used to check whether two Strings are equal or not)
+        // -------------------------------------------------------------------
+
+        // It is used to check whether two Strings are equal or not, by Its characters.
+
+        String str2 = "Hello"; // A String Variable 'str2' Stored the value "Hello"
+
+        String str3 = "Hello"; // A String Variable 'str3' Stored the value "Hello"
+
+        String str4 = "hello"; // A String Variable 'str4' Stored the value "hello"
+
+        System.out.println(str2.equals(str3)); // OUTPUT:- true
+
+        // Because when str2 is equal to str3, it will return true.
+
+        // Because str2 and str3 are equal, "Hello" and "Hello" are equal.
+
+        System.out.println(str2.equals(str4)); // OUTPUT:- false
+
+        // This will return false because "Hello" and "hello" are not equal.
+
+        // Yes, the Words are Equal but there Case is different.
+
+        // Like in "Hello", H is Uppercase and in "hello", h is Lowercase.
+
+        // So it will return false.
+
+        // -------------------------------------------------------------------
+        // .equalsIgnoreCase() (Used to check whether two Strings are equal or not, ignoring case)
+        // -------------------------------------------------------------------
+
+        // It is used to check whether two Strings are equal or not, by Its characters.
+
+        String str5 = "Hello"; // A String Variable 'str5' Stored the value "Hello"
+
+        String str6 = "Hello"; // A String Variable 'str6' Stored the value "Hello"
+
+        String str7 = "hello"; // A String Variable 'str7' Stored the value "hello"
+
+        System.out.println(str5.equalsIgnoreCase(str6)); // OUTPUT:- true
+
+        // Because when str5 is equal to str6, it will return true.
+
+        // Because str5 and str6 are equal, "Hello" and "Hello" are equal.
+
+        System.out.println(str5.equalsIgnoreCase(str7)); // OUTPUT:- true
+
+        // This will return true because "Hello" and "hello" are equal.
+
+        // The Case is Ignored, so 'H' and 'h' are treated as equal.
+
+        // -------------------------------------------------------------------
+        // .split() (Used to split a String into an array of Strings)
+        // -------------------------------------------------------------------
+
+        // It is the function to split a String into an array of Strings, by using the delimiter.
+
+        // Delimiter is the character which will be used to split the String.
+
+        String str8 = "Hello I am good"; // A String Variable 'str8' Stored the value "Hello I am good"
+
+        String[] arr = str8.split("o"); // A String Array 'arr' will store the value after splitting.
+
+        // Now lets understand the Indexing of String.
+
+        // Indexing starts from 0.
+
+        // So, this is the String, "Hello I am good".
+
+        // In this, String it will split by the delimiter "o" or the Character "o".
+
+        // So, it will split it in "hell" , " I am g" , "d".
+
+        // Because delimiter is "o" and it doesn't count himself in array.
+
+        // First split occurs in "hello I am good" at point o of 'hello'
+
+        // So the before String of 'o' is "hell".
+
+        // Remaining String is " I am good"
+
+        // Next 'o' is at 'good' , and it will return the before String which is "I am g"
+
+        // Remaining String is "od" , and Now 'o' is at 'od' , so it will split before String and return it.
+
+        // Remaining String is "d", and no more delimiter is found.
+
+        // So the last remaining String is "d", which we will be returning as an array.
+
+        for(String word : arr) { // This will Iterate through the array of String and Store each item of the array in the String variable 'word'.
+
+            System.out.println(word); // This will print each item of the array.
+
+        }// for loop ends here.
+
+        // OUTPUT:- 
+        //
+        //      hell
+        //       I am g
+        //
+        //      d
+
+
+        // -------------------------------------------------------------------
+        // .startswith() (Used to check whether a String starts with another String)
+        // -------------------------------------------------------------------
+
+        // It is used to check whether a String starts with the parameter, or not.
+
+        // It will return boolean either true or false.
+
+        String str9 = "Hello"; // A String Variable 'str9' Stored the value "Hello"
+
+        String str10 = "Hello I am good"; // A String Variable 'str10' Stored the value "Hello I am good"
+
+        System.out.println(str9.startsWith("i")); // OUTPUT:- false
+
+        // Because 'str9' which is 'Hello' do not start with 'i'.
+
+        System.out.println(str10.startsWith(str9)); // OUTPUT:- true
+
+        // This output will be true because 'str10' which is "Hello I am good", starts with 'str9' which is 'Hello'.
+
+        // -------------------------------------------------------------------
+        // .endswith() (Used to check whether a String ends with another String)
+        // -------------------------------------------------------------------
+
+        // It is used to check whether a String ends with the parameter, or not.
+
+        // It will return boolean either true or false.
+
+        String str11 = "good"; // A String Variable 'str11' Stored the value "good"
+
+        String str12 = "Hello I am good"; // A String Variable 'str12' Stored the value "Hello I am good"
+
+        System.out.println(str11.endsWith("H")); // OUTPUT:- false
+
+        // Because 'str11' which is 'good' do not end with 'i'.
+
+        System.out.println(str12.endsWith(str9)); // OUTPUT:- true
+
+        // This output will be true because 'str12' which is "Hello I am good", ends with 'str11' which is 'good'.
+
+
+        // -------------------------------------------------------------------
+        // .replace() Function (Definition and Use)
+        // -------------------------------------------------------------------
+
+        // The replace() function is used to replace ALL occurrences of a given character or substring in the original string.
+        // Syntax: 
+        // String newStr = originalString.replace(oldChar/oldSubStr, newChar/newSubStr);
+
+        // It does NOT modify the original string but returns a new string with the replacements.
+
+        String Str1 = "banana"; // A String variable 'Str1' storing 'banana'.
+
+        // Using replace() to replace all occurrences of 'a' with 'o'.
+        String replacedStr1 = Str1.replace('a', 'o'); // Replaces all 'a' with 'o'.
+
+        // Dry Run:
+        // Initial String -> b a n a n a
+        // After Replacement -> b o n o n o
+        // All 'a' characters are replaced with 'o'.
+
+        System.out.println(replacedStr1); // OUTPUT: "bonono"
+
+
+        // -------------------------------------------------------------------
+        // Example 2: Replacing all occurrences of a substring
+        // -------------------------------------------------------------------
+
+        String Str2 = "abcabc"; // A String variable 'Str2' storing 'abcabc'.
+
+        // Using replace() to replace all occurrences of "abc" with "xyz".
+        String replacedStr2 = Str2.replace("abc", "xyz"); // Replaces all "abc" with "xyz".
+
+        // Dry Run:
+        // Initial String -> a b c a b c
+        // After Replacement -> x y z x y z
+        // All "abc" substrings are replaced with "xyz".
+
+        System.out.println(replacedStr2); // OUTPUT: "xyzxyz"
+
+
+        // -------------------------------------------------------------------
+        // Example 3: Replacing digits with letters
+        // -------------------------------------------------------------------
+
+        String Str3 = "123123"; // A String variable 'Str3' storing '123123'.
+
+        // Using replace() to replace all occurrences of '1' with 'A'.
+        String replacedStr3 = Str3.replace('1', 'A'); // Replaces all '1' with 'A'.
+
+        // Dry Run:
+        // Initial String -> 1 2 3 1 2 3
+        // After Replacement -> A 2 3 A 2 3
+        // All '1' digits are replaced with 'A'.
+
+        System.out.println(replacedStr3); // OUTPUT: "A23A23"
+
+
+        // -------------------------------------------------------------------
+        // .replaceFirst() Function (Definition and Use)
+        // -------------------------------------------------------------------
+
+        // The replaceFirst() function is used to replace ONLY the FIRST occurrence of a given character or substring.
+        // Syntax: 
+        // String newStr = originalString.replaceFirst(oldSubStr, newSubStr);
+
+        // It returns a new string where only the first occurrence is replaced.
+
+
+        // -------------------------------------------------------------------
+        // Example 1: Replacing the first occurrence of a substring
+        // -------------------------------------------------------------------
+
+        String Str4 = "hellohello"; // A String variable 'Str4' storing 'hellohello'.
+
+        // Using replaceFirst() to replace the first occurrence of "hello" with "hi".
+        String replacedStr4 = Str4.replaceFirst("hello", "hi"); // Replaces the first "hello" with "hi".
+
+        // Dry Run:
+        // Initial String -> h e l l o h e l l o
+        // After Replacement -> h i h e l l o
+        // Only the first "hello" is replaced with "hi".
+
+        System.out.println(replacedStr4); // OUTPUT: "hihello"
+
+
+        // -------------------------------------------------------------------
+        // Example 2: Replacing the first occurrence of a character
+        // -------------------------------------------------------------------
+
+        String Str5 = "abracadabra"; // A String variable 'Str5' storing 'abracadabra'.
+
+        // Using replaceFirst() to replace the first occurrence of 'a' with 'o'.
+        String replacedStr5 = Str5.replaceFirst("a", "o"); // Replaces the first 'a' with 'o'.
+
+        // Dry Run:
+        // Initial String -> a b r a c a d a b r a
+        // After Replacement -> o b r a c a d a b r a
+        // Only the first 'a' is replaced with 'o'.
+
+        System.out.println(replacedStr5); // OUTPUT: "obracadabra"
+
+
+        // -------------------------------------------------------------------
+        // Example 3: Replacing the first occurrence of a digit
+        // -------------------------------------------------------------------
+
+        String Str6 = "123123"; // A String variable 'Str6' storing '123123'.
+
+        // Using replaceFirst() to replace the first occurrence of "12" with "45".
+        String replacedStr6 = Str6.replaceFirst("12", "45"); // Replaces the first "12" with "45".
+
+        // Dry Run:
+        // Initial String -> 1 2 3 1 2 3
+        // After Replacement -> 4 5 3 1 2 3
+        // Only the first "12" is replaced with "45".
+
+        System.out.println(replacedStr6); // OUTPUT: "453123"
+
+        // -------------------------------------------------------------------
+        // String Functions Overview (trim(), strip(), concat(), toUpperCase(), toLowerCase())
+        // -------------------------------------------------------------------
+
+        // Java provides various string functions to manipulate or modify strings effectively.
+        // These functions return a new string since strings are immutable in Java.
+
+        // -------------------------------------------------------------------
+        // .trim() Function (Definition and Use)
+        // -------------------------------------------------------------------
+
+        // The trim() function is used to remove any leading and trailing spaces from a string.
+        // It does NOT remove spaces in between words or characters.
+        // Syntax: 
+        // String newStr = originalString.trim();
+
+
+        // -------------------------------------------------------------------
+        // Example 1: Using trim() to remove leading and trailing spaces
+        // -------------------------------------------------------------------
+
+        String Str7 = "  hello world  "; // A String variable 'Str7' storing '  hello world  ' (with spaces).
+
+        // Using trim() to remove spaces from the beginning and end of the string.
+        String trimmedStr = Str7.trim(); // Removes the leading and trailing spaces.
+
+        // Dry Run:
+        // Initial String -> "  hello world  "
+        // After trim() -> "hello world"
+        // The spaces before 'hello' and after 'world' are removed.
+
+        System.out.println(trimmedStr); // OUTPUT: "hello world"
+
+        // -------------------------------------------------------------------
+        // .strip() Function (Definition and Use)
+        // -------------------------------------------------------------------
+
+        // The strip() function is similar to trim(), but it also removes Unicode white spaces.
+        // Unicode whitespaces are wider and not covered by the regular trim() function.
+        // Syntax: 
+        // String newStr = originalString.strip();
+
+        // -------------------------------------------------------------------
+        // Example 2: Using strip() to remove leading and trailing spaces (including Unicode spaces)
+        // -------------------------------------------------------------------
+
+        String Str8 = "   hello world   "; // A String variable 'Str8' storing '   hello world   ' (with spaces).
+
+        // Using strip() to remove spaces (including Unicode whitespaces).
+        String strippedStr = Str8.strip(); // Removes leading and trailing spaces.
+
+        // Dry Run:
+        // Initial String -> "   hello world   "
+        // After strip() -> "hello world"
+        // The spaces (including Unicode whitespaces) are removed.
+
+        System.out.println(strippedStr); // OUTPUT: "hello world"
+
+
+        // -------------------------------------------------------------------
+        // .concat() Function (Definition and Use)
+        // -------------------------------------------------------------------
+
+        // The concat() function is used to concatenate (join) two strings together.
+        // It joins the specified string to the end of the original string.
+        // Syntax: 
+        // String newStr = originalString.concat(anotherString);
+
+
+        // -------------------------------------------------------------------
+        // Example 3: Using concat() to join two strings
+        // -------------------------------------------------------------------
+
+        String Str9 = "Hello"; // A String variable 'Str9' storing 'Hello'.
+        String Str10 = " World"; // A String variable 'Str10' storing ' World'.
+
+        // Using concat() to join 'Str9' and 'Str10'.
+        String combinedStr = Str9.concat(Str10); // Joins 'Hello' and ' World'.
+
+        // Dry Run:
+        // Initial String -> "Hello"
+        // Concatenated String -> "Hello World"
+        // The two strings are combined into a single string.
+
+        System.out.println(combinedStr); // OUTPUT: "Hello World"
+
+
+        // -------------------------------------------------------------------
+        // .toUpperCase() Function (Definition and Use)
+        // -------------------------------------------------------------------
+
+        // The toUpperCase() function converts all characters in the string to uppercase.
+        // Syntax: 
+        // String upperStr = originalString.toUpperCase();
+
+        // -------------------------------------------------------------------
+        // Example 4: Using toUpperCase() to convert all characters to uppercase
+        // -------------------------------------------------------------------
+
+        String Str11 = "hello"; // A String variable 'Str11' storing 'hello'.
+
+        // Using toUpperCase() to convert all characters to uppercase.
+        String upperStr = Str11.toUpperCase(); // Converts 'hello' to 'HELLO'.
+
+        // Dry Run:
+        // Initial String -> "hello"
+        // After Conversion -> "HELLO"
+        // All lowercase letters are changed to uppercase.
+
+        System.out.println(upperStr); // OUTPUT: "HELLO"
+
+
+        // -------------------------------------------------------------------
+        // .toLowerCase() Function (Definition and Use)
+        // -------------------------------------------------------------------
+
+        // The toLowerCase() function converts all characters in the string to lowercase.
+        // Syntax: 
+        // String lowerStr = originalString.toLowerCase();
+
+        // -------------------------------------------------------------------
+        // Example 5: Using toLowerCase() to convert all characters to lowercase
+        // -------------------------------------------------------------------
+
+        String Str12 = "WORLD"; // A String variable 'Str12' storing 'WORLD'.
+
+        // Using toLowerCase() to convert all characters to lowercase.
+        String lowerStr = Str12.toLowerCase(); // Converts 'WORLD' to 'world'.
+
+        // Dry Run:
+        // Initial String -> "WORLD"
+        // After Conversion -> "world"
+        // All uppercase letters are changed to lowercase.
+
+        System.out.println(lowerStr); // OUTPUT: "world"
+    }
+
+    static void StringBuilding(){
+        
+    }
+}    
+

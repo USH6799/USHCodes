@@ -133,7 +133,7 @@ public class EscapeSequences {
            System.out.println("*");
          */
 
-        /*
+         /*
            OPTION C:-
            System.out.println("*\n* *\n*");
          */
