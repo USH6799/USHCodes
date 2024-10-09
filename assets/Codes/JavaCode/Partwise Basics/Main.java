@@ -69,7 +69,6 @@ public class Main {
         Arrays();
         Array_2D();
         StringManipulation();
-        StringBuilding();
 
         // Ignore this all things.
 
@@ -4676,8 +4675,5 @@ public class Main {
         System.out.println(lowerStr); // OUTPUT: "world"
     }
 
-    static void StringBuilding(){
-        
-    }
 }    
 

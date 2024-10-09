@@ -181,7 +181,53 @@ public class TypeConversionPractice {
 
         System.out.println(a + (int)(b + c) + 0f);
 
+        /*
 
+        // Lets Break it Down and Understand,
+
+        // due to Java Associativity and Precedence We will solve the Brackets first.
+
+        // (b + c) -> (int + double) 
+
+        // So int v/s double, will result in double.
+
+        // So we have to convert int into double through Implicit Type Conversion.
+
+        // (b + c) -> (101.0 + 5.0) -> 106.0
+
+        // Now, we use (int) which means we have to convert the result from double into int through Explicit Type Conversion.
+
+        // (int)(106.0) -> 106 (integer)
+
+        // Due to Java Associativity and Precedence We will solve it from left to right.
+
+        // (a + (int)(b + c)) -> (a + 106) -> (int + int)
+
+        // So there is need of Type Conversion because both are of Same Datatype.
+
+        // Now (a + 106) -> (10 + 106) -> 116
+
+        // (a + (int)(b + c) + 0f) -> (116 + 0f) 
+
+        // Here 0f means a float value, because f is the suffix of float datatype.
+
+        // (116 + 0f) -> (int + float)
+
+        // So int v/s float, will result in float.
+
+        // So we have to convert int into float through Implicit Type Conversion.
+
+        // (116) -> 116.0 (float)
+
+        // (116.0 + 0f) -> 116.0
+
+        // OUTPUT:- 116.0
+
+
+
+
+
+        */
 
 
 

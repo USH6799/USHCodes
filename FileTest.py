@@ -1,110 +1,101 @@
 import os
 
-def IsAvailable(path):
-    try:
-        open(path , 'r')
-        
-    except:
-        print(path , " Not found")
-        
-def CheckComment(path , symbol):
-    try:
-        data = open(path , 'r').read()
-        
-        if(data.count(symbol) < 10):
-            print(path , " Not commented")
-        
-        else:
-            pass
-        
-    except:
-        print(path , " Not found and Not commented")
-
-    
-
-def GetAllFiles(path , ext , passdata):
-    data = os.listdir(path)
-    for file in data:
-        if file.endswith(ext):
-            passdata.append(file)
-        
-        elif file.count('.'):
-            if file.count("vscode") == 1:
-                continue
-            
-            else:
-                print(file + " Containing dot")
-            
-        else:
-            passdata = GetAllFiles((f"{path}/{file}") , ext , passdata)
-    
-    return passdata
-
-
-def IsPosted(loc , web):
-    # print(loc)
-    for pgm in loc:
-        ans = web.count(pgm)
-        if not ans:
-            print(pgm + " Not Found on Web")
-            pass
-    
-            
-    
-        
-def Initiate(arr , ext , symbol , local):
-    
-    onlinedata = []
+def getAllLinks(data , ext):
+    links = []
     
     while True:
         
-        start = arr.find("assets")
+        start = data.find("assets")
         
-        end = arr.find(ext) + len(ext)
-        
-        if(start == -1 or end == -1):
+        if start == -1:
+            
             break
         
-        path = arr[start : end]
+        end = data.find(ext)
+        
+        end += len(ext)
+        
+        links.append(data[start : end])
+        
+        data = data[end : ]
+        
+    return links
 
+def isCommented(code , comment):
+    
+    data = open(code , 'r' , -1 , 'UTF-8').read()
+    
+    if(data.count(comment) < 10):
         
-        arr = arr[end : ]
+        print(code + " is Not Commented.")
         
-        onlinedata.append(path.split('/')[-1])
-        IsAvailable(path)
-        CheckComment(path , symbol)
-        
-    IsPosted(local , onlinedata)
-          
 
+def isLocalPresent(links , ext):
+    
+    for link in links:
+        
+        try:
+            
+            open(link , 'r' , -1 , 'UTF-8')
+            
+            isCommented(link , ext)
+            
+        except:
+            
+            print(link , ' is On Website But Not Present Locally.')
+            
+def isOnlinePresent(online , local):
+    for file in local:
+        flag = False
+        for data in online:
+            
+            if(file in data):
+                flag = True
+
+        if(not flag):
+            print(file , " is not Present Online")
+
+
+def extractLocalFiles(folder_path , ext):
+    data_files = [] 
+    
+    for root, dirs, files in os.walk(folder_path):
+        
+        for file in files:
+            
+            if file.endswith(ext): 
+                
+                data_files.append(root + "/" + file)
+                
+            elif (file.count(".") >= 1):
+                print(file + " contains Dot.")
+                
+
+    return data_files
+
+
+    
+    
 
 if __name__ == "__main__":
             
-    java = open('JAVA.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
-    python = open('PYTHON.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
+    java_online = open('JAVA.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
 
-    java = java.strip()
-    python = python.strip()
-
-    local_java = GetAllFiles("./assets/Codes/JavaCode" , '.java' , [])
+    python_online = open('PYTHON.html' , 'r').read().split('<main class="content">')[1].split('<div class="note">')[0]
     
-    local_python = GetAllFiles("./assets/Codes/PythonCode" , '.py' , [])
+    java_local = extractLocalFiles("assets/Codes/JavaCode/" , '.java')    
 
-    Initiate(java , ".java" , "//" , local_java)
+    python_local = extractLocalFiles("assets/Codes/PythonCode/" , '.py')    
+
     
-    # print(local_java)
+    online_java_links = getAllLinks(java_online , ".java")
 
-    Initiate(python , ".py" , "#" , local_python)
+    online_python_links = getAllLinks(python_online , ".py")
 
-    # print(local_python)
-    
+    isOnlinePresent(online_java_links , java_local)
 
+    isOnlinePresent(online_python_links , python_local)
 
+    isLocalPresent(online_java_links , '//')
 
-
-        
-
-
-
-
-        
+    isLocalPresent(online_python_links , '#')

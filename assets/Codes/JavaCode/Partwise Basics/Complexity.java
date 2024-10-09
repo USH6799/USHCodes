@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Complexity {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+            
         // --------------------------------------------------------------------------
         //  TIME AND SPACE COMPLEXITY
         // --------------------------------------------------------------------------

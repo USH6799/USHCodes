@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const codeElement = this.parentElement.nextElementSibling;
             toggleCode(codeElement, this);
         });
+
+        arrow.parentElement.addEventListener('click', function() {
+            // Toggle the display of .code element
+            const codeElement = this.nextElementSibling;
+            toggleCode(codeElement, this.lastElementChild);
+        });
     });
 
     // Function to toggle the display of .code element with animation
