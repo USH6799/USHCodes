@@ -1,5 +1,7 @@
 public class TypeConversion {
+    
     public static void main(String[] args) {
+
         // Type Conversion in java means converting one datatype to another datatype.
 
         // There are Two types of Type Conversion In java:-
@@ -129,5 +131,100 @@ public class TypeConversion {
         System.out.println(dt); // OUTPUT:- l
 
         // Because ASCII value of 'l' is 108.
+
+
+        // ------------------------------------------------------------
+
+        double d1 = 10.3;
+
+        System.out.println("Hello" + 12 + d1);
+
+        // Lets Figure Out the Output of this Println() fnc,
+
+        // Remember always, that String datatype or All non-primitive Datatypes have bigger size than Primitive Datatypes.
+
+        // So, print("Hello" + 12 + d1);
+
+        // Remember (+) addition in java goes from left to right.
+
+        // it will be print(String + int + double)
+
+        // so Firstly War between String and Int, and String wins, so int will be Converted into String through Implicit Type Conversion.
+
+        // "Hello" + "12"
+
+        // Now same datatype will Concatenate.
+
+        // Result: "Hello12"
+
+        // Secondly, print("Hello12" + d1) -> (String + double)
+
+        // War Between String and Double Datatype, will result in String Winning.
+
+        // So, Double datatype will be converted into String through implicit type Conversion.
+        
+        // "Hello12" + d1 -> "Hello12" + "10.3" -> "Hello1210.3"
+
+        // So final Result will be of String datatype.
+
+        // OUTPUT:- Hello1210.3
+
+        // But What if i want to add the numbers first and then do further things.
+
+        System.out.println("Hello" + (12 + d1));
+
+        // In this print statement, numbers are covered by () brackets, so they will be Execute first According to Java Associativity and Precedence.
+
+        // (12 + d1) -> (int + double)
+
+        // So Integer Value will be converted into Double value through implicit Type Conversion.
+
+        // (12 + d1) -> (12.0 + 10.3) -> (22.3)
+
+        // In print() statement, now ("Hello" + 22.3) is left.
+
+        // ("Hello" + 22.3) -> (String + double)
+
+        // So We have to convert double datatype into String Datatype.
+
+        // ("Hello" + 22.3) -> ("Hello" + "22.3") -> "Hello22.3"
+
+        // OUTPUT:- Hello22.3
+
+        // ------------------------------------------------------------
+
+        // Some Practice Questions like, find the Output of:-
+
+        /* Question 1.
+
+            System.out.println('a' + 10 + "Hello" + ('e' + 1.0));
+
+         */
+
+        /* Question 2.
+
+            int v1 = 10;
+
+            int v2 = 11;
+
+            double p1 = v1 + v2 + 'V';
+
+            int c1 = (int)p1;
+
+            System.out.println((char)c1);
+
+        */
+
+        /* Question 3.
+
+            int a1 = 10;
+
+            int b1 = 101;
+
+            double c1 = 5;
+
+            System.out.println(a1 + (int)(b1 + c1) + 0f);
+         
+        */
     }
 }

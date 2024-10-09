@@ -105,6 +105,26 @@ public class Basic {
         // For example, words like `default`, `void`, `Integer`, `System`, and `class` are reserved and hold special meanings in Java.
 
         // -------------------------------------------------------------------
+        
+        
+        // -------------------------------------------------------------------
+        // SOME PRACTICE QUESTIONS
+        // -------------------------------------------------------------------
 
+        // Question 1.
+
+        
+        /* What will be the Output.
+
+            System.out.println("a");
+            System.out.print("b");
+            System.out.print("c");
+            System.out.println("d");
+
+        */
+
+        // You will get the answer of This code in next chapter but try to do it first.
+
+        
     }
 }

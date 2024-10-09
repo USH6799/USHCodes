@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Complexity
- */
 public class Complexity {
 
     public static void main(String[] args) {
@@ -93,7 +90,7 @@ public class Complexity {
 
         // In best case approach, we find the minimum no. of operations to find '1' in the list.
 
-        // So we can think that if the numbers are arranged in any order, the best case is that in 1 times.
+        // So we can think that if the numbers are arranged in this order, the best case is that in 1 times.
 
         // So the time complexity is Ω(1).
 
@@ -136,6 +133,8 @@ public class Complexity {
         // In this we have to find the maximum no. of operations to find '1' in the list.
 
         // We can see that the maximum no. of operations will be n.
+
+        // if list = {2 , 3 , 4 , 5 , 1} then no. of operations needed to find '1' will be 5 or n (maximum).
 
         // So the time complexity is O(n).
 
@@ -316,3 +315,68 @@ public class Complexity {
 
     }
 }
+
+
+// -----------------------------------------------------------------
+// PRACTICE QUESTIONS
+// -----------------------------------------------------------------
+
+
+    // Question 1.
+
+    /*  Calculate the Best Case Time Complexity.
+
+        int a = sc.nextInt(); // 'a' should be any positive integer.
+
+        for(int i = 1 ; i <= a ; i++){
+
+            if(i % 2 == 0){
+                continue;
+            }
+            
+        }
+
+    */
+
+
+    // Question 2.
+
+    /*  Calculate the Worst Case Time Complexity.
+
+        int a = 25;
+
+        for(int i = 1 ; i <= a ; i++){
+        
+            for(int j = 1 ; j <= a ; j++){
+
+                System.out.println("hello");
+
+            }
+
+        }
+
+    */
+
+    // Question 3.
+
+    /*  Calculate the Worst Case Time Complexity.
+
+        int a = 10;
+
+        for(int i = 1 ; i <= 15 ; i++){
+        
+            for(int j = 1 ; j <= a ; j++){
+
+                if( i == a){
+                    break;
+                }
+
+            }
+
+        }
+
+        for(int i = 1 ; i <= a ; i++){
+            System.out.println("Hi");
+        }
+
+    */

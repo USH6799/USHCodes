@@ -234,3 +234,44 @@ Step-by-Step Execution:
 9. Print: "The index of the number 5 is 1 and 1".
 10. The program exits.
 */
+
+
+// SOME PRACTICE QUESTIONS:-
+
+// Question 1. Write the Code to Add two Matrix and Display the New Matrix Formed.
+
+/*
+    Example:-
+
+    [1  2  4]     [2  3  4]    [3  5  8]
+    [3  4  6]  +  [1  3  5] => [4  7 11]
+    [2  5  0]     [6  7  8]    [8  12 8] 
+
+*/
+
+// Question 2. Write the Code to Subtract two Matrix and Display the New Matrix Formed.
+
+/*
+    Example:-
+
+    [6  5  4]     [2  3  4]    [4  2  0]
+    [3  4  6]  -  [1  3  5] => [2  1  1]
+    [7  9  9]     [6  7  8]    [1  2  1] 
+    
+ */
+
+
+// Question 3. Write the Code to Transpose a Given matrix and Display the New Matrix.
+    // Transpose means if a matrix of (row X column) then the new matrix will be (column X row).
+
+    /*
+        Example:-
+
+        [6  5  4]       [6  3]
+        [3  4  6]  =>   [5  4]
+                        [4  6]
+
+ */
+
+// The answers are provided in Next Chapter but first try yourself to Do this.
+

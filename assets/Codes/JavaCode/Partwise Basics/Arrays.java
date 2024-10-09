@@ -223,19 +223,19 @@ public class Arrays {
 
         int size = sc.nextInt(); // A variable to store the size of array.
 
-        int[] arr = new int[size]; // A new array of type int with size 'size'.
+        int[] array = new int[size]; // A new array of type int with size 'size'.
 
         for(int i = 0 ; i < size ; i++){ // For Loop Running on Each index of Array.
 
             System.out.print("Enter the value at index " + i + ": "); // Enter the value at each index.
 
-            arr[i] = sc.nextInt(); // Taking Input from user and storing it in array at index i.
+            array[i] = sc.nextInt(); // Taking Input from user and storing it in array at index i.
 
         }// for loop ends here.
 
         // Lets try to Print the Array,
 
-        for(int j : arr){ // For Loop Running on Each item of Array and returning it in int j, for each item.
+        for(int j : array){ // For Loop Running on Each item of Array and returning it in int j, for each item.
 
             System.out.println(j); // We print the value of each index.
 
@@ -245,7 +245,7 @@ public class Arrays {
 
         // Now, it creates an array of type int with size 3.
 
-        // arr = { 0 , 0 , 0 }
+        // array = { 0 , 0 , 0 }
 
         // Empty Array created in memory so array is filled with null values ie. 0.
 
@@ -253,45 +253,45 @@ public class Arrays {
 
         // for i = 0,
 
-        // Taken input from user and stored it in arr[0].
+        // Taken input from user and stored it in array[0].
 
         // Lets think that user enters 5.
 
-        // arr[0] = 5
+        // array[0] = 5
 
-        // arr = { 5 , 0 , 0 }
+        // array = { 5 , 0 , 0 }
 
         // for i = 1,
 
-        // Taken input from user and stored it in arr[1].
+        // Taken input from user and stored it in array[1].
 
         // Lets think that user enters 12.
 
-        // arr[0] = 12
+        // array[0] = 12
 
-        // arr = { 5 , 12 , 0 }
+        // array = { 5 , 12 , 0 }
 
         // for i = 2,
 
-        // Taken input from user and stored it in arr[2].
+        // Taken input from user and stored it in array[2].
 
         // Lets think that user enters 15.
 
-        // arr[2] = 15
+        // array[2] = 15
 
-        // arr = { 5 , 12 , 15 }
+        // array = { 5 , 12 , 15 }
 
-        // Moving Towards the next loop, for printing the value of Array.
+        // Moving Towards the next loop, for printing the value of Arrayay.
 
-        // when int j = 5, arr[0] = 5,
+        // when int j = 5, array[0] = 5,
 
         // OUTPUT:- 5
 
-        // when int j = 12, arr[1] = 12,
+        // when int j = 12, array[1] = 12,
 
         // OUTPUT:- 12
 
-        // when int j = 15, arr[2] = 15,
+        // when int j = 15, array[2] = 15,
 
         // OUTPUT:- 15
 
@@ -383,5 +383,160 @@ public class Arrays {
         // -------------------------------------
 
 
+        // -----------------------------------------------------------------
+        // Question: Take an array input from the user. Search for a Number 'x' in that array and return its index.
+        // -----------------------------------------------------------------
+
+        System.out.print("Enter the size of the array: "); 
+        // Asking the user to input the size of the array.
+
+        int n = sc.nextInt(); 
+        // 'n' is assigned the value that the user enters.
+        // Let's assume the user enters 5.
+        // Now: n = 5
+
+        int[] arr = new int[n]; 
+        // Declaring an integer array of size 'n'. 
+        // Now, 'arr' is an array of size 5, i.e., it can hold 5 integers.
+
+        System.out.println("Enter the elements of the array: "); 
+        // Prompting the user to enter elements for the array.
+
+        for (int i = 0; i < n; i++) { 
+            // This loop will run 'n' times (5 times in this case), asking the user to input array elements.
+
+            arr[i] = sc.nextInt(); 
+            // Inside the loop, the user inputs an integer at index 'i'.
+            // Example: Let's assume user inputs: 3, 7, 8, 12, 5.
+            // After each iteration:
+            // i = 0, arr[0] = 3
+            // i = 1, arr[1] = 7
+            // i = 2, arr[2] = 8
+            // i = 3, arr[3] = 12
+            // i = 4, arr[4] = 5
+            // Final state of array: arr = [3, 7, 8, 12, 5]
+        }
+
+        System.out.print("Enter the number you want to search: "); 
+        // Asking the user to input the number to search in the array.
+
+        int x = sc.nextInt(); 
+        // 'x' is assigned the value that the user enters.
+        // Let's assume the user enters 12.
+        // Now: x = 12
+
+        int index = -1; 
+        // Initializing 'index' with -1, assuming that the number is not found initially.
+        // Now: index = -1
+
+        for (int i = 0; i < n; i++) { 
+            // Loop to traverse each element of the array.
+            // The loop runs from i = 0 to i < n (i.e., i < 5).
+            
+            if (arr[i] == x) { 
+                // Inside the loop, we check if the current array element (arr[i]) matches 'x'.
+
+                index = i; 
+                // If the element matches 'x', we store the index of the found element in 'index'.
+                // Then we break out of the loop since we found the element.
+                break;
+            }
+        }
+
+        if(index == -1){ 
+            // If 'index' remains -1, that means 'x' was not found in the array.
+
+            System.out.println("Number not found"); 
+            // Output a message that the number was not found.
+        }
+        else{ 
+            // If 'index' is updated, then the number 'x' was found.
+
+            System.out.println("The index of the number you searched is: " + index); 
+            // Output the index where the number was found.
+        }
+
+        // *****************************************
+        // Dry Run: (Assuming user inputs 5 elements: [3, 7, 8, 12, 5] and searches for 12.)
+        // *****************************************
+
+        /*
+
+        Iteration-wise breakdown:
+
+        1. User inputs the size of the array 'n = 5'.
+        2. The user then inputs 5 elements for the array: [3, 7, 8, 12, 5].
+        Array at this stage: arr = [3, 7, 8, 12, 5]
+
+        3. User inputs the number 'x = 12' to search in the array.
+
+        4. The 'for' loop begins to traverse each element of the array to check if 'arr[i] == x'.
+
+            - Iteration 1: 
+            i = 0, arr[0] = 3 (3 != 12), so loop continues.
+
+            - Iteration 2: 
+            i = 1, arr[1] = 7 (7 != 12), so loop continues.
+
+            - Iteration 3: 
+            i = 2, arr[2] = 8 (8 != 12), so loop continues.
+
+            - Iteration 4: 
+            i = 3, arr[3] = 12 (12 == 12), condition satisfied.
+            
+            'index' is set to 3.
+            The loop breaks since the element is found.
+
+        5. Since the 'index' is not -1, the final output is:
+        "The index of the number you searched is: 3".
+
+        */
+
+        // In case the user searched for a number that is not present (e.g., 15):
+        /*
+
+        1. The loop would have gone through all the iterations without finding the number, and 'index' would remain -1.
+        2. The output would have been:
+        "Number not found".
+        */
+
+
     }
 }
+
+// -------------------------------------------------------------
+// PRACTICE QUESTIONS
+// -------------------------------------------------------------
+
+//  Question 1. Ask the marks of Student(from user) in 3 Subject and Calculate the total Marks he got.
+//  
+//  Show the Marks of Each subject, and the Total Marks 
+
+
+/*
+
+    Question 2. Ask the marks of Student(from user) for 'n' Subjects(take n as input from user) and Calculate the total Marks he got and find the Average Marks he Got.
+
+    Name the Subjects as Subject 1 , Subject 2 , ... , Subject n.
+
+    Display the Marks got in each Subject, total marks, and the Average marks.
+
+*/
+
+
+/*
+
+    Question 3. Ask the marks of Student(from user) for 'n' Subjects(take n as input from user) and Calculate the total Marks he got and find the Average Marks he Got, also calculate the Percentage, 
+
+    if Percentage is below 34% -> fail,
+    if Percentage is between 35% to 90% -> Pass,
+    if Percentage is Above 90% -> topper
+
+    Name of Each Subject should be taken input from user.
+
+    Show the Complete Result at last.
+
+*/
+
+// You will get the Codes of this Programs, in The Next Chapter.
+// Before that ,try to do this Program and figure out what You have Studied till now.
