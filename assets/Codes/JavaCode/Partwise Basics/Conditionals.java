@@ -481,5 +481,72 @@ public class Conditionals {
         System.out.println(ans); // prints the result.
 
         // ---------------------------------------------------------------
+
+
+        // I would like to tell more thing regarding if , if else, else statments, that there is no need of Writing {} parenthesis in if , if else, else statments if We are writing only one line of Statement inside them.
+
+        // Like,
+
+        if(true) // if condition is true, then this code will be executed.
+        System.out.println("hello"); // OUTPUT:- hello
+
+        // this will run because there is only one statement after if.
+        
     }
+
 }
+
+
+// -----------------------------------------------------------------------------
+// SOME PRACTICE QUESTIONS
+// -----------------------------------------------------------------------------
+
+/*
+
+    // Question 1.
+
+    int a = 5, b = 10, c = 15;  
+
+    if (a < b && b < c)  
+        System.out.print("A");  
+    else if (a > b || b > c)  
+        System.out.print("B");  
+    else  
+        System.out.print("C");  
+
+*/
+
+/*
+
+    // Question 2.
+
+    int x = 20;  
+    if (x < 10)  
+        System.out.print("Low");  
+    else if (x < 30)  
+        System.out.print("Medium");  
+    else  
+        System.out.print("High");
+
+    x += 15;  
+
+    if (x > 30)  
+        System.out.print(" and High");  
+
+*/
+
+/*
+
+    // Question 3.
+
+    int n = 0;  
+    if (n == 0)  
+        System.out.print("Zero");  
+    if (n < 5)  
+        System.out.print(" Less than five");  
+    else  
+        System.out.print(" Greater than or equal to five");  
+
+*/
+
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.

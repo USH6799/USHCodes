@@ -155,3 +155,40 @@ public class MathClass {
    } 
 
 }
+
+
+// -----------------------------------------------------------------------------
+// SOME PRACTICE QUESTIONS
+// -----------------------------------------------------------------------------
+
+/*
+
+    // Question 1.
+
+      int x = -15, y = 8;
+      System.out.println(Math.abs(x) + Math.abs(y) - Math.abs(x - y));
+
+
+*/
+
+/*
+
+    // Question 2.
+
+      double a = 3.0, b = 4.0, c = 5.0;
+      System.out.println(Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) - Math.pow(c, 2)));
+
+
+*/
+
+/*
+
+    // Question 3.
+
+      double randomValue = Math.random() * 100 - 50; 
+      System.out.println(Math.ceil(randomValue));
+
+
+*/
+
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.

@@ -442,3 +442,47 @@ public class Operators {
         System.out.println(s); // Output: 1
     }
 }
+
+
+// -----------------------------------------------------------------------------
+// SOME PRACTICE QUESTIONS
+// -----------------------------------------------------------------------------
+
+/*
+
+    // Question 1.
+
+        int a = 7;
+        int b = 3;
+        int result = ++a - --b + a++ * b-- - --a;
+        System.out.println(result);
+    
+
+*/
+
+/*
+
+    // Question 2.
+
+        int x = 15;
+        int y = 4;
+        int result = x-- / ++y * --x + y++;
+        System.out.println(result);
+
+
+*/
+
+/*
+
+    // Question 3.
+
+        int p = 8;
+        int q = 5;
+        int result = --p % q++ + p-- * ++q - q--;
+        System.out.println(result);
+
+
+*/
+
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.
+

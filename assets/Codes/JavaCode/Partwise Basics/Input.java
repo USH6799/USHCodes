@@ -198,3 +198,59 @@ public class Input {
         System.out.println("Remainder = " + (num1 % num2)); // Printing the Remainder when num1 is divided by num2
     }
 }
+
+
+// -----------------------------------------------------------------------------
+// SOME PRACTICE QUESTIONS
+// -----------------------------------------------------------------------------
+
+/*
+
+    // Question 1.
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (num > 0) {
+            System.out.println("Positive");
+            System.out.print("Enter another number: ");
+            int anotherNum = sc.nextInt();
+            System.out.println("Sum: " + (num + anotherNum));
+        } else {
+            System.out.println("Negative or Zero");
+        } 
+
+*/
+
+/*
+
+    // Question 2.
+
+    // What will happen if the user inputs 'Hello World' for the character input in the following code?
+
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter a Character Value: ");
+        char ch = sc.next().charAt(0);
+        
+        System.out.println("Character: " + ch);
+    
+}
+
+
+*/
+
+/*
+
+    // Question 3.
+
+    Write a program that reads a single line of input containing an integer, a double, and a string, separated by spaces. After reading the input, output the integer multiplied by 2, the double divided by 2, and the string input Concatenated with double value and then Integer value.
+
+    // Ex:- input: 45 92.4 tame2 
+
+    // output: 90 46.2 tame246.290
+
+*/
+
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.

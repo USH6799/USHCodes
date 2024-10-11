@@ -441,3 +441,44 @@ public class MoreString {
         System.out.println(lowerStr); // OUTPUT: "world"
     }
 }
+
+
+// -----------------------------------------------------------------------------
+// SOME PRACTICE QUESTIONS
+// -----------------------------------------------------------------------------
+
+/*
+
+    // Question 1.
+
+        String str = "Data Science is the future.";
+        String result = str.replace("future", "now").substring(5, 15).trim();
+        System.out.println(result.charAt(0) + "" + result.indexOf('c') + result.length());
+
+
+*/
+
+/*
+
+    // Question 2.
+
+        String str1 = "Java";
+        String str2 = "java";
+        String result = (str1.equals(str2) ? str1 : str2).toLowerCase();
+        System.out.println(result.substring(0, 2).concat(result.substring(2).toUpperCase()));
+
+*/
+
+/*
+
+    // Question 3.
+
+    String str = "Split,This,String,Complexity";
+    String[] parts = str.split(",");
+    String result = String.join(" ", parts);
+    System.out.println(result.substring(0, 5).toUpperCase() + parts[2].length());
+
+*/
+
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.
+
