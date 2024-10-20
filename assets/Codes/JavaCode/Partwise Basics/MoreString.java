@@ -1,6 +1,7 @@
 public class MoreString {
 
     public static void main(String[] args) {
+        
         // -------------------------------------------------------------------
         // .substring() (Used to get a substring from a String)
         // -------------------------------------------------------------------
@@ -342,7 +343,7 @@ public class MoreString {
         // -------------------------------------------------------------------
 
         // The strip() function is similar to trim(), but it also removes Unicode white spaces.
-        // Unicode whitespaces are wider and not covered by the regular trim() function.
+        // Unicode whitespace are wider and not covered by the regular trim() function.
         // Syntax: 
         // String newStr = originalString.strip();
 
@@ -352,13 +353,13 @@ public class MoreString {
 
         String Str8 = "   hello world   "; // A String variable 'Str8' storing '   hello world   ' (with spaces).
 
-        // Using strip() to remove spaces (including Unicode whitespaces).
+        // Using strip() to remove spaces (including Unicode whitespace).
         String strippedStr = Str8.strip(); // Removes leading and trailing spaces.
 
         // Dry Run:
         // Initial String -> "   hello world   "
         // After strip() -> "hello world"
-        // The spaces (including Unicode whitespaces) are removed.
+        // The spaces (including Unicode whitespace) are removed.
 
         System.out.println(strippedStr); // OUTPUT: "hello world"
 

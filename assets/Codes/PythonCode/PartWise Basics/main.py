@@ -149,7 +149,7 @@
 
 # Compiler -> Takes a set of code at once, converts it into different forms of code, and gives the final code as binary code which is later executed by the computer. Example - Java language offers Compiler.
 
-# Interpreter -> Takes a line of code, converts it into binary code, runs it, then moves to the next line of code, and repeats the same process for each line of code. Example - JavaScript language offers interpreter.
+# Interpreter -> Takes a line of code, converts it into binary code, runs it, then moves to the next line of code, and repeats the same process for each line of code. Example - Javascript language offers interpreter.
 
 # Python is an interpreted language. It means it uses an interpreter to execute its code.
 
@@ -164,8 +164,7 @@
 # 2. WHAT IS TERMINALS?
 # ----------------------------------------------------------
 
-# Terminal:- It is used to interact with a computer's operating system or execute commands. It provides a way for users to input commands to perform various tasks and receive textual feedback.
-
+# Terminal:- It is used to interact with a computer's operating system or execute commands. It provides a way for users to input commands to perform various tasks and receive textual feedback or feedback.
 
 
 # ----------------------------------------------------------
@@ -192,7 +191,6 @@ print("Variables Begin:- ")
 print()
 
 # A print() function statement to add extra empty lines and printing to make the terminal output better to look at.
-
 
 
 # ----------------------------------------------------------
@@ -237,7 +235,7 @@ print(name) # Now printing the variable. Notice that I don't use "" double quote
 
 # import -> It is a keyword, Wrong variable.
 
-# Corrected Variable: Import 
+# Corrected Variable: Import because there is a keyword import which has meaning in python but Import due to Different case, treated completely different, and declared different from keyword.
 
 # Why variables? What is the use?
 

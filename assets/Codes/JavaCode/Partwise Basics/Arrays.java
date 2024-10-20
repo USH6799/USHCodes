@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Arrays {
     
     public static void main(String[] args) {
+        
         // Array is a Non-Primitive Datatype in Java.
 
         // Array is also as Reference type in Java because when we copy an array, it copies the memory address of the array.

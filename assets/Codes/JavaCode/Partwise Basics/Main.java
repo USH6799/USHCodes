@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         // -------------------------------------------------------------------
 
         // Java is a high-level language, which has both a compiler and an interpreter.
@@ -24,7 +25,7 @@ public class Main {
 
         // class classname {
         //     public static void main(String[] args) {
-
+        //
         //     }
         // }
 
@@ -52,79 +53,104 @@ public class Main {
 
         // -------------------------------------------------------------------
 
-        Basic();
-        EscapeSequences();
-        Variables();
-        Datatypes();
-        Operators();
-        ScannerInput();
-        Conditionals();
-        Looping();
-        Functions();
-        Function1();
-        Function2();
-        MathClass();
-        TypeConversion();
-        Complexity();
-        Arrays();
-        Array_2D();
-        StringManipulation();
 
-        // Ignore this all things.
+        Basic(); // Ignore this.
+        EscapeSequences(); // Ignore this.
+        Variables(); // Ignore this.
+        Datatypes(); // Ignore this.
+        Operators(); // Ignore this.
+        JAVA_BODMAS(); // Ignore this.
+        ScannerInput(); // Ignore this.
+        Conditionals(); // Ignore this.
+        Looping(); // Ignore this.
+        Functions(); // Ignore this.
+        MathClass(); // Ignore this.
+        TypeConversion(); // Ignore this.
+        Complexity(); // Ignore this.
+        Arrays(); // Ignore this.
+        Array_2D(); // Ignore this.
+        StringManipulation(); // Ignore this.
+        buildString(); // Ignore this.
+        Operators_Overview(); // Ignore this.
+        BinaryFusion(); // Ignore this.
+
+        
 
     }
 
     static void Basic() {
-        // To print or display any output on the screen, we use a print statement.
 
-        System.out.println("Hello World");
-        // Output: Hello World
+         // To print or display any output on the screen, we use a print statement.
 
-        // In this, we access the System class, then its object `out`, and call the function `println()` to print the output or value.
+         System.out.println("Hello World");
+         // Output: Hello World
+ 
+         // In this, we access the System class, then its object `out`, and call the function `println()` to print the output or value.
+ 
+         // Remember, all statements in Java end with a terminating symbol or a semicolon (;).
+ 
+         // Java also uses various brackets: parentheses (()), square brackets ([]), and braces ({}), for different purposes like defining scopes.
+ 
+         // -------------------------------------------------------------------
+ 
+         // Difference Between println() and print()
+ 
+         System.out.println("I am on the Same line"); // Here, `println()` adds a new line after printing its statement.
+ 
+         System.out.println("I am on the next Line due to the above println() statement"); // Here, `println()` adds a new line after printing its statement.
+ 
+         System.out.print("I am also on the next Line due to the above print() statement"); // Here, `print()` does not add a new line after printing its statement.
+ 
+         System.out.println(", I am on the same line due to the above print() statement"); // Here, `println()` adds a new line after printing its statement.
+ 
+         /*
+             OUTPUT:
+ 
+             I am on the Same line
+             I am on the next Line due to the above println() statement
+             I am also on the next Line due to the above print() statement, I am on the same line due to the above print() statement
+         */
+ 
+         // -------------------------------------------------------------------
+ 
+         // <- This is a comment. It is not compiled by the compiler and is used to make notes, mark important points, or explain changes for readers.
+ 
+         /*
+             This is
+             a
+             multiline
+             comment, which means you can write as many lines as you want inside this comment without causing an error.
+         */
+ 
+         // The smallest individual unit of code is called a token.
+ 
+         // Java has tokens such as keywords, operators, identifiers, literals, and comments.
+ 
+         // Keywords or reserved words in Java have special meanings and cannot be used as variable names, function names, or in other contexts.
+ 
+         // For example, words like `default`, `void`, `Integer`, `System`, and `class` are reserved and hold special meanings in Java.
+ 
+         // -------------------------------------------------------------------
+         
+         
+         // -------------------------------------------------------------------
+         // SOME PRACTICE QUESTIONS
+         // -------------------------------------------------------------------
+ 
+         // Question 1.
+ 
+         
+         /* What will be the Output.
+ 
+             System.out.println("a");
+             System.out.print("b");
+             System.out.print("c");
+             System.out.println("d");
+ 
+         */
+ 
+         // You will get the answer of This code in next chapter[Ch.1.2] but try to do it first.
 
-        // Remember, all statements in Java end with a terminating symbol or a semicolon (;).
-
-        // Java also uses various brackets: parentheses (()), square brackets ([]), and braces ({}), for different purposes like defining scopes.
-
-        // -------------------------------------------------------------------
-
-        // Difference Between println() and print()
-
-        System.out.println("I am on the Same line"); // Here, `println()` adds a new line after printing its statement.
-
-        System.out.println("I am on the next Line due to the above println() statement"); // Here, `println()` adds a new line after printing its statement.
-
-        System.out.print("I am also on the next Line due to the above print() statement"); // Here, `print()` does not add a new line after printing its statement.
-
-        System.out.println(", I am on the same line due to the above print() statement"); // Here, `println()` adds a new line after printing its statement.
-
-        /*
-        OUTPUT:
-        I am on the Same line
-        I am on the next Line due to the above println() statement
-        I am also on the next Line due to the above print() statement, I am on the same line due to the above print() statement
-        */
-
-        // -------------------------------------------------------------------
-
-        // <- This is a comment. It is not compiled by the compiler and is used to make notes, mark important points, or explain changes for readers.
-
-        /*
-        This is
-        a
-        multiline
-        comment, which means you can write as many lines as you want inside this comment without causing an error.
-        */
-
-        // The smallest individual unit of code is called a token.
-
-        // Java has tokens such as keywords, operators, identifiers, literals, and comments.
-
-        // Keywords or reserved words in Java have special meanings and cannot be used as variable names, function names, or in other contexts.
-
-        // For example, words like `default`, `void`, `Integer`, `System`, and `class` are reserved and hold special meanings in Java.
-
-        // -------------------------------------------------------------------
     }
 
     static void EscapeSequences() {
@@ -260,16 +286,18 @@ public class Main {
            System.out.println("*");
          */
 
-        /*
+         /*
            OPTION C:-
            System.out.println("*\n* *\n*");
          */
 
-        // Try to check all options and their outputs.
+        // Try to check all options and their outputs, you may get the Solution and Its Explanations in next Chapter[Ch.2.2]
+
     }
 
 
     static void Variables() {
+
         // Variables are like Containers to Store some value in memory or Storage.
 
         // Like lets go in maths, Geometry, the most hatred Chapter.
@@ -392,9 +420,11 @@ public class Main {
         // String My_Name = "USH"; this is Correct and doesn't throws any error.
 
         // 4. It cannot Contain Special characters and Operators.
+
     }
 
     static void Datatypes() {
+
         // Let us understand about datatypes before Starting Variables.
 
         // Datatypes are just used to Specify the Type of Data, so that computer can understand it and use it properly.
@@ -588,6 +618,7 @@ public class Main {
         // Lets Do Some Practice and Check Your Understanding:-
 
         /*
+        
            How to Calculate the Below thing:-
            
            a1 X b1
@@ -600,7 +631,7 @@ public class Main {
         
         int b1 = 5; // A Variable 'b1' of Datatype int(Integer), Storing 5.
 
-        int ans = 10; // A Variable 'ans' of datatype int(Integer, Storing Result.
+        int ans = 10; // A Variable 'ans' of datatype int(Integer), Storing Result.
 
         // which Option will give the Same value of ans.
 
@@ -621,12 +652,15 @@ public class Main {
 
         // Try to Copy my Code and Run it in your System and Understand the OUTPUTS.
 
+        // You will get the Solutions and Explanations of These Codes in the Next Chapter[ch.4.2]
+
         // ----------------------------------------------------------------------
 
     }
 
 
     static void Operators() {
+
         // Operators are the symbols which are used to perform certain mathematical or logical operations.
 
         // Arithmetic operators in Java are the same as in Python.
@@ -1063,15 +1097,199 @@ public class Main {
         // %=
 
         int s = 3;
-
+        
         s %= 2; // s %= 2 -> s = s % 2
 
         System.out.println(s); // Output: 1
+
+
+        // -----------------------------------------------------------------------------
+        // SOME PRACTICE QUESTIONS
+        // -----------------------------------------------------------------------------
+
+        /*
+
+            // Question 1.
+
+                int a = 7;
+                int b = 3;
+                int result = ++a - --b + a++ * b-- - --a;
+                System.out.println(result);
+            
+
+        */
+
+        /*
+
+            // Question 2.
+
+                int x = 15;
+                int y = 4;
+                int result = x-- / ++y * --x + y++;
+                System.out.println(result);
+
+
+        */
+
+        /*
+
+            // Question 3.
+
+                int p = 8;
+                int q = 5;
+                int result = --p % q++ + p-- * ++q - q--;
+                System.out.println(result);
+
+
+        */
+
+        // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.5.2].
+
+    }
+
+    static void JAVA_BODMAS(){
+
+        // In Java, Do You know, that java Arithmetic Operations do not follow the Rule of BODMAS.
+
+        // Java is a language in which each operators have different Precedence, and higher Precedence Operators get Evaluated first, then the lower Precedence Operators are Evaluated.
+
+        // Precedence is the Priority level of any operators which decides which Operator's Operations will be executed first.
+
+        // Like,
+
+        int a = 10 - 5 * 2 + 2; // A Variable 'a' of datatype Integer Storing some Arithmetic Values.
+
+        // Here if you think firstly it will subtract 10 from 5 and then multiply it by 2 then add 2.
+
+        // Then you are Wrong, i know java Sees any expression character-wise and keep Solving,
+
+        // but here * has Higher Precedence than + and -, so It will be Evaluated first.
+
+        // Now the Question, what values will be Evaluated with *.
+
+        // In A Operations, like 1 + 4 , here + is the Operator, 1 and 4 are the Operands.
+
+        // In the Same way here, 5 and 2 are the Operands, and * is the operator.
+
+        // 5 * 2 -> 10
+
+        // a = 10 - 10 + 2;
+
+        // Now, here is the main Case, + and - have equal Precedence.
+
+        // Then the Question is which will be Evaluated first?
+
+        // According to BODMAS, we should solve, addition first.
+
+        // But According to Java Associativity of + and - says that they should be solved from left to right.
+
+        // Associativity is defined as the Property given to each operators of Same Precedence form which direction, it should be start Solving in case of Same operators, or the Operators with same Precedence.
+
+        // Now, lets solve from left to right,
+
+        // We see Moving from left to right, we have to solve - first and + later.
+
+        // 10 - 10 -> 0
+
+        // a = 0 + 2
+
+        // a = 2
+
+        // Hence the final value of a is 2.
+
+        System.out.println(a); // OUTPUT:- 2 
+
+        // Lets take one more Example,
+
+        int x = 1; // A Variable 'a' of datatype Integer Storing 1.
+
+        int y = 2; // A Variable 'b' of datatype Integer Storing 2.
+
+        int z = 3; // A Variable 'c' of datatype Integer Storing 3.
+
+        x += z += ~y; // A complex Expression written.
+
+        // In this Complex Expression, lets firstly find out how many Operators are there.
+
+        // There is +=, or Shorthand Operator.
+
+        // There is ~, or Unary Operator.
+
+        // Now, According to Java Precedence, unary Operator(~) has higher Precedence than Shorthand Operator(+=).
+
+        // So, we will firstly Evaluate (~) then (+=).
+
+        // Now, the Expression is like x += z += (~y);
+
+        // Because Brackets have highest Precedence.
+
+        // Now, we have two Same operators (+=) with same Precedence.
+
+        // Here we take help of Java Associativity of this Shorthand Operator, and it says that they should be Evaluated from right to left.
+
+        // So, the final Expression will be x += (z += (~y));
+
+        // Hence, firstly inner Brackets will be Solved then the Outer one.
+
+        
+        // Lets Show you the Chart to Understand it Properly,
+
+        // We are Writing Operators in Decreasing Order of Their Precedence which means the below operator has lower Precedence than Upper Operators.
+
+        // -----------------------------------------------------------------
+        // Operators -> []() (Highest Precedence) Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> ++ -- ~ ! instanceof , Associativity -> Right to Left
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> new (type) , Associativity -> Right to Left
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> * / % , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> + - , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> << >> >>> , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> < > <= >= , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> == != , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> & , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> ^ , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> | , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> && , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> || , Associativity -> Left to Right
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> ? :  , Associativity -> Right to Left
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> = += -= *= /= %= ^= , Associativity -> Right to Left
+        // -----------------------------------------------------------------
+        // -----------------------------------------------------------------
+        // Operators -> &= |= >>= <<= >>>= (Least Precedence), Associativity -> Right to Left
+        // -----------------------------------------------------------------
 
     }
 
     static void ScannerInput() {
 
+        
         // Let us understand how To take input from user.
 
         // For that we have to right two things or statements which are compulsory.
@@ -1138,7 +1356,7 @@ public class Main {
 
         System.out.println("String: " + y); // lets check the value of y.
 
-        // Difference between next(); and nextLine(); fncs.
+        // Difference between next(); and nextLine(); functions.
 
         // This both associate with String datatype.
 
@@ -1262,6 +1480,62 @@ public class Main {
         System.out.println("Quotient = " + (num1 / num2)); // Printing the Quotient when num1 is divided by num2
 
         System.out.println("Remainder = " + (num1 % num2)); // Printing the Remainder when num1 is divided by num2
+
+
+        // -----------------------------------------------------------------------------
+        // SOME PRACTICE QUESTIONS
+        // -----------------------------------------------------------------------------
+
+        /*
+
+            // Question 1.
+
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter a number: ");
+                int num = sc.nextInt();
+
+                if (num > 0) {
+                    System.out.println("Positive");
+                    System.out.print("Enter another number: ");
+                    int anotherNum = sc.nextInt();
+                    System.out.println("Sum: " + (num + anotherNum));
+                } else {
+                    System.out.println("Negative or Zero");
+                } 
+
+        */
+
+        /*
+
+            // Question 2.
+
+            // What will happen if the user inputs 'Hello World' for the character input in the following code?
+
+                Scanner sc = new Scanner(System.in);
+                
+                System.out.print("Enter a Character Value: ");
+                char ch = sc.next().charAt(0);
+                
+                System.out.println("Character: " + ch);
+            
+        }
+
+
+        */
+
+        /*
+
+            // Question 3.
+
+            Write a program that reads a single line of input containing an integer, a double, and a string, separated by spaces. After reading the input, output the integer multiplied by 2, the double divided by 2, and the string input Concatenated with double value and then Integer value.
+
+            // Ex:- input: 45 92.4 tame2 
+
+            // output: 90 46.2 tame246.290
+
+        */
+
+        // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.6.2].
 
     }
 
@@ -1746,9 +2020,77 @@ public class Main {
         System.out.println(ans); // prints the result.
 
         // ---------------------------------------------------------------
+
+
+        // I would like to tell more thing regarding if , if else, else statements, that there is no need of Writing {} parenthesis in if , if else, else statements if We are writing only one line of Statement inside them.
+
+        // Like,
+
+        if(true) // if condition is true, then this code will be executed.
+        System.out.println("hello"); // OUTPUT:- hello
+
+        // this will run because there is only one statement after if.
+        
+    
+
+        // -----------------------------------------------------------------------------
+        // SOME PRACTICE QUESTIONS
+        // -----------------------------------------------------------------------------
+
+        /*
+
+            // Question 1.
+
+            int a = 5, b = 10, c = 15;  
+
+            if (a < b && b < c)  
+                System.out.print("A");  
+            else if (a > b || b > c)  
+                System.out.print("B");  
+            else  
+                System.out.print("C");  
+
+        */
+
+        /*
+
+            // Question 2.
+
+            int x = 20;  
+            if (x < 10)  
+                System.out.print("Low");  
+            else if (x < 30)  
+                System.out.print("Medium");  
+            else  
+                System.out.print("High");
+
+            x += 15;  
+
+            if (x > 30)  
+                System.out.print(" and High");  
+
+        */
+
+        /*
+
+            // Question 3.
+
+            int n = 0;  
+            if (n == 0)  
+                System.out.print("Zero");  
+            if (n < 5)  
+                System.out.print(" Less than five");  
+            else  
+                System.out.print(" Greater than or equal to five");  
+
+        */
+
+        // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.7.2].
+
     }
 
     static void Looping() {
+
         // Lets take an Example and understand looping.
 
         // Think i want to print this statement 100 times.
@@ -2311,7 +2653,9 @@ public class Main {
     }
         
     static void Functions() {
-        
+       Function1();
+
+
         // FUNCTIONS:- THE REUSABLE BLOCK OF CODE
 
         // By its name, u can understand in Short about Functions, actually functions are the part of code which have a specific task to perform by taking some input and providing some output.
@@ -2362,22 +2706,21 @@ public class Main {
 
         // If you use the Static Keyword in the Function Prototype which makes it a Static fnc and then the function do not need any object for Calling it.
 
-        // We will Study OOPs in future and there we will study non-static fncs but here we are going to understand Static Functions so its compulsory to Write static in Function Prototype.
+        // We will Study OOPs in future and there we will study non-static functions but here we are going to understand Static Functions so its compulsory to Write static in Function Prototype.
 
         // We cannot use keywords in place of Function name, it could be anything but not the Keywords.
 
         // There are mainly Two Types of Functions in Java:-
 
-        // PURE AND IMPURE FNCS
+        // PURE AND IMPURE FUNCTIONS
 
         // Pure Function:- A pure function is a function that returns a value, to the caller, it uses the return keyword for returning the value from function and it is compulsory to be used.
 
-        // Pure fncs are those which have a desired return type other then void.
+        // Pure functions are those which have a desired return type other then void.
 
         // Impure Function:- An impure function is a function that does not return a value, to the caller, it may use or may not use the return keyword for returning the value from function and it is not compulsory to be used.
 
-        // Impure fncs are all those Functions which have their return type as void.
-
+        // Impure functions are all those Functions which have their return type as void.
 
     }
 
@@ -2449,6 +2792,46 @@ public class Main {
         System.out.println(x1); // OUTPUT:- 12
 
         System.out.println(y1); // OUTPUT:- 15
+
+
+        // ---------------------------------------------------------------------------------------------------
+        // TRY SOME PRACTICE questions.
+        // ---------------------------------------------------------------------------------------------------
+
+        // create a function to do the following questions.
+
+        // --------------------------------------------------------------------------
+            // Question 1: Enter 3 numbers from the user and print their average.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 2: Print the sum of all odd numbers from 1 to n.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 3: Take two numbers and find the greatest among them.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 4: Check if a person is eligible to vote based on their age.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 5: Calculate the area and circumference of a circle given its radius.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 6: Ask the user to enter numbers until they stop, and count how many positive, negative, and zero numbers were entered.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 7: Calculate the result of x^n (x raised to the power of n).
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 8: Find the greatest common divisor (GCD) of two numbers.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+            // Question 9: Print the Fibonacci series till n.
+            // --------------------------------------------------------------------------
+        // --------------------------------------------------------------------------
+
+
+        // You will get these Functions Programs Solution and explanations in Next Chapter[Ch.10.3]
+
     }
 
     // Lets create a Function to Input the Name of the User and greet him.
@@ -2680,7 +3063,44 @@ public class Main {
         // Its return type is Double
 
         System.out.println(Math.PI); // OUTPUT:- 3.141592653589793
-        
+
+
+        // -----------------------------------------------------------------------------
+        // SOME PRACTICE QUESTIONS
+        // -----------------------------------------------------------------------------
+
+        /*
+
+            // Question 1.
+
+            int x = -15, y = 8;
+            System.out.println(Math.abs(x) + Math.abs(y) - Math.abs(x - y));
+
+
+        */
+
+        /*
+
+            // Question 2.
+
+            double a = 3.0, b = 4.0, c = 5.0;
+            System.out.println(Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) - Math.pow(c, 2)));
+
+
+        */
+
+        /*
+
+            // Question 3.
+
+            double randomValue = Math.random() * 100 - 50; 
+            System.out.println(Math.ceil(randomValue));
+
+
+        */
+
+        // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.11.2].
+
     }
 
 
@@ -2816,11 +3236,110 @@ public class Main {
 
         // Because ASCII value of 'l' is 108.
 
+
+        // ------------------------------------------------------------
+
+        double d1 = 10.3;
+
+        System.out.println("Hello" + 12 + d1);
+
+        // Lets Figure Out the Output of this Println() fnc,
+
+        // Remember always, that String datatype or All non-primitive Datatypes have bigger size than Primitive Datatypes.
+
+        // So, print("Hello" + 12 + d1);
+
+        // Remember (+) addition in java goes from left to right.
+
+        // it will be print(String + int + double)
+
+        // so Firstly War between String and Int, and String wins, so int will be Converted into String through Implicit Type Conversion.
+
+        // "Hello" + "12"
+
+        // Now same datatype will Concatenate.
+
+        // Result: "Hello12"
+
+        // Secondly, print("Hello12" + d1) -> (String + double)
+
+        // War Between String and Double Datatype, will result in String Winning.
+
+        // So, Double datatype will be converted into String through implicit type Conversion.
+        
+        // "Hello12" + d1 -> "Hello12" + "10.3" -> "Hello1210.3"
+
+        // So final Result will be of String datatype.
+
+        // OUTPUT:- Hello1210.3
+
+        // But What if i want to add the numbers first and then do further things.
+
+        System.out.println("Hello" + (12 + d1));
+
+        // In this print statement, numbers are covered by () brackets, so they will be Execute first According to Java Associativity and Precedence.
+
+        // (12 + d1) -> (int + double)
+
+        // So Integer Value will be converted into Double value through implicit Type Conversion.
+
+        // (12 + d1) -> (12.0 + 10.3) -> (22.3)
+
+        // In print() statement, now ("Hello" + 22.3) is left.
+
+        // ("Hello" + 22.3) -> (String + double)
+
+        // So We have to convert double datatype into String Datatype.
+
+        // ("Hello" + 22.3) -> ("Hello" + "22.3") -> "Hello22.3"
+
+        // OUTPUT:- Hello22.3
+
+        // ------------------------------------------------------------
+
+        // Some Practice Questions like, find the Output of:-
+
+        /* Question 1.
+
+            System.out.println('a' + 10 + "Hello" + ('e' + 1.0));
+
+         */
+
+        /* Question 2.
+
+            int v1 = 10;
+
+            int v2 = 11;
+
+            double p1 = v1 + v2 + 'V';
+
+            int c1 = (int)p1;
+
+            System.out.println((char)c1);
+
+        */
+
+        /* Question 3.
+
+            int a1 = 10;
+
+            int b1 = 101;
+
+            double c1 = 5;
+
+            System.out.println(a1 + (int)(b1 + c1) + 0f);
+         
+        */
+
+         // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.12.2].
+
+
     }
 
 
     static void Complexity(){
 
+            
         // --------------------------------------------------------------------------
         //  TIME AND SPACE COMPLEXITY
         // --------------------------------------------------------------------------
@@ -2908,7 +3427,7 @@ public class Main {
 
         // In best case approach, we find the minimum no. of operations to find '1' in the list.
 
-        // So we can think that if the numbers are arranged in any order, the best case is that in 1 times.
+        // So we can think that if the numbers are arranged in this order, the best case is that in 1 times.
 
         // So the time complexity is Ω(1).
 
@@ -2951,6 +3470,8 @@ public class Main {
         // In this we have to find the maximum no. of operations to find '1' in the list.
 
         // We can see that the maximum no. of operations will be n.
+
+        // if list = {2 , 3 , 4 , 5 , 1} then no. of operations needed to find '1' will be 5 or n (maximum).
 
         // So the time complexity is O(n).
 
@@ -3128,6 +3649,74 @@ public class Main {
         // So we can say the Best Case Time Complexity is O(n).
 
         // And the Worst Case Time Complexity is O(n^3).
+
+
+
+        // -----------------------------------------------------------------
+        // PRACTICE QUESTIONS
+        // -----------------------------------------------------------------
+
+        // Question 1.
+
+        /*  Calculate the Best Case Time Complexity.
+
+            int a = sc.nextInt(); // 'a' should be any positive integer.
+
+            for(int i = 1 ; i <= a ; i++){
+
+                if(i % 2 == 0){
+                    continue;
+                }
+                
+            }
+
+        */
+
+
+        // Question 2.
+
+        /*  Calculate the Worst Case Time Complexity.
+
+            int a = 25;
+
+            for(int i = 1 ; i <= a ; i++){
+            
+                for(int j = 1 ; j <= a ; j++){
+
+                    System.out.println("hello");
+
+                }
+
+            }
+
+        */
+
+        // Question 3.
+
+        /*  Calculate the Worst Case Time Complexity.
+
+            int a = 10;
+
+            for(int i = 1 ; i <= 15 ; i++){
+            
+                for(int j = 1 ; j <= a ; j++){
+
+                    if( i == a){
+                        break;
+                    }
+
+                }
+
+            }
+
+            for(int i = 1 ; i <= a ; i++){
+                System.out.println("Hi");
+            }
+
+        */
+
+         // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.13.2].
+
 
     }
 
@@ -3353,19 +3942,19 @@ public class Main {
 
         int size = sc.nextInt(); // A variable to store the size of array.
 
-        int[] arr = new int[size]; // A new array of type int with size 'size'.
+        int[] array = new int[size]; // A new array of type int with size 'size'.
 
         for(int i = 0 ; i < size ; i++){ // For Loop Running on Each index of Array.
 
             System.out.print("Enter the value at index " + i + ": "); // Enter the value at each index.
 
-            arr[i] = sc.nextInt(); // Taking Input from user and storing it in array at index i.
+            array[i] = sc.nextInt(); // Taking Input from user and storing it in array at index i.
 
         }// for loop ends here.
 
         // Lets try to Print the Array,
 
-        for(int j : arr){ // For Loop Running on Each item of Array and returning it in int j, for each item.
+        for(int j : array){ // For Loop Running on Each item of Array and returning it in int j, for each item.
 
             System.out.println(j); // We print the value of each index.
 
@@ -3375,7 +3964,7 @@ public class Main {
 
         // Now, it creates an array of type int with size 3.
 
-        // arr = { 0 , 0 , 0 }
+        // array = { 0 , 0 , 0 }
 
         // Empty Array created in memory so array is filled with null values ie. 0.
 
@@ -3383,45 +3972,45 @@ public class Main {
 
         // for i = 0,
 
-        // Taken input from user and stored it in arr[0].
+        // Taken input from user and stored it in array[0].
 
         // Lets think that user enters 5.
 
-        // arr[0] = 5
+        // array[0] = 5
 
-        // arr = { 5 , 0 , 0 }
+        // array = { 5 , 0 , 0 }
 
         // for i = 1,
 
-        // Taken input from user and stored it in arr[1].
+        // Taken input from user and stored it in array[1].
 
         // Lets think that user enters 12.
 
-        // arr[0] = 12
+        // array[0] = 12
 
-        // arr = { 5 , 12 , 0 }
+        // array = { 5 , 12 , 0 }
 
         // for i = 2,
 
-        // Taken input from user and stored it in arr[2].
+        // Taken input from user and stored it in array[2].
 
         // Lets think that user enters 15.
 
-        // arr[2] = 15
+        // array[2] = 15
 
-        // arr = { 5 , 12 , 15 }
+        // array = { 5 , 12 , 15 }
 
-        // Moving Towards the next loop, for printing the value of Array.
+        // Moving Towards the next loop, for printing the value of Arrayay.
 
-        // when int j = 5, arr[0] = 5,
+        // when int j = 5, array[0] = 5,
 
         // OUTPUT:- 5
 
-        // when int j = 12, arr[1] = 12,
+        // when int j = 12, array[1] = 12,
 
         // OUTPUT:- 12
 
-        // when int j = 15, arr[2] = 15,
+        // when int j = 15, array[2] = 15,
 
         // OUTPUT:- 15
 
@@ -3513,6 +4102,160 @@ public class Main {
         // -------------------------------------
 
 
+        // -----------------------------------------------------------------
+        // Question: Take an array input from the user. Search for a Number 'x' in that array and return its index.
+        // -----------------------------------------------------------------
+
+        System.out.print("Enter the size of the array: "); 
+        // Asking the user to input the size of the array.
+
+        int n = sc.nextInt(); 
+        // 'n' is assigned the value that the user enters.
+        // Let's assume the user enters 5.
+        // Now: n = 5
+
+        int[] arr = new int[n]; 
+        // Declaring an integer array of size 'n'. 
+        // Now, 'arr' is an array of size 5, i.e., it can hold 5 integers.
+
+        System.out.println("Enter the elements of the array: "); 
+        // Prompting the user to enter elements for the array.
+
+        for (int i = 0; i < n; i++) { 
+            // This loop will run 'n' times (5 times in this case), asking the user to input array elements.
+
+            arr[i] = sc.nextInt(); 
+            // Inside the loop, the user inputs an integer at index 'i'.
+            // Example: Let's assume user inputs: 3, 7, 8, 12, 5.
+            // After each iteration:
+            // i = 0, arr[0] = 3
+            // i = 1, arr[1] = 7
+            // i = 2, arr[2] = 8
+            // i = 3, arr[3] = 12
+            // i = 4, arr[4] = 5
+            // Final state of array: arr = [3, 7, 8, 12, 5]
+        }
+
+        System.out.print("Enter the number you want to search: "); 
+        // Asking the user to input the number to search in the array.
+
+        int x = sc.nextInt(); 
+        // 'x' is assigned the value that the user enters.
+        // Let's assume the user enters 12.
+        // Now: x = 12
+
+        int index = -1; 
+        // Initializing 'index' with -1, assuming that the number is not found initially.
+        // Now: index = -1
+
+        for (int i = 0; i < n; i++) { 
+            // Loop to traverse each element of the array.
+            // The loop runs from i = 0 to i < n (i.e., i < 5).
+            
+            if (arr[i] == x) { 
+                // Inside the loop, we check if the current array element (arr[i]) matches 'x'.
+
+                index = i; 
+                // If the element matches 'x', we store the index of the found element in 'index'.
+                // Then we break out of the loop since we found the element.
+                break;
+            }
+        }
+
+        if(index == -1){ 
+            // If 'index' remains -1, that means 'x' was not found in the array.
+
+            System.out.println("Number not found"); 
+            // Output a message that the number was not found.
+        }
+        else{ 
+            // If 'index' is updated, then the number 'x' was found.
+
+            System.out.println("The index of the number you searched is: " + index); 
+            // Output the index where the number was found.
+        }
+
+        // *****************************************
+        // Dry Run: (Assuming user inputs 5 elements: [3, 7, 8, 12, 5] and searches for 12.)
+        // *****************************************
+
+        /*
+
+        Iteration-wise breakdown:
+
+        1. User inputs the size of the array 'n = 5'.
+        2. The user then inputs 5 elements for the array: [3, 7, 8, 12, 5].
+        Array at this stage: arr = [3, 7, 8, 12, 5]
+
+        3. User inputs the number 'x = 12' to search in the array.
+
+        4. The 'for' loop begins to traverse each element of the array to check if 'arr[i] == x'.
+
+            - Iteration 1: 
+            i = 0, arr[0] = 3 (3 != 12), so loop continues.
+
+            - Iteration 2: 
+            i = 1, arr[1] = 7 (7 != 12), so loop continues.
+
+            - Iteration 3: 
+            i = 2, arr[2] = 8 (8 != 12), so loop continues.
+
+            - Iteration 4: 
+            i = 3, arr[3] = 12 (12 == 12), condition satisfied.
+            
+            'index' is set to 3.
+            The loop breaks since the element is found.
+
+        5. Since the 'index' is not -1, the final output is:
+        "The index of the number you searched is: 3".
+
+        */
+
+        // In case the user searched for a number that is not present (e.g., 15):
+        /*
+
+        1. The loop would have gone through all the iterations without finding the number, and 'index' would remain -1.
+        2. The output would have been:
+        "Number not found".
+        */
+
+        // -------------------------------------------------------------
+        // PRACTICE QUESTIONS
+        // -------------------------------------------------------------
+
+        //  Question 1. Ask the marks of Student(from user) in 3 Subject and Calculate the total Marks he got.
+        //  
+        //  Show the Marks of Each subject, and the Total Marks 
+
+
+        /*
+
+            Question 2. Ask the marks of Student(from user) for 'n' Subjects(take n as input from user) and Calculate the total Marks he got and find the Average Marks he Got.
+
+            Name the Subjects as Subject 1 , Subject 2 , ... , Subject n.
+
+            Display the Marks got in each Subject, total marks, and the Average marks.
+
+        */
+
+
+        /*
+
+            Question 3. Ask the marks of Student(from user) for 'n' Subjects(take n as input from user) and Calculate the total Marks he got and find the Average Marks he Got, also calculate the Percentage, 
+
+            if Percentage is below 34% -> fail,
+            if Percentage is between 35% to 90% -> Pass,
+            if Percentage is Above 90% -> topper
+
+            Name of Each Subject should be taken input from user.
+
+            Show the Complete Result at last.
+
+        */
+
+        // You will get the Codes of this Programs, in The Next Chapter[Ch.14.3].
+        // Before that ,try to do this Program and figure out what You have Studied till now.
+
     }
    
     static void Array_2D(){
@@ -3527,11 +4270,13 @@ public class Main {
 
         // Let's represent this matrix example visually:
         /*
+        
             [ 0,0 | 0,1 | 0,2 | 0,3 ]  -> Row 0
             [ 1,0 | 1,1 | 1,2 | 1,3 ]  -> Row 1
             [ 2,0 | 2,1 | 2,2 | 2,3 ]  -> Row 2
             [ 3,0 | 3,1 | 3,2 | 3,3 ]  -> Row 3
             [ 4,0 | 4,1 | 4,2 | 4,3 ]  -> Row 4
+
         */
         
         // Now, we will create a 2D array of integers with 5 rows and 4 columns.
@@ -3692,12 +4437,11 @@ public class Main {
             System.out.println("Number " + x + " not found in the matrix.");
         }
 
-
         /*
         Dry Run of the Code:
-        
+
         Let's assume the following input during the execution of the code:
-        
+
         - Number of rows (r): 3
         - Number of columns (c): 3
         - Matrix values:
@@ -3711,9 +4455,9 @@ public class Main {
             Enter the value at [2][1]: 8
             Enter the value at [2][2]: 9
         - Number to search (x): 5
-        
+
         Step-by-Step Execution:
-        
+
         1. Initialize Scanner.
         2. Prompt for rows (r) = 3.
         3. Prompt for columns (c) = 3.
@@ -3746,9 +4490,51 @@ public class Main {
         10. The program exits.
         */
 
+
+        // SOME PRACTICE QUESTIONS:-
+
+        // Question 1. Write the Code to Add two Matrix and Display the New Matrix Formed.
+
+        /*
+            Example:-
+
+            [1  2  4]     [2  3  4]    [3  5  8]
+            [3  4  6]  +  [1  3  5] => [4  7 11]
+            [2  5  0]     [6  7  8]    [8  12 8] 
+
+        */
+
+        // Question 2. Write the Code to Subtract two Matrix and Display the New Matrix Formed.
+
+        /*
+            Example:-
+
+            [6  5  4]     [2  3  4]    [4  2  0]
+            [3  4  6]  -  [1  3  5] => [2  1  1]
+            [7  9  9]     [6  7  8]    [1  2  1] 
+            
+        */
+
+
+        // Question 3. Write the Code to Transpose a Given matrix and Display the New Matrix.
+            // Transpose means if a matrix of (row X column) then the new matrix will be (column X row).
+
+            /*
+                Example:-
+
+                [6  5  4]       [6  3]
+                [3  4  6]  =>   [5  4]
+                                [4  6]
+
+        */
+
+        // The answers are provided in Next Chapter[Ch.14.4] but first try yourself to Do this.
+
+
     }    
 
     static void StringManipulation(){
+
         // String is a non-primitive datatype value.
 
         // It is the Collection of Characters, or the Sequence of Characters.
@@ -3784,7 +4570,7 @@ public class Main {
         // -------------------------------------------------------------------
 
         Scanner sc = new Scanner(System.in);
-        // creating sc object of Scanner class for taking input or running input fncs.
+        // creating sc object of Scanner class for taking input or running input functions.
 
         String name = sc.next(); // This will take only the first word of the String and Store it in variable 'name';
 
@@ -4576,7 +5362,7 @@ public class Main {
         // -------------------------------------------------------------------
 
         // The strip() function is similar to trim(), but it also removes Unicode white spaces.
-        // Unicode whitespaces are wider and not covered by the regular trim() function.
+        // Unicode whitespace are wider and not covered by the regular trim() function.
         // Syntax: 
         // String newStr = originalString.strip();
 
@@ -4586,13 +5372,13 @@ public class Main {
 
         String Str8 = "   hello world   "; // A String variable 'Str8' storing '   hello world   ' (with spaces).
 
-        // Using strip() to remove spaces (including Unicode whitespaces).
+        // Using strip() to remove spaces (including Unicode whitespace).
         String strippedStr = Str8.strip(); // Removes leading and trailing spaces.
 
         // Dry Run:
         // Initial String -> "   hello world   "
         // After strip() -> "hello world"
-        // The spaces (including Unicode whitespaces) are removed.
+        // The spaces (including Unicode whitespace) are removed.
 
         System.out.println(strippedStr); // OUTPUT: "hello world"
 
@@ -4673,6 +5459,845 @@ public class Main {
         // All uppercase letters are changed to lowercase.
 
         System.out.println(lowerStr); // OUTPUT: "world"
+
+        // -----------------------------------------------------------------------------
+        // SOME PRACTICE QUESTIONS
+        // -----------------------------------------------------------------------------
+
+        /*
+
+            // Question 1.
+
+                String str = "Data Science is the future.";
+                String result = str.replace("future", "now").substring(5, 15).trim();
+                System.out.println(result.charAt(0) + "" + result.indexOf('c') + result.length());
+
+
+        */
+
+        /*
+
+            // Question 2.
+
+                String str1 = "Java";
+                String str2 = "java";
+                String result = (str1.equals(str2) ? str1 : str2).toLowerCase();
+                System.out.println(result.substring(0, 2).concat(result.substring(2).toUpperCase()));
+
+        */
+
+        /*
+
+            // Question 3.
+
+            String str = "Split,This,String,Complexity";
+            String[] parts = str.split(",");
+            String result = String.join(" ", parts);
+            System.out.println(result.substring(0, 5).toUpperCase() + parts[2].length());
+
+        */
+
+        // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.15.3].
+
+    }
+
+    static void buildString(){
+
+        // We know, from Earlier Chapters, that Strings are Immutable, that cannot be edited, nor the characters deleted or Changed.
+
+        // This is due to Heap Memory in which our all String data Get Stored.
+
+        // There are mainly Two Spaces of Memory:
+
+        // Stack Memory:- In which all the data, are Stacked one Upon another and Executed from top to Bottom.
+
+        // like i have created some variables.
+
+        int a = 13; // A variable 'a' of datatype Integer Storing Integer.
+
+        double b = 1.3; // A variable 'b' of datatype Double Storing double.
+
+        boolean c = true; // A variable 'c' of datatype boolean Storing true.
+
+        // In the Stack Memory, they are Stored like this.
+
+        /* STACK MEMORY and Heap memory
+
+            |        |
+            ----------
+            |   c    | --------> Inside heap memory 13 is Stored and c is pointing towards 13 as its Value.
+            ----------
+            |   b    | --------> Inside heap memory 1.3 is Stored and b is pointing towards 1.3 as its Value.
+            ----------
+            |   a    | --------> Inside heap memory 13 is Stored and a is pointing towards 13 as its Value.
+            ----------
+
+            This is know as Stack Memory in which data is arranged in form of Stacks,
+
+
+            // Heap Memory is the type of Memory in which data are not arranged in form of Stacks or any order, it is just an empty space, where the values are stored, and reference are passed to Variables.
+
+            // It first Stores a then b then c, from down to top.
+
+            // but during Operations, firstly the Upper Stack will be removed then lower Stacks are Removed.
+         
+         */
+
+        // Whenever we add, something in String, that it doesn't change the value of That String, but created a new value and Start pointing towards it. and Deletes the Old value.
+
+        String str = "h";  // Inside Stack Memory, str is Stored.
+
+        // Inside heap memory, "h" is Stored and str is pointing towards it[referencing].
+
+        str = str + "e"; // Inside Stack Memory, str is Stored Already so no new data is created.
+
+        // Inside heap memory, "h" data is Deleted, and new data "he" is Created and Now str is pointing towards it[referencing].
+
+        str = str + "l"; // Inside Stack Memory, str is Stored Already so no new data is created.
+
+        // Inside heap memory, "he" data is Deleted, and new data "hel" is Created and Now str is pointing towards it[referencing].
+
+        str = str + "l"; // Inside Stack Memory, str is Stored Already so no new data is created.
+
+        // Inside heap memory, "hel" data is Deleted, and new data "hell" is Created and Now str is pointing towards it[referencing].
+
+        str = str + "o"; // Inside Stack Memory, str is Stored Already so no new data is created.
+
+        // Inside heap memory, "hell" data is Deleted, and new data "hello" is Created and Now str is pointing towards it[referencing].
+
+        // Here due to this Deletion and Recreation of values, this might take some time, in ms, which is negligible for us but when we want to manipulate String at high level, or in big Software, this might take time in Seconds, which is not good for user and reduces its Experience.
+
+        // For this, Solution formed and Know as StringBuilder, which manipulates and Change the data rather Then deleting and Recreating.
+
+        // Lets Understand About String Builder class.
+
+        // Syntax will be same as Syntax of Object Creation.
+
+        // Here the StringBuilder class do not Create variable, but creates Objects.
+
+        // Syntax:- <className> <object name> = new <className> ();
+
+        // className: StringBuilder
+
+        // Syntax for StringBuilder:- StringBuilder <object name> = new StringBuilder(<value>);
+
+        // Lets create our 1st Variable sb.
+    
+        StringBuilder sb = new StringBuilder("Hello Guys"); // Here we are Creating Object of String Builder.
+
+        // The variable 'sb' is Storing the value "Hello Guys"
+
+        System.out.println(sb); // OUTPUT:- Hello Guys
+
+        // Lets know about Some functions of String Builder class Which is used to manipulate String.
+
+        // -----------------------------------------------------------------------------
+        // <string>.charAt(<index>); To get the character at given index.
+        // -----------------------------------------------------------------------------
+
+        // Lets get the First Character of the String.
+
+        // Lets do the Indexing First.
+
+        // String -> H e l l o   G u y s
+        // Index  -> 0 1 2 3 4 5 6 7 8 9
+
+        // So, lets get the first Character means the Character at index 0.
+
+        System.out.println(sb.charAt(0)); // OUTPUT:- H
+
+        // -----------------------------------------------------------------------------
+        // <string>.setCharAt(<old index>, <new char>); To set the character at given index.
+        // -----------------------------------------------------------------------------
+
+        // Now lets Understand to Set characters or Change Characters at a Given Index.
+
+        // Lets do the Indexing First.
+
+        // String -> H e l l o   G u y s
+        // Index  -> 0 1 2 3 4 5 6 7 8 9
+
+        // I want to Change this "Hello guys" to "Hello boys"
+
+        // so to do that i have to Change two characters ie. "G" and "u".
+
+        // So, index of 'G' is 6.
+        // So, index of 'u' is 7.
+
+        sb.setCharAt(6, 'B'); // Changing the value of 'G' to 'B'
+
+        // This function will change the Character at given index (index 6) by the new Character 'B'.
+
+        System.out.println(sb); // OUTPUT:- Hello Buys
+
+        // this is not that i wanted, so lets claim it.
+
+        // I want to Change one more Character at index 7.
+
+        sb.setCharAt(7, 'o'); // Changing the value of 'u' to 'o'
+
+        // This function will change the Character at index 7 by the new Character 'o'.
+
+        System.out.println(sb); // OUTPUT:- Hello Boys
+
+        // ------------------------------------------------------------------------------
+        // <string>.insert(<index>, <value>); To Insert the value at given index.
+        // -----------------------------------------------------------------------------
+
+        // This Function is used to add new Characters in the String.
+
+        // Here "Hello Boys" look incomplete due to full stop(.), so lets add it.
+
+        // Lets do the Indexing First.
+
+        // String -> H e l l o   B o y s
+        // Index  -> 0 1 2 3 4 5 6 7 8 9
+
+        // Here i want to add a new Character at last means after 9th index, or i mean at 10th index.
+
+        sb.insert(10, '.'); // Adding a new Character at 10th index
+
+        // Here This function will add a new Character '.' at Given Index (10th index).
+
+        System.out.println(sb); // OUTPUT:- Hello Boys.
+
+        // I want to add an Extra 's' before full Stop(.)
+
+        // Lets do the Indexing First,
+
+        // String -> H e l l o   B o y s .
+        // Index  -> 0 1 2 3 4 5 6 7 8 9 10
+
+        // So this means I want to add an Extra character at 9th Index.
+
+        sb.insert(9, 's'); // Adding a new Character at 9th index
+
+        // Here This function will add a new Character 's' at Given Index (9th index).
+
+        System.out.println(sb); // OUTPUT:- Hello Boyss.
+
+        // Now, see the Indexing:-
+
+        // String -> H e l l o   B o y s s  .
+        // Index  -> 0 1 2 3 4 5 6 7 8 9 10 11
+
+        // Here we have added a new character 's' at index 9 and shifted the rest string part forward.
+
+
+        // ------------------------------------------------------------------------------
+        // <string>.delete(<start index>, <end index>); To delete the characters between start and end index.
+        // ------------------------------------------------------------------------------
+
+        // Lets delete "llo" from "hello Boyss.".
+
+        // Lets do the indexing first,
+
+        // String -> H e l l o   B o y s s  .
+        // Index  -> 0 1 2 3 4 5 6 7 8 9 10 11
+
+        // So i want to delete from index 2 till index 4.
+
+        sb.delete(2, 5); // Deleting the characters between 2nd and 5th index.
+
+        // I had written 2nd Index because it is inclusive, or included in deleting, means the Character at index 2 will be deleted.
+
+        // I had written 5th index because it is exclusive, or not included in deleting, means the Character at index 5 will not be deleted.
+
+        // It will delete everything from 2nd Index till 5th Index.
+
+        // but not include the 5th index or you can say till 4th index.
+
+        System.out.println(sb); // OUTPUT:- He Boyss.
+
+        // I also wanted to Delete that extra 's'.
+
+        // Lets do the Indexing first,
+
+        // String -> H e   B o y s s .
+        // Index  -> 0 1 2 3 4 5 6 7 8 
+
+        // So i want to delete extra 's' i can pick any 's', so lets pick the last 's' at index 7.
+
+        sb.delete(7 , 8); // Deleting the Characters between 7th and 8th index.
+
+        // As i said starting index is inclusive an Ending index in exclusive, so i won't delete the 8th index Character.
+
+        // but it will the 7th index Character as it is Inclusive.
+
+        System.out.println(sb); // OUTPUT:- He Boys.
+
+        // ------------------------------------------------------------------------------
+        // <string>.append(<substring>); Use to add a Substring at the Last of the String.
+        // ------------------------------------------------------------------------------
+
+        // I also wanted to add "He Boys and she Girls", but it is only "He Boys".
+
+        // I am not going to add Each character using insert() fnc, nor i am going to simply use concatenation, as it is not the Correct way.
+
+        // So, lets use the append() fnc which will add the sub String at the last of the String.
+
+        sb.append("and she Girls."); // Here we appended the sub String at the last of the String.
+        
+        // By this we have added "and she Girls" at the last of the String.
+
+        System.out.println(sb); // OUTPUT:- He Boys.and she Girls.
+
+        // Lets remove the extra full stop in between the String.
+
+        // Lets do the Indexing first,
+
+        // String -> H e   B o y s . a n d     s  h  e     G  i  r  l  s  .
+        // Index  -> 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+
+        // So we have to delete the extra full stop at index 7.
+
+        sb.delete(7 , 8); // Deleting the Characters between 7th and 8th index.
+
+        // Here 7th index is inclusive and 8th index is exclusive, so i won't delete the 8th index Character.
+
+        // but it will the 7th index Character as it is Inclusive.
+
+        System.out.println(sb); // OUTPUT:- He Boysand she Girls.
+
+        // Now, there is no space and 'Boysand'
+
+        // So lets fix it by inserting an space character.
+
+        // Lets do the Indexing first,
+
+        // String -> H e   B o y s a n d     s  h  e     G  i  r  l  s  .
+        // Index  -> 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+        sb.insert(7, " "); // Inserting the space character at 7th index.
+
+        // This will add the space character at the 7th index.
+
+        System.out.println(sb); // OUTPUT:- He Boys and she Girls.
+
+        // Now we have perfectly manipulated the String from "Hello Guys" to "He Boys and she Girls."
+
+        // by learning different StringBuilder functions.
+
+
+        // --------------------------------------------------------------------------------
+        // SOME PRACTICE QUESTIONS
+        // --------------------------------------------------------------------------------
+
+        // --------------------------------------------------------------------------------
+        // QUESTION 1. Reverse a given String and store the Reverse into new String, do not use StringBuilder class functions.
+        // --------------------------------------------------------------------------------
+
+        // --------------------------------------------------------------------------------
+        // QUESTION 2. Reverse a given String Through String Builder Class functions.
+        // --------------------------------------------------------------------------------
+
+        // --------------------------------------------------------------------------------
+        // QUESTION 3. Compare the Time Complexity of Both the Cases.
+        // if Q.1 case has less time complexity than Q.2 , then make the new logic to reverse a String using String Builder class functions, with less Time complexity than Q.1 .
+        // --------------------------------------------------------------------------------    
+
+        // Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.15.4].
+
+    }
+
+    static void Operators_Overview(){
+
+        // What are Operators?
+
+        // Operators are the Special symbols which tells the Compiler to perform certain operations.
+
+        // Like a + b
+
+        // here + is an operator and a & b are operands.
+
+        // Operands are those values on which operators and operations are applied.
+
+        // We have mainly three types of Operators depending upon the no. of Operands.
+
+        // 1. Unary Operator:- Applies to only one operand.
+
+        // 2. Binary Operator:- Applies to two operands.
+
+        // 3. Ternary Operator:- Applies to three operands.
+
+        // ---------------------------------------------------------------------------
+        // ARITHMETIC OPERATORS
+        // ---------------------------------------------------------------------------
+
+        // Unary Arithmetic Operators:- like ++ and --
+
+        // Binary Arithmetic Operators:- like +, -, *, /, %
+
+        // Let suppose two numbers A and B.
+
+        int A = 10; // A Variable 'A' of Datatype int(Integer), Storing 10.
+
+        int B = 5; // A Variable 'B' of Datatype int(Integer), Storing 5.
+
+        // Lets see the Binary Arithmetic Operators.
+
+        // -----------------------------------------------------------------------
+        // Addition (+)
+        // -----------------------------------------------------------------------
+
+        System.out.println(A + B); // Output: 15
+
+        // It simply adds Two Numbers.
+        
+        // -----------------------------------------------------------------------
+        // Subtraction (-)
+        // -----------------------------------------------------------------------
+
+        System.out.println(A - B); // Output: 5
+
+        // It simply subtracts Two Numbers.
+
+        // -----------------------------------------------------------------------
+        // Multiplication (*)
+        // -----------------------------------------------------------------------
+
+        System.out.println(A * B); // Output: 50
+
+        // It simply multiplies Two Numbers.
+
+        // -----------------------------------------------------------------------
+        // Division (/)
+        // -----------------------------------------------------------------------
+
+        System.out.println(A / B); // Output: 2
+
+        // It simply divides Two Numbers and returns the Quotient.
+
+        // -----------------------------------------------------------------------
+        // Modulus (%)
+        // -----------------------------------------------------------------------
+
+        System.out.println(A % B); // Output: 0
+
+        // It simply divides Two Numbers and returns the Remainder.
+
+        // -----------------------------------------------------------------------
+        // UNARY ARITHMETIC OPERATORS
+        // -----------------------------------------------------------------------
+
+        // Increment Operator (++) and Decrement Operator (--)
+
+        // In Simple words, when we have to add or subtract 1 in any number like,
+
+        // A = A + 1 or B = B - 1 then we simply can write the same thing in the form of a++ and b--
+
+        // -----------------------------------------------------------------------
+        // Increment Operator (++)
+        // -----------------------------------------------------------------------
+
+        // It has mainly two forms, Prefix and Postfix.
+
+        System.out.println(A++); // Output: 10
+
+        // Because it is in Postfix, means A++ , this means first use then increment.
+
+        // So, firstly we printed the original value of A and then incremented it by 1.
+
+        // Now, if you check internally, The value of A is 11.
+
+        // Lets Confirm,
+
+        System.out.println(A); // Output: 11
+
+        // Here, the value of A is 11.
+
+        System.out.println(++B); // Output: 6
+
+        // Here we used prefix, means ++B , which means first increment the value of B and then use it.
+
+        // So, firstly we incremented the value of B by 1 and then printed it.
+
+        // So, it may print the Incremented value of B.
+
+        // Now, if you check internally, The value of B is 6.
+
+        // -----------------------------------------------------------------------
+        // Decrement Operator (--)
+        // -----------------------------------------------------------------------
+
+        // It has mainly two forms, Prefix and Postfix.
+
+        System.out.println(A--); // Output: 11
+
+        // Because it is in Postfix, means A-- , this means first use then decrement.
+
+        // So, firstly we printed the original value of A and then decremented it by 1.
+
+        // Now, if you check internally, The value of A is 10.
+
+        // Lets Confirm,
+
+        System.out.println(A); // Output: 10
+
+        // Here, the value of A is 10.
+
+        System.out.println(--B); // Output: 5
+
+        // Here we used prefix, means --B , which means first decrement the value of B and then use it.
+
+        // So, firstly we decremented the value of B by 1 and then printed it.
+
+        // So, it may print the Decremented value of B.
+
+        // Now, if you check internally, The value of B is 5.
+
+
+        // RELATIONAL OPERATORS
+
+        // Relational Operators:- >, <, >=, <=, ==, !=
+
+        // -----------------------------------------------------------------------
+        // Equal To Operator (==)
+        // -----------------------------------------------------------------------
+
+        // This Operators is used to check whether the value of A and B are equal or not, or they have same memory location or not.
+
+        System.out.println(A == B); // Output: false
+
+        // Here A = 10 and B = 5.
+
+        // And, 10 is equal to 5.
+
+        // So, it returns the boolean, either true or false.
+
+        // Here, it is false because 10 is not equal to 5.
+        
+        // -----------------------------------------------------------------------
+        // Not Equal To Operator (!=)
+        // -----------------------------------------------------------------------
+
+        // This Operators is used to check whether the value of A and B are not equal or not, or they have different memory location or not.
+
+        System.out.println(A != B); // Output: true
+
+        // Here A = 10 and B = 5.
+
+        // And, 10 is not equal to 5.
+
+        // So, it returns the boolean, either true or false.
+
+        // Here, it is true because 10 is not equal to 5.
+
+        // != and == are opposite to each other.
+
+        // -----------------------------------------------------------------------
+        // Greater Than Operator (>)
+        // -----------------------------------------------------------------------
+
+        // This Operators is used to check whether the value of A is greater than B or not.
+
+        System.out.println(A > B); // Output: true
+
+        // Here A = 10 and B = 5.
+
+        // And, 10 is greater than 5.
+
+        // So, it returns the boolean, either true or false.
+
+        // Here, it is true because 10 is greater than 5.
+
+        // -----------------------------------------------------------------------
+        // Less Than Operator (<)
+        // -----------------------------------------------------------------------
+
+        // This Operators is used to check whether the value of A is less than B or not.
+
+        System.out.println(A < B); // Output: false
+
+        // Here A = 10 and B = 5.
+
+        // And, 10 is less than 5.
+
+        // So, it returns the boolean, either true or false.
+
+        // Here, it is false because 10 is not less than 5.
+
+        // -----------------------------------------------------------------------
+        // Greater Than Or Equal To Operator (>=)
+        // -----------------------------------------------------------------------
+
+        // This Operators is used to check whether the value of A is greater than or equal to B or not.
+
+        System.out.println(A >= B); // Output: true
+
+        // Here A = 10 and B = 5.
+
+        // And, 10 is greater than or equal to 5.
+
+        // So, it returns the boolean, either true or false.
+
+        // Here, it is true because 10 is greater than or equal to 5.
+
+        // -----------------------------------------------------------------------
+        // Less Than Or Equal To Operator (<=)
+        // -----------------------------------------------------------------------
+
+        // This Operators is used to check whether the value of A is less than or equal to B or not.
+
+        System.out.println(A <= B); // Output: false
+
+        // Here A = 10 and B = 5.
+
+        // And, 10 is less than or equal to 5.
+
+        // So, it returns the boolean, either true or false.
+
+        // Here, it is false because 10 is not less than or equal to 5.
+
+
+        // -----------------------------------------------------------------------
+        // LOGICAL OPERATORS
+        // -----------------------------------------------------------------------
+
+        // Logical operators are used to perform logical operations. They are used to combine multiple conditions.
+
+        // Logical Operators like && (AND), || (OR), ! (NOT) are used to perform logical operations.
+
+        // -----------------------------------------------------------------------
+        // Logical AND (&&)
+        // -----------------------------------------------------------------------
+
+        // It is used as an operators between Two Conditions, and it returns true when both the conditions are Satisfied and are true, otherwise it always return false, also if one of the condition is true and another one is false.
+
+        System.out.println(A > B && A < B); // Output: false
+
+        // Here the Output is False, because at the First Condition, A is greater than B is true because A = 10 and B = 5.
+
+        // And, A > B -> 10 > 5 -> true
+
+        // But when we check the Second Condition, A is less than B is false because A = 10 and B = 5.
+
+        // And, A < B -> 10 < 5 -> false
+
+        // So, we applied AND operator, between true and false.
+
+        // So, true && false will return false, because AND operator returns true only if both the conditions are True.
+
+        // true && true -> true
+
+        // false && true -> false
+
+        // true && false -> false
+
+        // false && false -> false  
+
+
+        // -----------------------------------------------------------------------
+        // Logical OR (||)
+        // -----------------------------------------------------------------------
+
+        // It is used as an operators between Two Conditions, and it returns true when either one of the condition is true, otherwise it always return false, it returns true if both the condition is true.
+
+        System.out.println(A > B || A < B); // Output: true
+
+        // Here the Output is True, because at the First Condition, A is greater than B is true because A = 10 and B = 5.
+
+        // And, A > B -> 10 > 5 -> true
+
+        // But when we check the Second Condition, A is less than B is false because A = 10 and B = 5.
+
+        // And, A < B -> 10 < 5 -> false
+
+        // So, we applied OR operator, between true and false.
+
+        // So, true || false will return true, because OR operator returns true if either condition is true or i would say if any one is condition than the overall output will be true.
+
+        // true || true -> true
+
+        // true || false -> true
+
+        // false || true -> true
+
+        // false || false -> false
+
+
+        // -----------------------------------------------------------------------
+        // Logical NOT (!)
+        // -----------------------------------------------------------------------
+
+        // It is used as an operator at one Condition, and it returns true when the condition is false and it returns false when the condition is true.
+
+        // In clean words, we can say that it reverses the final result.
+
+        System.out.println(!true); // Output: false
+
+        // Here the Output is False, because the condition is true and due to Logical NOT operator, it will reverse the Result and return false.
+
+        System.out.println(!false); // Output: true
+
+        // Here the Output is True, because the condition is false and due to Logical NOT operator, it will reverse the Result and return true.
+
+    }
+
+    
+    static void BinaryFusion(){
+
+         // What is Number System?
+
+        // Number System is a way of writing numbers, like 0, 1, 2, 3, 4, 5, etc.
+
+        // It is the System of writing numbers in a specific base.
+
+        // A number system is defined as a system of writing to express numbers. It is the mathematical notation for representing numbers of a given set by using digits or other symbols in a consistent manner.
+
+        // There are three number systems in Java.
+
+        // 1. Binary Number System is the base-2 number system. (Include 0 and 1)
+        
+        // 2. Decimal Number System is the base-10 number system. (Include 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+        // 3. Hexadecimal Number System is the base-16 number system. (Include 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+
+        // --------------------------------------------------------------------------
+
+        // Base-2 means it has only two possible values 0 and 1.
+
+        // In Java and many Programming Languages, There is no math number System or Decimal Number System.
+
+        // They all follow the Binary Number System.
+
+        // In Decimal Number System, we have 10 digits, 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9.
+
+        // All the numbers is Decimal Number System are Represented by 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+        // Like small number 57.
+
+        // It Included 5 and 7 which are the Digits of Decimal Number System.
+
+        // Like Big number 239374983469.
+
+        // It also the Same Digits of Decimal Number System.
+
+        // Means any number formed or Written in Decimal Number System is Represented by 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+        // Hence it is also known as base-10 Number System.
+
+        // And on the other Side, Binary Number System or the Number System of Computer, is known as base-2 Number System.
+
+        // Because it only has two possible values, 0 and 1.
+
+        // All the Numbers, either big or small, are Represented by 0 and 1.
+
+        // Like 4 in Decimal Number System is represented by 0100 in Binary Number System.
+
+        // Now, you may think that they also include the Same Digits of Decimal Number System.
+
+        // But In Binary Number System, we can use only this 2 Digits, ie. 0 and 1.
+
+        // Lets Understand how to Write Decimal Number System in Binary Number System.
+
+        // Lets Suppose we have to convert 4 in Decimal Number System to Binary Number System.
+
+        // First we have to keep dividing 4 by 2 till we reach 1.
+
+        // 4 / 2 -> 2 and remainder is 0.
+
+        // We Count the Remainder of Each Step as the Binary Numbers, because any number divided by 2 will give either 1 or 0 as the remainder.
+
+        // Binary Format: 0
+
+        // 2 / 2 -> 1 and remainder is 0.
+
+        // Remember, we have to keep writing the Remainder from right to left.
+
+        // Binary Format: 0 0
+
+        // 1 / 2 -> 0 and remainder is 1.
+
+        // Binary Format: 1 0 0 
+
+        // Now, we finally Converted 4 into binary Format, which is 100 .
+
+        // Now, when we have to represent it then we say,
+
+        // Now, lets convert a Binary Number into Decimal Number System.
+
+        // Lets Suppose we have to convert 1101 in Binary Number System to Decimal Number System.
+
+        // So, firstly we have to pick each digit from right to left, and keep multiplying it by powers of 2, starting from power 0 till last digit.
+
+        // Like, here the Digits are 1, 1, 0, 1.
+
+        // So, firstly 1 * 2^0 = 1 * 1 = 1
+
+        // Decimal Format: 1
+
+        // Then 0 * 2^1 = 0 * 2 = 0
+
+        // Decimal Format: 1 + 0 
+
+        // Here we have to Keep Adding the Result at each Step.
+
+        // Then 1 * 2^2 = 1 * 4 = 4
+
+        // Decimal Format: 1 + 0 + 4
+
+        // Then 1 * 2^3 = 1 * 8 = 8
+
+        // Decimal Format: 1 + 0 + 4 + 8
+
+        // Here we have to keep increasing the power of 2 by 1. starting from power 0.
+
+        // Decimal Format: 1 + 0 + 4 + 8 = 13
+
+        // So, 1101 in Binary Number System is equal to 13 in Decimal Number System.
+
+
+        // Lets Know, some Starting values of Decimal Number System,
+
+        // 0 -> 000
+
+        // 1 -> 001
+
+        // 2 -> 010
+
+        // 3 -> 011
+
+        // 4 -> 100
+
+        // 5 -> 101
+
+        // 6 -> 110
+
+        // 7 -> 111
+
+        // 8 -> 1000
+
+        // 9 -> 1001
+
+        // 10 -> 1010
+
+
+
+        // -------------------------------------------------------------------
+        // BITWISE OPERATORS
+        // -------------------------------------------------------------------
+
+        // Some Bitwise Operators like & , | , ^ , ~ , << , >>
+
+        // -------------------------------------------------------------------
+        // Binary AND Operator
+        // -------------------------------------------------------------------
+
+        // It is Used to check the Logical relation between Two Binary Numbers.
+
+        // In Java, 0 is Represented as false, and 1 is represented as true.
+
+        // Lets Assume, we have two Binary Numbers.
+
+        int A = 101; // A Variable 'A' of Datatype Integer, storing 101.
+
+        int B = 111;
+
+    
+
+
+
     }
 
 }    

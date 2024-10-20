@@ -36,7 +36,7 @@ print(name) # Now printing the variable. Notice that I don't use "" double quote
 
 # Full name -> Contains spaces, wrong variable.
 
-# Corrected variable: Full_name -> this is the right variable because it contains an underscore (_) instead of spaces.
+# Corrected Variable: Import because there is a keyword import which has meaning in python but Import due to Different case, treated completely different, and declared different from keyword.
 
 # Why variables? What is the use?
 

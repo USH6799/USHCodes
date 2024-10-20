@@ -3,8 +3,6 @@ public class Functions {
         Function1();
 
 
-
-
         // FUNCTIONS:- THE REUSABLE BLOCK OF CODE
 
         // By its name, u can understand in Short about Functions, actually functions are the part of code which have a specific task to perform by taking some input and providing some output.
@@ -55,21 +53,21 @@ public class Functions {
 
         // If you use the Static Keyword in the Function Prototype which makes it a Static fnc and then the function do not need any object for Calling it.
 
-        // We will Study OOPs in future and there we will study non-static fncs but here we are going to understand Static Functions so its compulsory to Write static in Function Prototype.
+        // We will Study OOPs in future and there we will study non-static functions but here we are going to understand Static Functions so its compulsory to Write static in Function Prototype.
 
         // We cannot use keywords in place of Function name, it could be anything but not the Keywords.
 
         // There are mainly Two Types of Functions in Java:-
 
-        // PURE AND IMPURE FNCS
+        // PURE AND IMPURE FUNCTIONS
 
         // Pure Function:- A pure function is a function that returns a value, to the caller, it uses the return keyword for returning the value from function and it is compulsory to be used.
 
-        // Pure fncs are those which have a desired return type other then void.
+        // Pure functions are those which have a desired return type other then void.
 
         // Impure Function:- An impure function is a function that does not return a value, to the caller, it may use or may not use the return keyword for returning the value from function and it is not compulsory to be used.
 
-        // Impure fncs are all those Functions which have their return type as void.
+        // Impure functions are all those Functions which have their return type as void.
 
     }
 

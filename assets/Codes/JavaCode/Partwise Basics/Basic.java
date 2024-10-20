@@ -123,7 +123,7 @@ public class Basic {
 
         */
 
-        // You will get the answer of This code in next chapter but try to do it first.
+        // You will get the answer of This code in next chapter[Ch.1.2] but try to do it first.
 
         
     }

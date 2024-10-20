@@ -1,5 +1,6 @@
 public class Variables {
     public static void main(String[] args) {
+
         // Variables are like Containers to Store some value in memory or Storage.
 
         // Like lets go in maths, Geometry, the most hatred Chapter.
@@ -122,5 +123,6 @@ public class Variables {
         // String My_Name = "USH"; this is Correct and doesn't throws any error.
 
         // 4. It cannot Contain Special characters and Operators.
+        
     }
 }

@@ -5,7 +5,6 @@ public class Input {
 
     public static void main(String[] args) {
         
-        
         // Let us understand how To take input from user.
 
         // For that we have to right two things or statements which are compulsory.
@@ -72,7 +71,7 @@ public class Input {
 
         System.out.println("String: " + y); // lets check the value of y.
 
-        // Difference between next(); and nextLine(); fncs.
+        // Difference between next(); and nextLine(); functions.
 
         // This both associate with String datatype.
 
@@ -253,4 +252,4 @@ public class Input {
 
 */
 
-// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.6.2].

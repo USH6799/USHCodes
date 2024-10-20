@@ -1,5 +1,6 @@
 public class Datatypes {
     public static void main(String[] args) {
+
         // Let us understand about datatypes before Starting Variables.
 
         // Datatypes are just used to Specify the Type of Data, so that computer can understand it and use it properly.
@@ -227,7 +228,10 @@ public class Datatypes {
 
         // Try to Copy my Code and Run it in your System and Understand the OUTPUTS.
 
+        // You will get the Solutions and Explanations of These Codes in the Next Chapter[ch.4.2]
+
         // ----------------------------------------------------------------------
+
     }
 }
 

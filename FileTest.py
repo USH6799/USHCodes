@@ -67,8 +67,11 @@ def extractLocalFiles(folder_path , ext):
                 
                 data_files.append(root + "/" + file)
                 
-            elif (file.count(".") >= 1 and not file.endswith(".json")):
-                print(file + " contains Dot.")
+            # elif (file.count(".") >= 1 and not file.endswith(".json")):
+            #     print(file + " contains Dot.")
+
+            else:
+                print(file + " Unknown")
                 
 
     return data_files

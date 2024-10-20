@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Conditionals {
     public static void main(String[] args) {
+
         // Conditional Statements are the Statements which are used to make decisions or execute certain code based on certain conditions.
 
         // Like if a number is positive or negative or even or odd.
@@ -483,7 +484,7 @@ public class Conditionals {
         // ---------------------------------------------------------------
 
 
-        // I would like to tell more thing regarding if , if else, else statments, that there is no need of Writing {} parenthesis in if , if else, else statments if We are writing only one line of Statement inside them.
+        // I would like to tell more thing regarding if , if else, else statements, that there is no need of Writing {} parenthesis in if , if else, else statements if We are writing only one line of Statement inside them.
 
         // Like,
 
@@ -549,4 +550,4 @@ public class Conditionals {
 
 */
 
-// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.7.2].

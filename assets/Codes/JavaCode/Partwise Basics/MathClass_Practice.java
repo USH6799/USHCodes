@@ -115,7 +115,7 @@ public class MathClass_Practice {
 
         // Math.pow(c , 2) -> Math.pow(5.0 , 2) -> 25.0
 
-        // Now, we can put the returned value in place of fncs, and solve the last math fnc.
+        // Now, we can put the returned value in place of functions, and solve the last math fnc.
 
         // Math.sqrt(x); returns the Square root of the given number 'x' as the parameter, it returns double datatype value.
 

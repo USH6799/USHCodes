@@ -1,5 +1,6 @@
 public class Operators {
     public static void main(String[] args) {
+
         // Operators are the symbols which are used to perform certain mathematical or logical operations.
 
         // Arithmetic operators in Java are the same as in Python.
@@ -484,5 +485,5 @@ public class Operators {
 
 */
 
-// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter.
+// Try to Solve this Problems, you will get the Solution of this Questions in next Chapter[Ch.5.2].
 

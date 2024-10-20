@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Looping {
     public static void main(String[] args) {
+        
         // Lets take an Example and understand looping.
 
         // Think i want to print this statement 100 times.

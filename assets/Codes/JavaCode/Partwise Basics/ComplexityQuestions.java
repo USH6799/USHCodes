@@ -72,7 +72,7 @@ public class ComplexityQuestions {
         // main fnc to run the code.
 
         Scanner sc = new Scanner(System.in);
-        // creating sc object of Scanner class for taking input or running input fncs.
+        // creating sc object of Scanner class for taking input or running input functions.
 
         // ----------------------------------------------------------------
         // Question 1.
